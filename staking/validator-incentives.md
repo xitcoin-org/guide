@@ -32,20 +32,24 @@ The mainnet planning reference separates validator stake from the reward treasur
 
 | Planning parameter | Reference |
 |---|---:|
-| Initial Validator Incentive Treasury | 100,000,000 XTC |
-| Maximum treasury-funded annual rate | 8% of bonded stake |
-| Default treasury-funded annual distribution cap | 10,000,000 XTC |
-| Hard annual distribution safety ceiling | 40,000,000 XTC |
+| Initial Validator Incentive Treasury planning reference | 100,000,000 XTC |
+| Initial operating APR target | 8% of eligible bonded stake |
+| Governance-adjustable funded APR range | 0% to 20% |
+| Absolute annual token cap | None independent of bonded stake |
 | Unrestricted mint authority | None |
 
-The planned annual treasury contribution is:
+The funded reward calculation is:
 
 ```
-annual treasury distribution =
-min(active rate × total bonded XTC, active annual cap, funded treasury balance)
+annual funded rewards =
+min(
+  active APR × eligible bonded XTC,
+  annual budget already funded and committed,
+  available Validator Incentive Treasury balance
+)
 ```
 
-The available treasury balance remains an additional hard limit. If the treasury is empty, treasury-funded distributions stop.
+The available treasury balance is always a hard limit. If the treasury is empty, treasury-funded distributions stop.
 
 Transaction fees and other protocol revenues remain subject to the network's active distribution parameters. Availability, validator commission, delegation and slashing can change the amount received by each participant.
 
@@ -55,13 +59,16 @@ The planning values are configurable operating parameters, not a promise of a pe
 
 Subject to the final module implementation and its on-chain authority:
 
-- the treasury-funded annual rate may be reduced or increased between **0% and 8%**;
-- the annual distribution cap starts at **10,000,000 XTC** and may be adjusted between **0 and 40,000,000 XTC**;
+- the initial operating APR target is **8%**;
+- the funded APR may be adjusted between **0% and 20%**;
+- no fixed annual token ceiling is imposed independently of eligible bonded stake;
+- the next reward period must be funded before its activation;
+- an APR increase is limited to one percentage point per quarter;
 - distributions may be paused without moving or destroying the funded treasury balance;
-- the treasury may receive additional identifiable XTC deposits at any time;
-- new funding extends the available operating horizon and does not automatically change the active rate or annual cap.
+- new funding may increase a future funded APR or extend the operating horizon;
+- funding a vault never changes a parameter by itself.
 
-A valid on-chain parameter decision may change the operating values within these hard safety limits. Exceeding the 8% rate ceiling, exceeding the 40,000,000 XTC hard annual safety ceiling or granting mint authority requires a separately reviewed protocol upgrade; it cannot be enabled by an ordinary parameter vote.
+A valid on-chain parameter decision may change the operating APR within these safety limits. Exceeding 20%, granting mint authority or bypassing pre-funding requires a separately reviewed protocol upgrade.
 
 Reward-policy decisions remain separate from validator admission. A reward-parameter vote does not approve, protect or revoke a validator.
 
@@ -82,7 +89,7 @@ flowchart TD
 
 The purpose of this loop is to allow application activity to strengthen network security over time. Ecosystem companies, integration partners and independent developers may design applications that contribute through transparent buyback, revenue-sharing or network-fee mechanisms.
 
-Contributions extend the treasury's operating horizon. They do not automatically change the active reward rate or annual distribution cap. A funded deposit alone therefore grants no parameter authority.
+Contributions may support a higher future funded APR or extend the treasury's operating horizon. They never change the active APR automatically. A funded deposit alone grants no parameter authority.
 
 ## Separation of responsibilities
 
@@ -122,6 +129,18 @@ treasury-funded rewards distributed
 
 The planned incentive module must not receive unrestricted mint permission. Treasury funding must come from identifiable XTC deposits or protocol revenues.
 
+## Multichain staking boundary
+
+Xitcoin POS and Xitcoin EVM share the same native XTC economy. They must not create separate balances or duplicate rewards.
+
+- Native consensus staking delegates XTC to approved validators.
+- A future Xitcoin EVM interface may call the canonical staking module through an audited precompile or adapter.
+- A Cronos application may offer a separately funded yield program, or aggregate native staking by bridging and delegating the underlying XTC.
+- A token may participate in only one reward path for the same period.
+- XTC merely held or used on Xitcoin EVM is not automatically staked.
+
+The number of validators changes how the funded reward budget is distributed; it does not multiply the aggregate reward budget.
+
 ## Participation boundary
 
 New validators provide their own required stake and remain subject to admission review. A sovereign reference allocation does not automatically generate staking rewards.
@@ -133,7 +152,7 @@ A participant receives validator or delegator rewards only through active, eligi
 Before activation, the system requires:
 
 - deterministic accounting tests;
-- rate and annual-cap tests;
+- funded-APR, solvency and reward-period tests;
 - four- and five-validator distribution tests;
 - bridge replay and finality protection;
 - vault, router and module access controls;
