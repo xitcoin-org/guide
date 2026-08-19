@@ -26,9 +26,9 @@ The migration converted eligible V1 balances to V2 at a **1:1 token ratio**. Leg
 
 The historical migration interface is [migration.xitcoin.org](https://migration.xitcoin.org). Its availability must not be interpreted as confirmation that every migration path remains open.
 
-## V2 contract evolution
+## V2 proxy and V3 implementation evolution
 
-The V2 lifecycle introduced a proxy-based upgrade path and later administrative safeguards:
+The 2025 V2 generation introduced the persistent proxy address. Its later audited implementation revision is identified in the Cyberscope record by the source label `XitcoinV3_cyberscope.sol`. This V3 revision history introduced or preserved the following safeguards:
 
 * recovery support for third-party tokens transferred accidentally to the token contract;
 * an owner-restricted burn capability;
@@ -57,17 +57,18 @@ The auditor's historical filename and the canonical repository filename differ. 
 
 Before relying on the audit after a proxy revision, verify the active implementation address, deployed bytecode, canonical source hash and applicable audit scope together.
 
-## Planned V3 update
+## Planned V4 WXTC update
 
-V3 is the planned public transition for the Cronos representation after native XTC and the canonical bridge are operational.
+V4 is the planned public transition for the Cronos representation after native XTC and the canonical bridge are operational and verified.
 
 | Stage | Public identity | Meaning |
 |---|---|---|
 | V2 | $XTC | Temporary Cronos display symbol used while the native chain was under development |
-| V3 | WXTC | Verified 1:1 Cronos representation of canonical native XTC |
+| V3 | $XTC | Current audited implementation revision within the V2 proxy generation |
+| V4 | WXTC | Planned verified 1:1 Cronos representation of canonical native XTC |
 | Native network | XTC | Canonical Xitcoin asset |
 
-The `W` prefix must describe technical provenance, not marketing. V3 must not be presented as WXTC until bridge contracts, supply accounting, migration instructions and public verification records are released.
+The `W` prefix must describe technical provenance, not marketing. V4 must not be presented as WXTC until bridge contracts, supply accounting, migration instructions and public verification records are released.
 
 ## Cross-network accounting
 
