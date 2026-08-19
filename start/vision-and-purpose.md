@@ -61,6 +61,24 @@ Eligible public-sector operators can connect through the shared protocol while r
 
 Organizations can build settlement, record-keeping, membership, payment or coordination services using verifiable transactions and programmable rules while retaining responsibility for compliance, custody and user operations.
 
+### Financial and transfer infrastructure
+
+Xitcoin is intended to open a technical path for payment, transfer, settlement and accounting services that can be developed directly on the network or connected by specialized providers.
+
+The combination of delegated proof-of-stake finality and native EVM accounting can support:
+
+- traceable transfer and settlement workflows;
+- programmable payment and treasury rules;
+- reconciliation between application records and finalized blockchain state;
+- remittance and cross-border transfer integrations;
+- auditable reserve, custody and bridge accounting;
+- interfaces through which regulated financial institutions or specialist service providers can connect their own systems;
+- independently developed banking, payment and financial applications using common transaction standards.
+
+Proof-of-stake provides ordered and finalized network state. EVM execution provides programmable accounting, authorization logic and compatibility with established Ethereum tooling. Cosmos interfaces expose native transfers, staking and protocol data to connected services.
+
+Any financial deployment retains its own licensing, legal, compliance, custody, risk-management and customer-protection responsibilities. Xitcoin provides the shared technical infrastructure and verifiable state on which those services can be built.
+
 ### DeFi and developers
 
 Developers can use Solidity and Ethereum tooling or Cosmos-native interfaces. DeFi applications remain independently responsible for their contracts, economic design, security reviews and user disclosures.
