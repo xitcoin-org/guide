@@ -33,6 +33,25 @@ CRO pays Cronos network fees. XTC on Cronos is a CRC-20 token contract; it is no
 
 Inspect the current proxy on the [Cronos Explorer](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991). The associated contract-audit record is published by [Cyberscope](https://www.cyberscope.io/audits/1-xtc).
 
+## Buy or swap XTC
+
+XTC can be obtained on Cronos through decentralized-market routes that reference the current proxy contract.
+
+| Access route | Link | Purpose |
+|---|---|---|
+| VVS Finance | [Open a CRO-to-XTC swap](https://vvs.finance/trade/swap?inputCurrency=cro&outputCurrency=0xe45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) | Opens the VVS swap interface with CRO as the input asset and the current XTC contract as the output asset |
+| Crypto.com Onchain | [Open the official Onchain page](https://crypto.com/onchain) | Use the wallet's Swap feature on Cronos and verify XTC by its complete contract address |
+| DEX Screener | [View XTC markets and pools](https://dexscreener.com/cronos/0xe45fe733bc8617fa6dac8437fc44b5fffa949991) | Compare detected pools, liquidity, activity and trading pairs |
+| GeckoTerminal | [Search all pools for the XTC contract](https://www.geckoterminal.com/search?query=0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) | Independent live pool discovery by contract address |
+
+In Crypto.com Onchain, select **Cronos** as the network, open **Swap**, and identify XTC using `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`. Before confirming, review the output amount, price impact, network fee and the protocol displayed on the confirmation screen. Token and route availability depends on the liquidity sources supported by the wallet at that time.
+
+{% hint style="warning" %}
+The legacy V1 address must not be used for a new purchase or liquidity position. A ticker or logo is not proof of identity. Verify the Cronos network and the complete current contract address before signing.
+{% endhint %}
+
+For a wider market overview and pool-verification procedure, see [Markets and liquidity](../resources/markets-and-liquidity.md).
+
 ## V2 controls
 
 The V2 contract lifecycle added administrative recovery support for third-party tokens sent accidentally to the token contract. It also records an **owner-restricted burn capability**. These are privileged contract controls, not public user permissions.
