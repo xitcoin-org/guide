@@ -12,7 +12,7 @@ The roadmap separates completed public records from infrastructure currently bei
 * XTC contract generations on Cronos;
 * 2025 migration from the legacy contract to the current proxy;
 * supply-model reduction from 21 billion to 5.25 billion XTC;
-* Cyberscope contract-audit iterations;
+* Cyberscope contract-audit iterations and passed KYC record;
 * public market-information listings;
 * Xitcoin Layer 1 source and testnet infrastructure.
 
@@ -23,7 +23,8 @@ The roadmap separates completed public records from infrastructure currently bei
 * clean validator and admission-authority identities;
 * four-validator consensus validation;
 * endpoint, explorer, faucet and indexer cutover preparation;
-* release documentation and checksum reconciliation.
+* release documentation and checksum reconciliation;
+* V4 WXTC specification and bridge security review before any Cronos identity transition.
 
 ## Mainnet target
 
