@@ -9,26 +9,26 @@ The planned canonical bridge connects the canonical Cronos XTC contract with nat
 
 It provides continuity between two networks. The user experience remains centered on XTC, while the bridge accounts for how value is locked, represented and returned.
 
-## Cronos to Xitcoin: lock and backed release
+## Cronos to Xitcoin: lock and strictly backed mint
 
 1. A user deposits canonical Cronos XTC into the approved bridge contract.
 2. The Cronos-side contract locks the deposited amount.
 3. Relayers observe the event and wait for the required finality.
 4. The Xitcoin-side bridge verifies the authorized message and replay protection.
 5. The corresponding native XTC amount is minted to the destination address.
-6. Public accounting records the relationship between Cronos XTC locked and native XTC released or bridge-authorized on Xitcoin.
+6. Public accounting records the one-to-one relationship between Cronos XTC locked and native XTC minted through the bridge.
 
-## Xitcoin to Cronos: representation retirement and unlock
+## Xitcoin to Cronos: bridge burn and unlock
 
 1. A user submits native XTC to the Xitcoin-side bridge.
-2. The corresponding bridge-authorized representation is retired on Xitcoin.
+2. The corresponding bridge-minted native XTC amount is burned on Xitcoin.
 3. Relayers observe finality and submit the authorized message to Cronos.
 4. The Cronos bridge releases the corresponding locked XTC.
 5. Transaction identifiers on both networks provide an auditable trail.
 
 ## Application revenue pathway
 
-The representation retirement used for a bridge return is an accounting operation: it moves value back to Cronos and does not reduce the global economic supply.
+The bridge burn used for a return is an accounting operation: it cancels the Xitcoin representation before the same value is unlocked on Cronos. It does not reduce the global economic supply.
 
 A permanent burn of canonical XTC on Cronos is different. It reduces the effective global XTC ceiling and must be recorded in a public burn ledger. The corresponding unused Xitcoin bridge capacity must be reduced by the same amount. Cronos XTC backing an active Xitcoin representation must never be permanently burned unless the corresponding Xitcoin amount is retired first.
 
@@ -44,7 +44,7 @@ flowchart LR
     D --> E["Validator Incentive Treasury"]
 ```
 
-This pathway does not grant applications or relayers a mint authority. Every amount made available on Xitcoin must remain covered by canonical XTC locked on Cronos.
+Only the authorized Xitcoin bridge module may perform this strictly backed mint. Applications and relayers receive no mint authority. Every XTC minted through the bridge must remain covered one-to-one by canonical XTC locked on Cronos.
 
 The full planned reward loop, distribution ceilings and security boundary are documented under [Validator incentives and revenue flywheel](../staking/validator-incentives.md).
 
@@ -66,8 +66,15 @@ At all times, the system must preserve measurable relationships between:
 
 * XTC locked on Cronos;
 * bridge-authorized native XTC issued on Xitcoin;
-* native XTC removed from circulation for return;
+* bridge-minted native XTC burned for return;
 * XTC unlocked back on Cronos.
+
+The fundamental bridge invariant is:
+
+```
+active bridge-minted XTC on Xitcoin
+= canonical XTC locked in the Cronos Bridge Escrow Vault
+```
 
 Bridge administration must not provide an unrestricted public issuance path. The canonical Cronos token must not receive new mint authority for bridge operation.
 
