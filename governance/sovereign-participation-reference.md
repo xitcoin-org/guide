@@ -335,6 +335,29 @@ The first column displays national flag images sourced through Wikimedia Commons
 | ![Zambia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Zambia.svg?width=48) | Zambia | `ZMB` | 22 521 915 | 1 500 000 XTC | 553 478 XTC | **2 053 478 XTC** |
 | ![Zimbabwe flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Zimbabwe.svg?width=48) | Zimbabwe | `ZWE` | 17 273 580 | 1 500 000 XTC | 484 717 XTC | **1 984 717 XTC** |
 
+## Reserved participation and activation framework
+
+The reference quantity is not a gift, an airdrop, an executed sale or an immediately transferable entitlement. Until a participation agreement is approved and settled, the corresponding XTC remains unactivated within the sovereign reference reserve and earns no staking reward.
+
+A potential activation requires, at minimum:
+
+1. verified institutional identity, authority and applicable compliance review;
+2. an approved legal and economic agreement;
+3. settlement of the agreed consideration through an appropriate regulated or institutional custody path;
+4. allocation to a disclosed custody or escrow structure;
+5. an approved lock-up and vesting schedule;
+6. separate review for validator admission or protocol delegation.
+
+The planning baseline is a **48-month principal schedule**, comprising a **12-month transfer cliff** followed by **36 months of quarterly linear vesting**. This baseline is not an executed offer and remains subject to applicable law, sanctions screening, custody feasibility and the final approved agreement.
+
+Locked principal may be eligible for canonical native staking when technically and legally approved. Staking does not shorten the principal schedule. Rewards are accounted for separately under the active network policy.
+
+A sovereign participant cannot obtain immediate unrestricted bridge withdrawal merely by activating a reference quantity. Transfers of vested principal remain subject to normal bridge finality, liquidity, security and rate-limit controls.
+
+If applicable law currently prohibits or prevents participation, the reference remains dormant. It is not automatically transferred to another participant solely because of that restriction. This preserves consistent treatment if the legal environment changes in the future.
+
+A sovereign reference quantity does not provide diplomatic recognition, governance control, validator admission or immunity from protocol rules.
+
 ## How a sovereign participant can initiate review
 
 A relevant public authority or formally authorized representative can initiate contact through the [official Xitcoin channels](../start/official-links.md).
