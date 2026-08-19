@@ -3,9 +3,9 @@ description: Whole-XTC sovereign reference methodology, complete table and parti
 icon: globe
 ---
 
-# Sovereign participation reference
+# Xitcoin Sovereign Reference Index 2026
 
-Xitcoin maintains a deterministic reference framework for potential sovereign participation. It provides a common technical method without granting ownership, validator status, diplomatic recognition or automatic access.
+The Xitcoin Sovereign Reference Index 2026 establishes a deterministic framework for potential sovereign participation. It provides a common technical method without granting ownership, validator status, diplomatic recognition or automatic access.
 
 ## Reference set
 
@@ -89,7 +89,7 @@ Cook Islands, Niue and Western Sahara remain non-consolidated statistical record
 
 ### Complete consolidation table
 
-| Statistical record | ISO3 | Population used | Included in reference | Target ISO3 |
+| Statistical record | ISO3 | 2026 reference population | Consolidated into reference | Target ISO3 |
 |---|---:|---:|---|---:|
 | Aruba | `ABW` | 108 164 | Netherlands | `NLD` |
 | Anguilla | `AIA` | 14 817 | United Kingdom | `GBR` |
@@ -133,11 +133,11 @@ Cook Islands, Niue and Western Sahara remain non-consolidated statistical record
 
 Every consolidation above is applied before the formula. The complete target population is then used once in the demographic component. No consolidated record receives a separate position or a second quantity.
 
-## Complete 2026 reference table
+## Complete Xitcoin Sovereign Reference Index 2026
 
-Flags are presentation images sourced through Wikimedia Commons. They are non-authoritative and do not affect identity, eligibility or quantity. United Nations M49 and ISO identifiers remain canonical.
+The first column displays national flag images sourced through Wikimedia Commons, the media repository used by Wikipedia. They are non-authoritative and do not affect identity, eligibility or quantity. United Nations M49 and ISO identifiers remain canonical.
 
-| Flag | Reference position | ISO3 | Consolidated population | Equal base | Demographic component | Total reference |
+| Wikipedia/Wikimedia flag | Sovereign reference | ISO3 | 2026 reference population | Equal component | Demographic component | 2026 reference quantity |
 |---|---|---:|---:|---:|---:|---:|
 | ![Afghanistan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Afghanistan.svg?width=48) | Afghanistan | `AFG` | 45 047 069 | 1 500 000 XTC | 782 764 XTC | **2 282 764 XTC** |
 | ![Albania flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Albania.svg?width=48) | Albania | `ALB` | 2 751 025 | 1 500 000 XTC | 193 439 XTC | **1 693 439 XTC** |
@@ -356,7 +356,7 @@ No position activates automatically. The table is a deterministic reference inde
 
 Only Atlas, Borealis, Meridian and Zenith are currently approved validators. No sovereign reference position is currently described as activated by this methodology.
 
-The complete data and verification sources are maintained in the Xitcoin blockchain repository:
+The complete Xitcoin Sovereign Reference Index 2026 data and verification sources are maintained in the Xitcoin blockchain repository:
 
 - `docs/sovereign-allocation-2026.md`;
 - `networks/testnet/sovereign-allocation-index-2026.csv`;
