@@ -161,28 +161,45 @@ A participant receives validator or delegator rewards only through active, eligi
 
 ## Verified implementation progress
 
-The development branch was tested on **19 August 2026** without deployment or movement of funds.
+The development branch was verified on **20 August 2026** without deployment
+or movement of funds.
 
 The verified implementation scope currently includes:
 
 - protocol parameters with an initial 8% operating APR and a hard 20% ceiling;
-- a maximum increase of one percentage point per quarterly period;
+- a maximum increase of one percentage point per reward period;
 - deterministic prefunded reward-period calculation;
-- rejection of overlapping reward periods;
-- rejection of distributions outside the active period;
-- rejection of any distribution exceeding the remaining provision;
+- rejection of overlapping periods and distributions outside the active period;
+- rejection of distributions exceeding the remaining period provision;
 - persistent period state and cumulative distribution accounting;
-- a minimal bank interface limited to reading the treasury balance and sending already-funded XTC from the module account;
-- bank-transfer ordering that records a distribution only after a successful transfer;
-- failure-path tests proving that a rejected bank transfer or insufficient treasury balance leaves distribution accounting unchanged;
-- explicit authority checks protecting parameter updates and funded-period activation;
-- rejection of missing or non-matching authorities without changing module state;
-- activation derived from canonical on-chain staking state and the real module-account balance;
-- rejection of an empty treasury or a failed staking-state query without changing period state;
-- generated Cosmos messages for parameter updates and funded-period activation;
-- a tested message server that rejects nil messages, invalid authorities and non-positive budgets before state mutation.
+- a Cosmos module-account treasury with no private key and no mint or burn permission;
+- real treasury balances read from the Bank keeper;
+- eligible bonded stake read from the Staking keeper;
+- rejection of caller-supplied treasury balances or eligible stake;
+- accounting updated only after a successful bank transfer;
+- governance-module authority for parameter updates and funded-period activation;
+- complete Cosmos messages, validation, message server and transaction CLI;
+- application store, keeper, module, codec and genesis integration;
+- read-only gRPC and REST queries for parameters, period state and treasury balance;
+- tests covering invalid authorities, invalid budgets, empty treasuries,
+  failed transfers, period limits, application wiring and public query results.
 
-The minimal bank interface exposes no mint or burn operation. The successful tests validate the accounting foundation only; they do not prove that production transfers, governance messages, application wiring or deployment are complete.
+The public read-only paths are:
+
+- `/cosmos/evm/validatorincentives/v1/params`
+- `/cosmos/evm/validatorincentives/v1/period`
+- `/cosmos/evm/validatorincentives/v1/treasury`
+
+Reward-policy governance remains separate from validator admission. A funded
+incentive proposal cannot approve, protect or revoke a validator.
+
+The incentive module never mints bridge assets. Bridge lock/mint and
+burn/unlock accounting belongs to the separately controlled bridge subsystem.
+The incentive treasury distributes only native XTC already credited to its
+module account.
+
+These successful development tests do not constitute a production deployment,
+a security audit or evidence that the treasury has been funded.
 
 ## Security and release status
 
