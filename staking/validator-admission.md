@@ -5,43 +5,50 @@ icon: user-shield
 
 # Validator admission
 
-Xitcoin includes an on-chain validator-admission policy. Holding XTC does not automatically grant the right to join the active validator set.
+Xitcoin includes an on-chain validator-admission policy. Holding, receiving, staking or delegating XTC does not grant the right to join the active validator set.
 
-## Policy model
-
-A validator must satisfy both:
-
-1. approval under the on-chain admission policy; and
-2. the applicable staking, self-delegation, security and operational requirements.
-
-The current Xitcoin Testnet release candidate defines:
+## Current release candidate
 
 | Parameter | Candidate value |
 |---|---:|
 | Maximum validator and admission capacity | 258 |
-| Initially approved core validators | 4 |
+| Initially approved validators | 4 |
+| Additional validators currently announced | 0 |
 | Protocol minimum self-delegation | 1,000,000 XTC |
 | Initial self-delegation per core validator | 5,000,000 XTC |
 
-The protocol minimum is the admission floor. The larger core-validator amount is the initial deployment value for Atlas, Borealis, Meridian and Zenith. These values describe different controls and are not contradictory.
+The four initially approved validators are Xitcoin Atlas, Xitcoin Borealis, Xitcoin Meridian and Xitcoin Zenith.
+
+The protocol minimum is the admission floor. The larger core-validator amount is the initial deployment value. These are different controls and are not contradictory.
+
+## Required admission conditions
+
+A validator must satisfy all applicable conditions:
+
+1. a separately reviewed operator identity;
+2. explicit approval by the canonical on-chain admission authority;
+3. the applicable self-delegation requirement;
+4. security, key-management and operational requirements;
+5. an auditable on-chain approval record.
+
+The 258-position parameter is a maximum capacity, not a target validator count.
 
 ## Participation capacity
 
-The 258-position planning model separates:
+The planning model separates 195 sovereign reference positions and 63 public positions. These categories do not announce additional validators, transfer funds or grant consensus power.
 
-- 195 sovereign reference positions; and
-- 63 public positions.
+Any expansion beyond the four initially approved validators will be considered individually. No operator is approved merely because capacity remains available.
 
-A reference position is not an automatic validator right. Admission still requires an approved validator operator address and compliance with the published technical and security requirements.
+## Authority boundary
 
-The allocation dataset also contains 39 territorial statistical consolidations. Those mappings support deterministic population calculations and do not create additional validator positions.
+Only the canonical validator-admission authority can execute the defined approval and revocation actions during the current launch phase.
 
-## Revocation and access
+Token holdings, staking balances, delegation weight and ordinary governance voting do not replace or override this authority. The technical presence of a Cosmos governance module does not give token holders validator-admission control.
 
 Approval and revocation are recorded in blockchain state. A revoked validator must not be able to recreate or unjail itself without renewed authorization.
 
-External full nodes can synchronize and relay data without becoming validators. Validator admission controls consensus participation, not public read access to the blockchain.
+External full nodes can synchronize and relay data without becoming validators. Validator admission controls consensus participation, not public read access.
 
 {% hint style="warning" %}
-Candidate testnet parameters do not automatically become mainnet rights. Mainnet admission, custody and governance controls must be verified against the final genesis and active on-chain state before launch.
+Candidate testnet parameters do not automatically become mainnet rights. Mainnet authority custody and recovery controls must be verified against final on-chain state before launch.
 {% endhint %}
