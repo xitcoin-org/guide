@@ -9,6 +9,53 @@ The planned canonical bridge connects the canonical Cronos XTC contract with nat
 
 It provides continuity between two networks. The user experience remains centered on XTC, while the bridge accounts for how value is locked, represented and returned.
 
+## Bridge lifecycle at a glance
+
+```mermaid
+flowchart LR
+    U1["User on Cronos"] -->|"Deposit XTC"| V["Cronos Bridge Escrow Vault"]
+    V -->|"Lock finalized"| Q["Relayer quorum and finality verification"]
+    Q -->|"Unique authorized message"| M["Xitcoin Bridge Module"]
+    M -->|"Strictly backed mint 1:1"| U2["User on Xitcoin EVM / POS"]
+
+    U2 -->|"Return request"| B["Burn bridge-minted XTC"]
+    B -->|"Burn finalized"| Q2["Relayer quorum and replay verification"]
+    Q2 -->|"Unique authorized message"| V
+    V -->|"Unlock original XTC"| U1
+```
+
+The forward path changes the network representation of XTC without increasing global economic supply. The return path burns the bridge-minted XTC before releasing the original Cronos XTC.
+
+## Technical settlement sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User
+    participant Cronos as Cronos XTC
+    participant Vault as Cronos Escrow Vault
+    participant Relay as Authorized Relayer Quorum
+    participant Bridge as Xitcoin Bridge Module
+    participant Account as Xitcoin Account
+
+    User->>Vault: Deposit canonical XTC
+    Vault->>Cronos: Transfer and lock XTC
+    Vault-->>Relay: Emit lock event with nonce
+    Relay->>Relay: Wait for finality and quorum
+    Relay->>Bridge: Submit chain ID, tx hash, nonce, amount and destination
+    Bridge->>Bridge: Verify allowlist, quorum, finality and replay protection
+    Bridge->>Account: Mint exactly the locked amount
+    Bridge-->>Relay: Emit completed mint record
+
+    User->>Bridge: Request return to Cronos
+    Bridge->>Bridge: Burn bridge-minted XTC
+    Bridge-->>Relay: Emit burn event with unique nonce
+    Relay->>Relay: Wait for finality and quorum
+    Relay->>Vault: Submit verified burn settlement
+    Vault->>Vault: Verify message and unused nonce
+    Vault->>User: Unlock exactly the burned amount
+```
+
 ## Cronos to Xitcoin: lock and strictly backed mint
 
 1. A user deposits canonical Cronos XTC into the approved bridge contract.
