@@ -59,7 +59,7 @@
 
 * [Governance](governance/overview.md)
 * [Participation framework](governance/participation-framework.md)
-* [Audits and technical validation](security/audits-and-validation.md)
+* [Xitcoin security and verification](security/audits-and-validation.md)
 * [Responsible disclosure](security/responsible-disclosure.md)
 * [Testnet and risk notice](security/testnet-notice.md)
 
