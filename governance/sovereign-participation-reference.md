@@ -46,6 +46,18 @@ Where (P_i) is the consolidated population reference for 1 July 2026.
 
 Square-root weighting recognizes population differences while limiting concentration. Four times the population produces twice the demographic weight, not four times the weight.
 
+## Neutrality and equal treatment
+
+The methodology uses only two components: an identical base and a pinned population reference. It does not use:
+
+- gross domestic product, national wealth or market size;
+- land area, natural resources or military capacity;
+- political alignment, diplomatic influence or institutional seniority;
+- current XTC holdings, investment size or ability to purchase tokens;
+- discretionary scoring by the Xitcoin operator.
+
+Because 75% of the envelope is equal, every reference receives the same 1 500 000 XTC base. Only 25% varies, and the square-root transformation deliberately compresses population differences. The same source, date, formula, precision and rounding rule apply to all 195 references.
+
 ## Whole-XTC rounding
 
 The published table contains no fractional XTC:
@@ -74,6 +86,52 @@ Following the United Nations M49 statistical framework used by the dataset, the 
 This is a statistical processing rule inherited from the cited dataset. It is not a separate political or diplomatic determination by Xitcoin.
 
 Cook Islands, Niue and Western Sahara remain non-consolidated statistical records. They do not create positions and are not added to another position.
+
+### Complete consolidation table
+
+| Statistical record | ISO3 | Population used | Included in reference | Target ISO3 |
+|---|---:|---:|---|---:|
+| Aruba | `ABW` | 108 164 | Netherlands | `NLD` |
+| Anguilla | `AIA` | 14 817 | United Kingdom | `GBR` |
+| American Samoa | `ASM` | 45 319 | United States of America | `USA` |
+| Bonaire, Sint Eustatius and Saba | `BES` | 31 913 | Netherlands | `NLD` |
+| Saint Barthélemy | `BLM` | 11 550 | France | `FRA` |
+| Bermuda | `BMU` | 64 459 | United Kingdom | `GBR` |
+| Curaçao | `CUW` | 185 440 | Netherlands | `NLD` |
+| Cayman Islands | `CYM` | 77 196 | United Kingdom | `GBR` |
+| Falkland Islands (Malvinas) | `FLK` | 3 465 | United Kingdom | `GBR` |
+| Faroe Islands | `FRO` | 56 526 | Denmark | `DNK` |
+| Guernsey | `GGY` | 64 609 | United Kingdom | `GBR` |
+| Gibraltar | `GIB` | 40 867 | United Kingdom | `GBR` |
+| Guadeloupe | `GLP` | 372 453 | France | `FRA` |
+| Greenland | `GRL` | 55 629 | Denmark | `DNK` |
+| French Guiana | `GUF` | 318 872 | France | `FRA` |
+| Guam | `GUM` | 170 185 | United States of America | `USA` |
+| China, Hong Kong SAR | `HKG` | 7 378 602 | China | `CHN` |
+| Isle of Man | `IMN` | 84 055 | United Kingdom | `GBR` |
+| Jersey | `JEY` | 104 106 | United Kingdom | `GBR` |
+| China, Macao SAR | `MAC` | 723 188 | China | `CHN` |
+| Saint Martin (French part) | `MAF` | 23 898 | France | `FRA` |
+| Northern Mariana Islands | `MNP` | 42 914 | United States of America | `USA` |
+| Montserrat | `MSR` | 4 328 | United Kingdom | `GBR` |
+| Martinique | `MTQ` | 337 711 | France | `FRA` |
+| Mayotte | `MYT` | 347 536 | France | `FRA` |
+| New Caledonia | `NCL` | 297 892 | France | `FRA` |
+| Puerto Rico | `PRI` | 3 222 688 | United States of America | `USA` |
+| French Polynesia | `PYF` | 283 076 | France | `FRA` |
+| Réunion | `REU` | 886 298 | France | `FRA` |
+| Saint Helena | `SHN` | 5 147 | United Kingdom | `GBR` |
+| Saint Pierre and Miquelon | `SPM` | 5 513 | France | `FRA` |
+| Sint Maarten (Dutch part) | `SXM` | 44 447 | Netherlands | `NLD` |
+| Turks and Caicos Islands | `TCA` | 47 148 | United Kingdom | `GBR` |
+| Tokelau | `TKL` | 2 691 | New Zealand | `NZL` |
+| China, Taiwan Province of China | `TWN` | 23 011 292 | China | `CHN` |
+| British Virgin Islands | `VGB` | 39 936 | United Kingdom | `GBR` |
+| United States Virgin Islands | `VIR` | 83 400 | United States of America | `USA` |
+| Wallis and Futuna Islands | `WLF` | 11 113 | France | `FRA` |
+| Kosovo (under UNSC res. 1244) | `XKX` | 1 666 992 | Serbia | `SRB` |
+
+Every consolidation above is applied before the formula. The complete target population is then used once in the demographic component. No consolidated record receives a separate position or a second quantity.
 
 ## Complete 2026 reference table
 
