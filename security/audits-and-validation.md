@@ -65,22 +65,23 @@ KYC verifies identity under the provider's process. It is separate from technica
 
 The Xitcoin Layer 1 is validated separately from the Cronos token contract. The current record consists of repository tests, continuous-integration definitions, deterministic build controls and recorded multi-validator operational checks.
 
-### Recorded network and genesis checks
+### Network and genesis verification
 
-The release process records the following checks:
+The validation program covers:
 
 * deterministic genesis checksum verification;
 * genesis validation with the official binary;
-* four-validator consensus testing;
-* block-production continuity;
-* peer discovery and connectivity;
+* signed genesis-transaction and validator-admission correspondence;
+* four-validator consensus, block-production and peer-connectivity testing;
 * consistent genesis state across validators;
 * Linux runtime and binary checksum comparison;
 * Cosmos and EVM chain-ID verification;
 * public RPC, REST, gRPC and JSON-RPC endpoint checks;
-* validator health and monitoring checks.
+* validator health, monitoring, backup and recovery checks.
 
-These are engineering and operational validation results for the tested release and environment. They are not described as an independent third-party Layer 1 audit.
+Status must be attached to a specific release. For the current `xitcoin-testnet-1` reset candidate, genesis identity, four validator identities, four signed genesis transactions, admission entries, chain IDs and the genesis SHA-256 are recorded in [PR 17](https://github.com/xitcoin-org/pos-chain/pull/17). That pull request remains a draft until isolated four-validator staging and transaction tests are complete. Earlier or separate testnet results must not be used to imply that this release gate has already passed.
+
+These are engineering and operational validations for identified releases and environments. They are not described as an independent third-party Layer 1 audit.
 
 ### Repository test and build evidence
 
@@ -98,6 +99,19 @@ These are engineering and operational validation results for the tested release 
 | web3.js compatibility | web3.js client integration | [web3.js workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/tests-compatibility-web3js.yml) |
 
 Workflow definitions prove which checks are encoded. A specific release claim must also reference the applicable commit, completed run and retained artifacts.
+
+### Recorded change and test evidence
+
+| Record | Security or validation scope | Recorded result and boundary |
+|---|---|---|
+| [PR 1 — Validator admission](https://github.com/xitcoin-org/pos-chain/pull/1) | Approval capacity, minimum self-delegation, authority updates and automated module tests | Module tests and compile checks recorded; no running validator or network was changed |
+| [PR 11 — Native XTC and bridge foundation](https://github.com/xitcoin-org/pos-chain/pull/11) | Native `axtc`, supply controls, disabled bridge foundations and genesis verification | Module, EVM integration, genesis validation and checksum commands recorded; activation remained separate |
+| [PR 12 — Native XTC bridge settlement](https://github.com/xitcoin-org/pos-chain/pull/12) | Signer threshold, owner-authorized burn, replay protection, limits, pause and supply ceilings | Targeted tests, race tests, integration test, build and genesis equivalence recorded; no route activation |
+| [PR 13 — Bridge attestation status query](https://github.com/xitcoin-org/pos-chain/pull/13) | Read-only replay-status query over CLI, gRPC and REST | Bridge tests and EVM compile checks recorded; no service restart, key use, deployment or transaction |
+| [PR 16 — Final testnet configuration](https://github.com/xitcoin-org/pos-chain/pull/16) | Chain identity, validator parameters and deterministic sovereign-allocation index | Genesis checksum, admission parameters, 195 unique positions, 39 consolidations and exact 390,000,000 XTC aggregate recorded |
+| [PR 17 — Secure testnet reset](https://github.com/xitcoin-org/pos-chain/pull/17) | `xitcoin-testnet-1`, four replacement validator identities, signed genesis transactions and final checksum | Draft release candidate; isolated four-validator staging and transaction tests remain required before merge |
+
+A merged pull request records reviewed source history and its stated validation. It does not prove deployment or activation unless the release record and live network state confirm that separately.
 
 ### Validator-admission validation
 
