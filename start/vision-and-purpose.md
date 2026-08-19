@@ -5,15 +5,15 @@ icon: lightbulb
 
 # Vision and purpose
 
-Xitcoin is designed as a common, verifiable infrastructure layer for transactions, applications and coordinated digital services.
+Xitcoin is conceived as a common, verifiable and evolving infrastructure layer for transactions, applications and coordinated digital services.
 
-Its purpose is to let different categories of participants work through compatible network rules and interfaces without requiring them to become part of one central organization or adopt one proprietary application stack.
+Its purpose is to offer a shared technical language through which public-sector participants, sovereign operators, companies, institutions, DeFi applications, communities and developers can interact using compatible rules and interfaces.
 
-This is a design objective. It does not claim that a government, institution, bank, company or DeFi protocol already uses, operates or endorses Xitcoin.
+Each participant retains its own identity, authority, legal framework and operational responsibilities. The common protocol creates interoperability without requiring institutional uniformity, political alignment or dependence on one proprietary application stack.
 
-## A shared compatibility layer
+## A universal compatibility framework
 
-Public-sector participants, sovereign operators, companies, institutions, DeFi applications, communities and developers can require different governance, legal and application models. Xitcoin is intended to provide a shared technical language underneath those differences:
+Different participants may operate under different mandates, jurisdictions and service models. Xitcoin places a neutral technical framework at their disposal:
 
 - one verifiable ledger for transactions and application state;
 - one canonical native-XTC accounting model;
@@ -23,7 +23,7 @@ Public-sector participants, sovereign operators, companies, institutions, DeFi a
 - published validator-admission and operational controls;
 - open RPC and integration standards for independently operated applications.
 
-The shared layer does not replace each participant's legal authority, internal systems, regulatory duties or application governance.
+The network is intended to let distinct systems speak the same technical language while preserving equal protocol rules and participant autonomy.
 
 ## Cosmos and EVM interoperability
 
@@ -39,13 +39,23 @@ Xitcoin combines Cosmos SDK and CometBFT with native EVM execution.
 
 Cosmos and EVM activity belongs to the same sovereign chain and the same native-XTC economy. Native EVM compatibility does not create a second XTC supply.
 
-Cross-network movement to Cronos is a separate bridge concern and must follow verified lock/mint and burn/unlock accounting before it is described as active.
+Cross-network movement to Cronos is a separate bridge concern and must follow verified lock/mint and burn/unlock accounting before activation.
+
+## Sovereign participation pathway
+
+The participation framework keeps one reference position available for each of 195 sovereign references: 193 United Nations Member States, the Holy See and the State of Palestine.
+
+A reserved position is a pathway made available for future participation. It becomes active only through the relevant participant's own initiative, an authorized operator and compliance with the same admission, security and operational standards applied across the network.
+
+This structure preserves equal technical treatment while allowing operator rotation, suspension or revocation when security, authorization or mandate conditions change.
+
+Alongside the sovereign framework, 63 positions are reserved for public participation. The network continues to develop through public infrastructure, applications, developers, companies, DeFi and community activity.
 
 ## Intended use environments
 
 ### Public and sovereign infrastructure
 
-The participation framework reserves sovereign reference capacity so eligible public-sector operators may be admitted under the same published technical and security standards. A reserved position is not endorsement, ownership, funding or active participation.
+Eligible public-sector operators can connect through the shared protocol while retaining their institutional autonomy and responsibilities.
 
 ### Companies and institutions
 
@@ -77,12 +87,13 @@ Staking power, validator admission, governance authority and infrastructure oper
 ## Design principles
 
 1. **Verifiability:** critical state and protocol decisions can be independently checked.
-2. **Compatibility:** Cosmos and EVM interfaces reduce integration friction.
-3. **Shared infrastructure, independent responsibility:** participants use common protocol rules while retaining their own obligations.
-4. **Separation of authority:** staking, admission, governance and operations are documented independently.
-5. **Controlled upgrades:** changes require an identifiable process, reviewable code and deployment records.
-6. **Operational accountability:** releases include checksums, configuration references, monitoring and recovery procedures.
-7. **Status accuracy:** intended or planned capabilities are never described as existing adoption or active services.
+2. **Universal compatibility:** common Cosmos and EVM interfaces reduce barriers between different systems.
+3. **Equal protocol treatment:** participation categories do not bypass published technical and security requirements.
+4. **Participant autonomy:** each participant retains its identity, mandate and operational responsibility.
+5. **Separation of authority:** staking, admission, governance and operations are documented independently.
+6. **Controlled upgrades:** changes require an identifiable process, reviewable code and deployment records.
+7. **Operational accountability:** releases include checksums, configuration references, monitoring and recovery procedures.
+8. **Status accuracy:** intended capabilities and reserved pathways are distinguished from activated services.
 
 ## Development sequence
 
