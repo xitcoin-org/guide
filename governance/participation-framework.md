@@ -36,6 +36,8 @@ The 390 million XTC reference methodology and validator admission are separate c
 
 The index does not transfer tokens, approve an operator, activate a validator or create ownership by itself.
 
+The exact formula, verified examples, United Nations statistical mappings, deterministic rounding rule and sovereign review pathway are published in [Sovereign participation reference](sovereign-participation-reference.md).
+
 ## Admission and decision authority
 
 Every validator requires explicit approval by the canonical on-chain validator-admission authority. During the current launch phase, that authority is controlled through the project's authorized custody process.
