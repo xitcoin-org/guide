@@ -59,7 +59,7 @@
 
 * [Governance](governance/overview.md)
 * [Participation framework](governance/participation-framework.md)
-* [Sovereign participation reference](governance/sovereign-participation-reference.md)
+* [Sovereign Reference Index 2026](governance/sovereign-participation-reference.md)
 * [Xitcoin security and verification](security/audits-and-validation.md)
 * [Responsible disclosure](security/responsible-disclosure.md)
 * [Testnet and risk notice](security/testnet-notice.md)
