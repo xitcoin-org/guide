@@ -5,7 +5,7 @@ icon: building-columns
 
 # Participation framework
 
-This page records the design under evaluation for mainnet validator participation. It does not grant a validator seat, a government allocation or an economic entitlement.
+This page records the design under evaluation for mainnet validator participation. It does not grant a validator seat, a sovereign allocation or an economic entitlement.
 
 ## Design objectives
 
@@ -16,31 +16,50 @@ The framework is intended to support public, institutional and sovereign operato
 | Parameter | Planning value | Status |
 |---|---:|---|
 | Initial approved validators | 4 | Testnet implementation |
-| Maximum validator capacity | 258 | Present in the candidate network parameters |
-| Proposed sovereign positions | 195 | Pre-launch policy; not allocated |
-| Proposed public positions | 63 | Pre-launch policy; not allocated |
-| Proposed validator self-delegation requirement | 5,000,000 XTC | Policy decision; deployment consistency pending |
-| Earlier protocol minimum | 1,000,000 XTC | Must be reconciled before mainnet |
-| Proposed sovereign reserve | 390,000,000 XTC | Treasury planning; not an active allocation |
-| Automatic validator rights | None | Policy objective |
+| Maximum validator capacity | 258 | Candidate network parameter |
+| Sovereign reference positions | 195 | Deterministic planning index; not automatic admission |
+| Public positions | 63 | Reserved participation capacity; not automatic admission |
+| Protocol minimum self-delegation | 1,000,000 XTC | Candidate network parameter |
+| Initial self-delegation per core validator | 5,000,000 XTC | Atlas, Borealis, Meridian and Zenith |
+| Sovereign reference reserve | 390,000,000 XTC | Treasury planning; not an active transfer |
+| Automatic validator rights | None | Enforced design objective |
 
-## Required reconciliation
+The 258-position model is the sum of 195 sovereign reference positions and 63 public positions.
 
-The proposed 390 million XTC reserve and the proposed 5 million XTC self-delegation requirement do not by themselves fund 195 validator positions. They represent different planning records and must not be presented as one completed allocation model.
+The sovereign reference set contains 193 United Nations Member States, the Holy See and the State of Palestine. The 39 territorial consolidations recorded in the allocation dataset are statistical population mappings, not additional validator positions.
+
+## Allocation boundary
+
+The 390 million XTC reference reserve and validator admission are separate controls.
+
+The deterministic index records a reference methodology:
+
+- 292,500,000 XTC equal component, representing 75%;
+- 97,500,000 XTC demographic component, representing 25%;
+- square-root population weighting for the demographic component;
+- exact aggregate of 390,000,000 XTC.
+
+The index does not itself transfer tokens, approve an operator, activate a validator or create sovereign ownership.
 
 Before mainnet, the published policy must define:
 
-* whether a reserve funds ownership, delegation, incentives or operating support;
-* the amount available per category and its vesting or custody controls;
-* how operators are approved, suspended and removed;
-* how stake concentration is monitored;
-* whether delegated public stake can change validator power;
-* conflict-of-interest and disclosure requirements;
-* the on-chain parameters implementing the policy.
+- whether any reserve funds ownership, delegation, incentives or operating support;
+- custody, vesting and release controls;
+- how operators are approved, suspended and removed;
+- how stake concentration is monitored;
+- whether delegated public stake can change validator power;
+- conflict-of-interest and disclosure requirements;
+- the final on-chain authority and governance process.
+
+## Admission and governance
+
+Every validator requires explicit on-chain approval. Holding or staking XTC does not create an automatic validator right.
+
+Admission, revocation and parameter updates must remain visible in blockchain state. The production authority and its multisignature custody procedures must be verified and published before mainnet.
 
 ## Equal technical standard
 
-Every active validator must satisfy the same consensus, key-management, uptime, monitoring and incident-response requirements. A sovereign or institutional designation must not bypass protocol security controls.
+Every active validator must satisfy the same consensus, key-management, uptime, monitoring and incident-response requirements. A sovereign, institutional or public designation must not bypass protocol security controls.
 
 ## Publication rule
 
