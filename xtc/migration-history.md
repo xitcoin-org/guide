@@ -36,7 +36,26 @@ The V2 lifecycle introduced a proxy-based upgrade path and later administrative 
 
 These controls must be assessed against the verified active implementation and ownership state. The guide does not publish privileged operating instructions.
 
-The current contract and its audit iterations are available through the [Cronos Explorer](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) and [Cyberscope audit record](https://www.cyberscope.io/audits/1-xtc).
+## Contract review and revisions
+
+Cyberscope publishes the official [Xitcoin smart-contract audit record](https://www.cyberscope.io/audits/1-xtc) for the Cronos proxy contract [`0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991).
+
+The public record lists four audit iterations:
+
+* [2 July 2025 and 16 July 2025](https://www.cyberscope.io/audits/1-xtc);
+* [16 February 2026 and 17 February 2026](https://www.cyberscope.io/audits/1-xtc).
+
+The corresponding technical record, including the audited source label, implementation address and SHA-256 source hash, is preserved in the [`xitcoin-org/contracts` repository](https://github.com/xitcoin-org/contracts/blob/main/audits/cyberscope-v2.md).
+
+Cyberscope identifies the reviewed source as `XitcoinV3_cyberscope.sol`. The canonical repository source is [`contracts/cronos/v2/XTCV2.sol`](https://github.com/xitcoin-org/contracts/blob/main/contracts/cronos/v2/XTCV2.sol), with SHA-256:
+
+`b5de4f5c4f13334bf644ec8fa97f8b0cda836ddc76935dc14c7bfcda2a73ff14`
+
+The implementation associated with this reviewed record is [`0x6c171952999421F0DA00E14F97B9C2DfBE71D8A0`](https://explorer.cronos.org/address/0x6c171952999421F0DA00E14F97B9C2DfBE71D8A0).
+
+The auditor's historical filename and the canonical repository filename differ. The source hash identifies the reviewed code. This audit record covers the identified Cronos token-contract source only. It does not certify the Xitcoin Layer 1, validator infrastructure, explorers, migration services, bridge software or any later proxy implementation.
+
+Before relying on the audit after a proxy revision, verify the active implementation address, deployed bytecode, canonical source hash and applicable audit scope together.
 
 ## Planned V3 update
 
