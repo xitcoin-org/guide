@@ -48,6 +48,22 @@ The available treasury balance remains an additional hard limit. If the treasury
 
 Transaction fees and other protocol revenues remain subject to the network's active distribution parameters. Availability, validator commission, delegation and slashing can change the amount received by each participant.
 
+## Parameter governance and flexibility
+
+The planning values are configurable operating parameters, not a promise of a permanent fixed yield.
+
+Subject to the final module implementation and its on-chain authority:
+
+- the treasury-funded annual rate may be reduced or increased between **0% and 8%**;
+- the annual distribution cap may be reduced or increased between **0 and 10,000,000 XTC**;
+- distributions may be paused without moving or destroying the funded treasury balance;
+- the treasury may receive additional identifiable XTC deposits at any time;
+- new funding extends the available operating horizon and does not automatically change the active rate or annual cap.
+
+A valid on-chain parameter decision may change the operating values within these hard safety limits. Exceeding the 8% rate ceiling, exceeding the 10,000,000 XTC annual ceiling or granting mint authority requires a separately reviewed protocol upgrade; it cannot be enabled by an ordinary parameter vote.
+
+Reward-policy decisions remain separate from validator admission. A reward-parameter vote does not approve, protect or revoke a validator.
+
 ## Cross-chain revenue flywheel
 
 ```mermaid
