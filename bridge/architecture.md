@@ -9,24 +9,30 @@ The planned canonical bridge connects the canonical Cronos XTC contract with nat
 
 It provides continuity between two networks. The user experience remains centered on XTC, while the bridge accounts for how value is locked, represented and returned.
 
-## Cronos to Xitcoin: lock and mint
+## Cronos to Xitcoin: lock and backed release
 
 1. A user deposits canonical Cronos XTC into the approved bridge contract.
 2. The Cronos-side contract locks the deposited amount.
 3. Relayers observe the event and wait for the required finality.
 4. The Xitcoin-side bridge verifies the authorized message and replay protection.
 5. The corresponding native XTC amount is minted to the destination address.
-6. Public accounting records the relationship between Cronos XTC locked and native XTC minted through the bridge.
+6. Public accounting records the relationship between Cronos XTC locked and native XTC released or bridge-authorized on Xitcoin.
 
-## Xitcoin to Cronos: burn and unlock
+## Xitcoin to Cronos: representation retirement and unlock
 
 1. A user submits native XTC to the Xitcoin-side bridge.
-2. The corresponding bridged amount is burned on Xitcoin.
+2. The corresponding bridge-authorized representation is retired on Xitcoin.
 3. Relayers observe finality and submit the authorized message to Cronos.
 4. The Cronos bridge releases the corresponding locked XTC.
 5. Transaction identifiers on both networks provide an auditable trail.
 
 ## Application revenue pathway
+
+The representation retirement used for a bridge return is an accounting operation: it moves value back to Cronos and does not reduce the global economic supply.
+
+A permanent burn of canonical XTC on Cronos is different. It reduces the effective global XTC ceiling and must be recorded in a public burn ledger. The corresponding unused Xitcoin bridge capacity must be reduced by the same amount. Cronos XTC backing an active Xitcoin representation must never be permanently burned unless the corresponding Xitcoin amount is retired first.
+
+Buyback XTC must have one exclusive destination: reward funding, bridge backing or permanent burn. The same XTC cannot be counted in more than one destination.
 
 The bridge may also support verified transfers from application-funded buyback and revenue-sharing mechanisms.
 
@@ -63,7 +69,7 @@ At all times, the system must preserve measurable relationships between:
 * native XTC removed from circulation for return;
 * XTC unlocked back on Cronos.
 
-Bridge administration must not provide an unrestricted public issuance path.
+Bridge administration must not provide an unrestricted public issuance path. The canonical Cronos token must not receive new mint authority for bridge operation.
 
 ## Security controls
 
