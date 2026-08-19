@@ -176,7 +176,9 @@ The verified implementation scope currently includes:
 - bank-transfer ordering that records a distribution only after a successful transfer;
 - failure-path tests proving that a rejected bank transfer or insufficient treasury balance leaves distribution accounting unchanged;
 - explicit authority checks protecting parameter updates and funded-period activation;
-- rejection of missing or non-matching authorities without changing module state.
+- rejection of missing or non-matching authorities without changing module state;
+- activation derived from canonical on-chain staking state and the real module-account balance;
+- rejection of an empty treasury or a failed staking-state query without changing period state.
 
 The minimal bank interface exposes no mint or burn operation. The successful tests validate the accounting foundation only; they do not prove that production transfers, governance messages, application wiring or deployment are complete.
 
