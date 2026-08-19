@@ -32,7 +32,7 @@ The mainnet planning reference separates validator stake from the reward treasur
 
 | Planning parameter | Reference |
 |---|---:|
-| Initial Validator Incentive Treasury planning reference | 100,000,000 XTC |
+| Initial Validator Incentive Treasury funding | Not yet approved; must be explicitly funded before activation |
 | Initial operating APR target | 8% of eligible bonded stake |
 | Governance-adjustable funded APR range | 0% to 20% |
 | Absolute annual token cap | None independent of bonded stake |
@@ -50,6 +50,8 @@ min(
 ```
 
 The available treasury balance is always a hard limit. If the treasury is empty, treasury-funded distributions stop.
+
+No fixed initial treasury allocation is currently approved. Treasury funding is separate from sovereign reference allocations, initial validator stake and personal holdings. Only XTC explicitly transferred through an approved funding path becomes distributable treasury balance.
 
 Transaction fees and other protocol revenues remain subject to the network's active distribution parameters. Availability, validator commission, delegation and slashing can change the amount received by each participant.
 
