@@ -34,14 +34,15 @@ The mainnet planning reference separates validator stake from the reward treasur
 |---|---:|
 | Initial Validator Incentive Treasury | 100,000,000 XTC |
 | Maximum treasury-funded annual rate | 8% of bonded stake |
-| Maximum treasury-funded annual distribution | 10,000,000 XTC |
+| Default treasury-funded annual distribution cap | 10,000,000 XTC |
+| Hard annual distribution safety ceiling | 40,000,000 XTC |
 | Unrestricted mint authority | None |
 
 The planned annual treasury contribution is:
 
 ```
 annual treasury distribution =
-min(8% × total bonded XTC, 10,000,000 XTC)
+min(active rate × total bonded XTC, active annual cap, funded treasury balance)
 ```
 
 The available treasury balance remains an additional hard limit. If the treasury is empty, treasury-funded distributions stop.
@@ -55,12 +56,12 @@ The planning values are configurable operating parameters, not a promise of a pe
 Subject to the final module implementation and its on-chain authority:
 
 - the treasury-funded annual rate may be reduced or increased between **0% and 8%**;
-- the annual distribution cap may be reduced or increased between **0 and 10,000,000 XTC**;
+- the annual distribution cap starts at **10,000,000 XTC** and may be adjusted between **0 and 40,000,000 XTC**;
 - distributions may be paused without moving or destroying the funded treasury balance;
 - the treasury may receive additional identifiable XTC deposits at any time;
 - new funding extends the available operating horizon and does not automatically change the active rate or annual cap.
 
-A valid on-chain parameter decision may change the operating values within these hard safety limits. Exceeding the 8% rate ceiling, exceeding the 10,000,000 XTC annual ceiling or granting mint authority requires a separately reviewed protocol upgrade; it cannot be enabled by an ordinary parameter vote.
+A valid on-chain parameter decision may change the operating values within these hard safety limits. Exceeding the 8% rate ceiling, exceeding the 40,000,000 XTC hard annual safety ceiling or granting mint authority requires a separately reviewed protocol upgrade; it cannot be enabled by an ordinary parameter vote.
 
 Reward-policy decisions remain separate from validator admission. A reward-parameter vote does not approve, protect or revoke a validator.
 
@@ -81,7 +82,7 @@ flowchart TD
 
 The purpose of this loop is to allow application activity to strengthen network security over time. Ecosystem companies, integration partners and independent developers may design applications that contribute through transparent buyback, revenue-sharing or network-fee mechanisms.
 
-Contributions extend the treasury's operating horizon. They do not automatically increase the annual distribution ceiling.
+Contributions extend the treasury's operating horizon. They do not automatically change the active reward rate or annual distribution cap. A funded deposit alone therefore grants no parameter authority.
 
 ## Separation of responsibilities
 
@@ -94,6 +95,14 @@ The architecture uses separate components:
 5. **Cosmos distribution layer** — accounts for validator commission, delegator rewards and applicable penalties.
 
 The Bridge Escrow Vault and Validator Incentive Treasury are not the same account. Backing must not be counted as freely distributable funds until the corresponding cross-chain operation is complete.
+
+## Vault control model
+
+The native Validator Incentive Treasury is planned as a Cosmos module account. It has no private key or seed and cannot be operated like a personal wallet. Releases are executed only by deterministic module rules.
+
+Cross-chain vault and router administration must not depend on a single externally owned account. Production controls require separated roles, multisignature authorization, a timelock for non-emergency changes, replay protection, observable events and an emergency pause that stops operations without granting seizure authority.
+
+Funding a vault does not confer control over it. Relayers may submit verified messages but must not receive arbitrary withdrawal, upgrade or mint permissions.
 
 ## Required accounting invariants
 
