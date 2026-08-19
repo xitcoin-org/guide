@@ -111,6 +111,18 @@ Cross-chain vault and router administration must not depend on a single external
 
 Funding a vault does not confer control over it. Relayers may submit verified messages but must not receive arbitrary withdrawal, upgrade or mint permissions.
 
+## Mint-authority boundary
+
+The bridge and the reward module have different authorities:
+
+- the authorized Xitcoin bridge module may mint native XTC only after verifying an equivalent finalized lock of canonical XTC on Cronos;
+- returning to Cronos burns the corresponding bridge-minted XTC before unlocking the original Cronos XTC;
+- the Validator Incentive Treasury has no mint authority and distributes only funded XTC already credited to it;
+- applications, relayers, validators and vault depositors have no arbitrary mint authority;
+- the canonical Cronos XTC contract receives no new mint authority for bridge operation.
+
+A strictly backed bridge mint changes the network representation of XTC without increasing global economic supply.
+
 ## Required accounting invariants
 
 At all times:
