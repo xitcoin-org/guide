@@ -174,7 +174,9 @@ The verified implementation scope currently includes:
 - persistent period state and cumulative distribution accounting;
 - a minimal bank interface limited to reading the treasury balance and sending already-funded XTC from the module account;
 - bank-transfer ordering that records a distribution only after a successful transfer;
-- failure-path tests proving that a rejected bank transfer or insufficient treasury balance leaves distribution accounting unchanged.
+- failure-path tests proving that a rejected bank transfer or insufficient treasury balance leaves distribution accounting unchanged;
+- explicit authority checks protecting parameter updates and funded-period activation;
+- rejection of missing or non-matching authorities without changing module state.
 
 The minimal bank interface exposes no mint or burn operation. The successful tests validate the accounting foundation only; they do not prove that production transfers, governance messages, application wiring or deployment are complete.
 
