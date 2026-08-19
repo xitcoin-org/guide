@@ -31,6 +31,7 @@
 
 * [How staking works](staking/overview.md)
 * [Core validators](staking/core-validators.md)
+* [Validator incentives and revenue flywheel](staking/validator-incentives.md)
 * [Delegate XTC](staking/delegate.md)
 * [Validator admission](staking/validator-admission.md)
 * [Risks and slashing](staking/risks-and-slashing.md)
