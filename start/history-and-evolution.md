@@ -27,9 +27,16 @@ The current proxy is:
 
 It uses 18 decimal places and is publicly displayed with the ticker **$XTC**. See [Contract and migration history](../xtc/migration-history.md).
 
-## Contract review and revisions
+## Contract revisions and security record
 
-Cyberscope publishes audit iterations dated July 2025 and February 2026 for the current Xitcoin contract record. Later contract revisions form part of the proxy implementation history. Every revision must be identified by source, bytecode, implementation address and audit scope.
+The public chronology distinguishes the persistent proxy generation from its implementation revisions:
+
+1. V1 is the retired standalone Cronos token.
+2. V2 is the upgradeable proxy generation used for the 2025 migration.
+3. V3 is the current audited implementation revision identified by Cyberscope's source label `XitcoinV3_cyberscope.sol`.
+4. V4 is reserved for the planned `WXTC` transition after the canonical native-XTC bridge is operational and verified.
+
+Cyberscope publishes audit iterations dated July 2025 and February 2026 for the current contract record, together with a separate passed KYC record. Every implementation revision must be identified by source, bytecode, implementation address and audit scope. See [Xitcoin security and verification](../security/audits-and-validation.md).
 
 ## Dedicated blockchain development
 
