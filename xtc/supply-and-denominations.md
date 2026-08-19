@@ -22,3 +22,27 @@ The current genesis configuration sets mint inflation to zero. This does not by 
 | 0.000001 XTC | 10¹² axtc |
 
 Applications should perform integer arithmetic in `axtc` and only format XTC for display.
+
+## Multichain supply invariant
+
+The 5,250,000,000 XTC figure is a global economic reference ceiling, not an amount that may be recreated independently on every connected network.
+
+At all times:
+
+```
+Cronos XTC outside bridge escrow
++ active bridge-backed XTC on Xitcoin
++ any future authorized external representation
+≤ effective global XTC ceiling
+```
+
+Xitcoin POS and Xitcoin EVM share the same native XTC economy and must not be counted as separate supplies.
+
+## Burn accounting
+
+A permanent burn of canonical XTC on Cronos reduces the effective global XTC ceiling. The corresponding unused bridge capacity on Xitcoin must be reduced by the same amount.
+
+Retiring a bridge-backed Xitcoin representation in order to unlock the same XTC on Cronos is a transfer between representations, not an economic supply reduction.
+
+Canonical XTC locked as backing for an active Xitcoin representation must not be permanently burned unless the corresponding Xitcoin amount is retired first. Every permanent burn requires a public supply-reconciliation record.
+
