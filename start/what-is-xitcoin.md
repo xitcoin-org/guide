@@ -40,9 +40,13 @@ Each phase is documented separately so users can understand what changed without
 
 Users can interact with applications, transfer XTC and participate in staking where supported.
 
-### Businesses and institutions
+### Businesses, financial services and institutions
 
-Organizations can build services that use verifiable transactions, programmable rules and shared public infrastructure.
+Organizations can build services using verifiable transactions, programmable rules and shared public infrastructure.
+
+The network is designed to support payment, transfer, settlement, treasury and accounting integrations. Delegated proof-of-stake provides finalized network state, while the EVM provides programmable accounting and compatibility with existing Ethereum development tools.
+
+Banks, payment providers, remittance specialists, fintech companies and other regulated institutions can develop or connect their own services through published interfaces while retaining responsibility for licensing, compliance, custody, risk controls and customer operations.
 
 ### Developers
 
