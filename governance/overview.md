@@ -5,7 +5,9 @@ icon: landmark
 
 # Governance and participation
 
-Xitcoin governance is intended to make eligible protocol decisions visible and verifiable while preserving clear operational responsibilities.
+Xitcoin governance is intended to make eligible protocol decisions visible and verifiable while preserving participant autonomy and clear operational responsibilities.
+
+The governance framework supports a shared and evolving technical language. Different public, sovereign, institutional, commercial and community participants can interact through the same protocol while retaining their own identity, mandate and responsibilities.
 
 ## Four distinct concepts
 
@@ -18,7 +20,7 @@ Xitcoin governance is intended to make eligible protocol decisions visible and v
 
 None of these automatically replaces the others. A large balance does not by itself grant administrative authority, and an approved operator must still satisfy staking and operational requirements.
 
-## Public, institutional and sovereign participation
+## Equal participation framework
 
 The reference participation model provides a maximum capacity of 258 positions:
 
@@ -27,19 +29,19 @@ The reference participation model provides a maximum capacity of 258 positions:
 
 The 195 sovereign references consist of 193 United Nations Member States, the Holy See and the State of Palestine.
 
-This is a capacity and planning framework. It does not state that any government, institution, company or public operator participates in or endorses Xitcoin. A reserved position does not transfer funds, activate a validator or create an automatic entitlement.
+One reference position is kept available for each sovereign reference as a future participation pathway. Activation is voluntary and begins only through the relevant participant's own initiative, an authorized operator and the published admission process.
 
-The design objective is coexistence without hidden privilege:
+All active validators remain subject to the same consensus, key-management, security, monitoring and accountability standards. Sovereign, institutional and public categories do not create different technical rules or hidden protocol privilege.
 
-- every validator follows published technical and security requirements;
-- admission decisions are recorded on-chain;
-- stake and voting power remain visible;
-- reserved capacity does not silently become active power;
-- no sovereign, institution or public delegator receives an undocumented automatic right;
-- parameter changes follow the applicable authority and governance process;
-- suspension, revocation and operator rotation remain possible under published rules.
+The 39 territorial consolidations in the allocation dataset are statistical mappings. They do not create additional validator positions.
 
-The 39 territorial consolidations in the sovereign allocation dataset are statistical mappings. They do not create additional validator positions.
+## Institutional neutrality
+
+The framework is designed to support interoperability without imposing political alignment, diplomatic recognition, institutional hierarchy or one centralized operating model.
+
+Names and reference positions provide deterministic technical identifiers. Participation, representation and mandate remain the responsibility of the relevant participant and authorized operator.
+
+Reserved capacity does not itself transfer funds or activate consensus power. Operator rotation, suspension and revocation remain available when authorization, security or mandate conditions change.
 
 ## Admission authority
 
@@ -64,7 +66,3 @@ A credible governance process should provide:
 5. an auditable result;
 6. an implementation and rollback plan where relevant;
 7. explicit boundaries between consultation, approval and execution.
-
-{% hint style="warning" %}
-Xitcoin is not presented as an official government blockchain or as already adopted by governments, banks, companies or DeFi protocols. The participation framework describes protocol capacity and future eligibility, not current endorsement.
-{% endhint %}
