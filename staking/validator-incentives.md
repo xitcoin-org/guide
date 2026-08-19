@@ -159,6 +159,23 @@ New validators provide their own required stake and remain subject to admission 
 
 A participant receives validator or delegator rewards only through active, eligible stake under the live protocol rules.
 
+## Verified implementation progress
+
+The development branch was tested on **19 August 2026** without deployment or movement of funds.
+
+The verified implementation scope currently includes:
+
+- protocol parameters with an initial 8% operating APR and a hard 20% ceiling;
+- a maximum increase of one percentage point per quarterly period;
+- deterministic prefunded reward-period calculation;
+- rejection of overlapping reward periods;
+- rejection of distributions outside the active period;
+- rejection of any distribution exceeding the remaining provision;
+- persistent period state and cumulative distribution accounting;
+- a minimal bank interface limited to reading the treasury balance and sending already-funded XTC from the module account.
+
+The minimal bank interface exposes no mint or burn operation. The successful tests validate the accounting foundation only; they do not prove that production transfers, governance messages, application wiring or deployment are complete.
+
 ## Security and release status
 
 Before activation, the system requires:
