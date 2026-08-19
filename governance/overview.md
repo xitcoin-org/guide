@@ -1,68 +1,73 @@
 ---
-description: How Xitcoin separates governance, validator admission, staking power and public participation.
+description: How Xitcoin separates project authority, validator admission, staking power and public participation.
 icon: landmark
 ---
 
 # Governance and participation
 
-Xitcoin governance is intended to make eligible protocol decisions visible and verifiable while preserving participant autonomy and clear operational responsibilities.
+Xitcoin provides visible and verifiable protocol state while preserving clear operational responsibility. During the current launch phase, final network-administration decisions remain under the project-controlled on-chain authority.
 
-The governance framework supports a shared and evolving technical language. Different public, sovereign, institutional, commercial and community participants can interact through the same protocol while retaining their own identity, mandate and responsibilities.
+The framework supports a shared and evolving technical language. Public, sovereign, institutional, commercial and community participants can interact through the same protocol while retaining their own identity, mandate and responsibilities.
 
 ## Four distinct concepts
 
 | Concept | Purpose |
 |---|---|
-| Governance | Propose and decide eligible protocol changes |
-| Validator admission | Determine which operators may enter the validator process |
-| Staking | Allocate economic weight to approved validators |
+| Project authority | Authorize eligible administrative actions during the current launch phase |
+| Validator admission | Determine which operators may enter or remain in the validator process |
+| Staking | Record stake and consensus weight for already approved validators |
 | Operations | Maintain software, infrastructure, keys and service continuity |
 
-None of these automatically replaces the others. A large balance does not by itself grant administrative authority, and an approved operator must still satisfy staking and operational requirements.
+These concepts do not replace one another. Holding more XTC, staking more XTC or participating in a token vote does not grant validator-admission authority or administrative control.
 
-## Equal participation framework
+## Current validator state
 
-The reference participation model provides a maximum capacity of 258 positions:
+The current Xitcoin Testnet release candidate has exactly four initially approved validators:
+
+- Xitcoin Atlas;
+- Xitcoin Borealis;
+- Xitcoin Meridian;
+- Xitcoin Zenith.
+
+No additional validator is announced or approved by the participation-capacity model.
+
+## Participation capacity
+
+The reference model provides a maximum capacity of 258 positions:
 
 - 195 sovereign reference positions;
 - 63 public positions.
 
-The 195 sovereign references consist of 193 United Nations Member States, the Holy See and the State of Palestine.
+These are capacity and planning categories, not active validators. Each future activation requires a separately authorized operator, an explicit on-chain approval and compliance with the same security and operational requirements.
 
-One reference position is kept available for each sovereign reference as a future participation pathway. Activation is voluntary and begins only through the relevant participant's own initiative, an authorized operator and the published admission process.
-
-All active validators remain subject to the same consensus, key-management, security, monitoring and accountability standards. Sovereign, institutional and public categories do not create different technical rules or hidden protocol privilege.
-
-The 39 territorial consolidations in the allocation dataset are statistical mappings. They do not create additional validator positions.
-
-## Institutional neutrality
-
-The framework is designed to support interoperability without imposing political alignment, diplomatic recognition, institutional hierarchy or one centralized operating model.
-
-Names and reference positions provide deterministic technical identifiers. Participation, representation and mandate remain the responsibility of the relevant participant and authorized operator.
-
-Reserved capacity does not itself transfer funds or activate consensus power. Operator rotation, suspension and revocation remain available when authorization, security or mandate conditions change.
+The 195 sovereign references consist of 193 United Nations Member States, the Holy See and the State of Palestine. The 39 territorial consolidations in the allocation dataset are statistical mappings and do not create additional positions.
 
 ## Admission authority
 
-The candidate network uses an on-chain validator-admission authority. Approval and revocation are protocol state transitions rather than a private allowlist stored on one server.
+The candidate network uses an on-chain validator-admission authority. Only that authority can execute the defined approval and revocation actions.
 
-Before mainnet, the production authority, multisignature custody, signer replacement, emergency scope and accountability procedures must be verified against the final on-chain configuration and published operational record.
+The authority is controlled through the project's authorized custody process during the current launch phase. Token balances, staking balances, delegations and ordinary governance voting do not override it.
 
-## Testnet governance
+Approval, revocation and parameter actions must remain visible in blockchain state and transaction history. The production custody, recovery and signer-change procedures must be verified before mainnet.
 
-The testnet includes Cosmos governance infrastructure for exercising proposal, deposit, voting and tally behavior. Testnet decisions, balances and reserved positions do not create mainnet rights.
+## Cosmos governance boundary
 
-Before participating, query the active network for deposit, voting, quorum, threshold and veto parameters rather than relying on an older document.
+The software contains Cosmos governance infrastructure that can be tested for compatible proposal, deposit, voting and tally behavior. Its technical presence does not mean that token holders control validator admission or every administrative decision.
+
+No governance power should be described as active unless the relevant message types, authority path, parameters and execution effects have been explicitly enabled, tested and published for that network release.
+
+## Equal technical standard
+
+All active validators remain subject to the same consensus, key-management, security, monitoring and accountability standards. Sovereign, institutional and public categories do not create hidden protocol privilege.
+
+Reserved capacity does not transfer funds, activate consensus power or create an automatic right. Operator rotation, suspension and revocation remain available when authorization, security or mandate conditions change.
 
 ## Accountability
 
-A credible governance process should provide:
+Administrative actions should provide:
 
-1. a clear proposal;
-2. an identifiable authority or proposer;
-3. a review period;
-4. public parameters and expected effects;
-5. an auditable result;
-6. an implementation and rollback plan where relevant;
-7. explicit boundaries between consultation, approval and execution.
+1. an identifiable authorized action;
+2. public parameters and expected effects;
+3. an auditable on-chain result;
+4. an implementation and rollback plan where relevant;
+5. explicit boundaries between consultation, authorization and execution.
