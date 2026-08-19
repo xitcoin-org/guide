@@ -26,6 +26,22 @@ It provides continuity between two networks. The user experience remains centere
 4. The Cronos bridge releases the corresponding locked XTC.
 5. Transaction identifiers on both networks provide an auditable trail.
 
+## Application revenue pathway
+
+The bridge may also support verified transfers from application-funded buyback and revenue-sharing mechanisms.
+
+```mermaid
+flowchart LR
+    A["Application revenue"] --> B["XTC buyback"]
+    B --> C["Bridge Escrow Vault"]
+    C --> D["Backed XTC on Xitcoin"]
+    D --> E["Validator Incentive Treasury"]
+```
+
+This pathway does not grant applications or relayers a mint authority. Every amount made available on Xitcoin must remain covered by canonical XTC locked on Cronos.
+
+The full planned reward loop, distribution ceilings and security boundary are documented under [Validator incentives and revenue flywheel](../staking/validator-incentives.md).
+
 ## User experience
 
 A public bridge interface should make five facts explicit before confirmation:
