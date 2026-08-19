@@ -5,22 +5,61 @@ icon: lightbulb
 
 # Vision and purpose
 
-Xitcoin is a digital infrastructure project for recording transactions, executing applications and coordinating services across public, commercial and institutional environments.
+Xitcoin is designed as a common, verifiable infrastructure layer for transactions, applications and coordinated digital services.
 
-## Purpose
+Its purpose is to let different categories of participants work through compatible network rules and interfaces without requiring them to become part of one central organization or adopt one proprietary application stack.
 
-The network is designed to provide:
+This is a design objective. It does not claim that a government, institution, bank, company or DeFi protocol already uses, operates or endorses Xitcoin.
 
-* one verifiable ledger for transactions and application state;
-* a native asset for fees, staking and protocol participation;
-* Ethereum-compatible smart-contract execution;
-* Cosmos RPC, REST and gRPC interfaces;
-* independent validation through proof-of-stake consensus;
-* published governance and validator-admission controls.
+## A shared compatibility layer
+
+Public-sector participants, sovereign operators, companies, institutions, DeFi applications, communities and developers can require different governance, legal and application models. Xitcoin is intended to provide a shared technical language underneath those differences:
+
+- one verifiable ledger for transactions and application state;
+- one canonical native-XTC accounting model;
+- Ethereum-compatible contracts, wallets and development tools;
+- Cosmos-native staking, governance and protocol interfaces;
+- common transaction finality and public verification;
+- published validator-admission and operational controls;
+- open RPC and integration standards for independently operated applications.
+
+The shared layer does not replace each participant's legal authority, internal systems, regulatory duties or application governance.
+
+## Cosmos and EVM interoperability
+
+Xitcoin combines Cosmos SDK and CometBFT with native EVM execution.
+
+| Interface | Function |
+|---|---|
+| Cosmos accounts and modules | Native transfers, staking, governance and protocol services |
+| EVM accounts and contracts | Ethereum-compatible transactions and smart contracts |
+| Shared consensus | Orders and finalizes both execution environments |
+| Native XTC | Provides canonical fees, staking and application value accounting |
+| Public APIs | Expose compatible data and transaction interfaces |
+
+Cosmos and EVM activity belongs to the same sovereign chain and the same native-XTC economy. Native EVM compatibility does not create a second XTC supply.
+
+Cross-network movement to Cronos is a separate bridge concern and must follow verified lock/mint and burn/unlock accounting before it is described as active.
+
+## Intended use environments
+
+### Public and sovereign infrastructure
+
+The participation framework reserves sovereign reference capacity so eligible public-sector operators may be admitted under the same published technical and security standards. A reserved position is not endorsement, ownership, funding or active participation.
+
+### Companies and institutions
+
+Organizations can build settlement, record-keeping, membership, payment or coordination services using verifiable transactions and programmable rules while retaining responsibility for compliance, custody and user operations.
+
+### DeFi and developers
+
+Developers can use Solidity and Ethereum tooling or Cosmos-native interfaces. DeFi applications remain independently responsible for their contracts, economic design, security reviews and user disclosures.
+
+### Individuals and communities
+
+Users and communities can interact with applications, transfer XTC and delegate where those services are active and supported.
 
 ## Operating model
-
-Participants retain their own legal, operational and application responsibilities. Interoperability is provided through common network protocols, transaction formats and public interfaces.
 
 | Layer | Function |
 |---|---|
@@ -28,28 +67,22 @@ Participants retain their own legal, operational and application responsibilitie
 | Native asset | Pays fees and secures staking |
 | EVM | Executes Ethereum-compatible contracts |
 | Cosmos interfaces | Expose chain data and native modules |
-| Applications | Deliver user-specific services |
+| Applications | Deliver participant-specific services |
 | Governance | Manages eligible protocol decisions |
 | Validator admission | Controls entry to the validator process |
+| Operations | Maintains infrastructure, keys, monitoring and recovery |
 
-## Intended participants
-
-The protocol can support individuals, developers, businesses, infrastructure operators, institutions and public-sector entities. Participation in the network does not automatically create validator, governance or administrative rights.
-
-## Relationship to everyday services and DeFi
-
-Applications can connect conventional service workflows to verifiable on-chain actions. Examples include payments, membership systems, rewards, settlement records, asset transfers and decentralized-finance applications.
-
-Xitcoin provides the execution and verification layer. Application operators remain responsible for user experience, regulatory obligations, data protection and service-specific controls.
+Staking power, validator admission, governance authority and infrastructure operations remain distinct. Holding XTC does not automatically create validator or administrative rights.
 
 ## Design principles
 
 1. **Verifiability:** critical state and protocol decisions can be independently checked.
-2. **Compatibility:** EVM and Cosmos interfaces reduce integration friction.
-3. **Separation of authority:** staking power, validator admission, governance and operations are documented independently.
-4. **Controlled upgrades:** changes require an identifiable process, reviewable code and deployment records.
-5. **Operational accountability:** releases include checksums, configuration references, monitoring and recovery procedures.
-6. **Status accuracy:** planned capabilities are not described as active services.
+2. **Compatibility:** Cosmos and EVM interfaces reduce integration friction.
+3. **Shared infrastructure, independent responsibility:** participants use common protocol rules while retaining their own obligations.
+4. **Separation of authority:** staking, admission, governance and operations are documented independently.
+5. **Controlled upgrades:** changes require an identifiable process, reviewable code and deployment records.
+6. **Operational accountability:** releases include checksums, configuration references, monitoring and recovery procedures.
+7. **Status accuracy:** intended or planned capabilities are never described as existing adoption or active services.
 
 ## Development sequence
 
