@@ -3,9 +3,9 @@ description: Independent XTC contract review, Cyberscope KYC, Xitcoin Layer 1 va
 icon: shield-check
 ---
 
-# Audits and technical validation
+# Xitcoin security and verification
 
-This page is the central security-evidence index for Xitcoin. Evidence is separated by component because a token audit, an identity verification and blockchain engineering tests establish different facts.
+This page organizes Xitcoin security evidence by asset, contract generation, network component and verification method. A token audit, an identity verification, a blockchain test and an operational check establish different facts and must not be merged into one claim.
 
 | Component | Review or validation | Current public status |
 |---|---|---|
@@ -15,6 +15,17 @@ This page is the central security-evidence index for Xitcoin. Evidence is separa
 | Canonical bridge | Contract, relayer and operational security review | Not yet presented as production-audited |
 
 ## XTC contract on Cronos
+
+### Version and naming record
+
+| Label | Meaning | Status |
+|---|---|---|
+| V1 | Legacy standalone Cronos token, 8 decimals | Retired from new integrations |
+| V2 | Cronos proxy generation created for the 2025 migration, 18 decimals | Current public proxy address |
+| V3 | Audited implementation revision within the V2 proxy generation; Cyberscope source label `XitcoinV3_cyberscope.sol` | Current reviewed implementation record |
+| V4 | Planned Cronos revision adopting `WXTC` after the canonical native-XTC bridge is operational and verified | Planned; not deployed or active |
+
+The V2 proxy-generation label and V3 implementation-revision label describe different layers of the same upgradeable contract history. Integrators continue to use the proxy address. V4 must not be represented as active until its implementation, bytecode, bridge backing, deployment record and review scope are published.
 
 ### Independent Cyberscope audit
 
