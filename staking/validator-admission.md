@@ -7,19 +7,21 @@ icon: user-shield
 
 Xitcoin includes an on-chain validator-admission policy. Holding, receiving, staking or delegating XTC does not grant the right to join the active validator set.
 
-## Current release candidate
+## Target protocol configuration
 
-| Parameter | Candidate value |
+| Parameter | Target value |
 |---|---:|
 | Maximum validator and admission capacity | 258 |
 | Initially approved validators | 4 |
 | Additional validators currently announced | 0 |
-| Protocol minimum self-delegation | 1,000,000 XTC |
+| Minimum self-delegation for every validator | 5,000,000 XTC |
 | Initial self-delegation per core validator | 5,000,000 XTC |
 
 The four initially approved validators are Xitcoin Atlas, Xitcoin Borealis, Xitcoin Meridian and Xitcoin Zenith.
 
-The protocol minimum is the admission floor. The larger core-validator amount is the initial deployment value. These are different controls and are not contradictory.
+The same minimum self-delegation applies to founder, sovereign and public validators. It represents the validator's own commitment and cannot be satisfied by a sovereign allocation or by third-party delegations.
+
+If all 258 positions were active at the minimum, their aggregate self-delegation would be 1,290,000,000 XTC.
 
 ## Required admission conditions
 
@@ -27,28 +29,32 @@ A validator must satisfy all applicable conditions:
 
 1. a separately reviewed operator identity;
 2. explicit approval by the canonical on-chain admission authority;
-3. the applicable self-delegation requirement;
-4. security, key-management and operational requirements;
+3. at least 5,000,000 XTC of self-delegation;
+4. security, governance, mandate and operational requirements;
 5. an auditable on-chain approval record.
 
-The 258-position parameter is a maximum capacity, not a target validator count.
+The 258-position parameter is a maximum capacity, not an announcement that every position is active.
 
 ## Participation capacity
 
-The planning model separates 195 sovereign reference positions and 63 public positions. These categories do not announce additional validators, transfer funds or grant consensus power.
+The planning model separates:
 
-Any expansion beyond the four initially approved validators will be considered individually. No operator is approved merely because capacity remains available.
+- 193 positions reserved for United Nations Member-State participation;
+- 65 general validator positions;
+- 258 positions in total.
+
+A sovereign position remains attached to the relevant State. Successive administrations of that State may transfer the institutional governance and operating mandate to their authorized successors without changing the position, its history or its remaining allocation.
+
+A reserved position receives no validator reward and no sovereign allocation tranche until all activation conditions have been satisfied.
 
 ## Authority boundary
 
-Only the canonical validator-admission authority can execute the defined approval and revocation actions during the current launch phase.
+Only the canonical validator-admission authority can execute the defined approval, suspension, reactivation and revocation actions during the current launch phase.
 
-Token holdings, staking balances, delegation weight and ordinary governance voting do not replace or override this authority. The technical presence of a Cosmos governance module does not give token holders validator-admission control.
-
-Approval and revocation are recorded in blockchain state. A revoked validator must not be able to recreate or unjail itself without renewed authorization.
+Token holdings, staking balances, delegation weight and ordinary governance voting do not replace or override this authority. Approval and revocation remain visible in blockchain state.
 
 External full nodes can synchronize and relay data without becoming validators. Validator admission controls consensus participation, not public read access.
 
 {% hint style="warning" %}
-Candidate testnet parameters do not automatically become mainnet rights. Mainnet authority custody and recovery controls must be verified against final on-chain state before launch.
+The five-million-XTC minimum is part of the target configuration under development. Mainnet activation requires validated source, final genesis or upgrade parameters, security review and verified on-chain state.
 {% endhint %}

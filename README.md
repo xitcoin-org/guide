@@ -42,6 +42,7 @@ This is the canonical public guide for users, developers, validators, infrastruc
 | A developer | [Developer overview](developers/overview.md) |
 | A delegator | [How staking works](staking/overview.md) |
 | A node operator | [Operator overview](operators/overview.md) |
+| A public authority | [Sovereign participation](governance/sovereign-participation-reference.md) |
 | An integration partner | [Network integration](developers/network-integration.md) |
 | A security researcher | [Responsible disclosure](security/responsible-disclosure.md) |
 

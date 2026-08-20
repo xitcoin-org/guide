@@ -27,6 +27,25 @@ These third-party pages may display the Cronos market symbol as **$XTC**. Always
 * [EVM explorer](https://evm-explorer-testnet.xitcoin.org/)
 * [Faucet](https://faucet-testnet.xitcoin.org/)
 
+## Institutional participation
+
+A public authority or formally authorized representative may request an institutional review through the verified [Xitcoin LinkedIn page](https://www.linkedin.com/showcase/xitcoin/).
+
+The initial request should contain only:
+
+* State or public institution;
+* department or agency;
+* representative's full name and official title;
+* official government website and institutional email domain;
+* purpose of the request;
+* proposed validator or infrastructure contact, if already designated.
+
+Do not send identity documents, credentials, private keys or confidential material through social media. The initial message creates only a contact request. Xitcoin must independently verify the institution and mandate through official government domains, published directories and a separate secure communication channel before opening an application.
+
+A social-media profile, personal email address or submitted document is never sufficient proof of governmental authority.
+
+Before production activation, Xitcoin will publish a dedicated institutional email address or secure intake form on an official Xitcoin domain. Until then, LinkedIn is an initial contact route only and must not be used to exchange confidential application material.
+
 ## Community
 
 * [Discord](https://discord.gg/xitcoin)
