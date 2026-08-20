@@ -1,5 +1,6 @@
 ---
 description: Cronos EVM network parameters, verified XTC contract generations and the planned transition to WXTC.
+icon: hexagon
 ---
 
 # XTC on Cronos EVM
