@@ -27,13 +27,13 @@ Every position starts with the same **1 500 000 XTC** base.
 
 Before rounding to whole XTC, each Member State's reference quantity is calculated as follows:
 
-$\displaystyle A_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{193}\sqrt{P_j}} \right)$
+$\displaystyle \operatorname{Allocation}_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{\operatorname{Population}_i}}{\sum_{j=1}^{193}\sqrt{\operatorname{Population}_j}} \right)$
 
 **Formula key**
 
 - **i** — the Member State currently being calculated;
-- **Aᵢ** — its calculated reference quantity before rounding;
-- **Pᵢ** — its consolidated population on 1 July 2026;
+- **Allocationᵢ** — the calculated reference quantity for that Member State before rounding;
+- **Populationᵢ** — that Member State's consolidated population on 1 July 2026;
 - **j** — each of the 193 Member States included in the population calculation;
 - **Σ** — add the values for all 193 Member States;
 - **√** — apply the square-root function to reduce concentration.
@@ -310,20 +310,20 @@ Each position receives an individual five-year vesting schedule when it is activ
 
 During eligible service, the protocol calculates the vested and claimable amounts at the current block:
 
-$\displaystyle V_i(b) = A_i \times \frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}$
+$\displaystyle \operatorname{Vested}_i(\operatorname{Block}) = \operatorname{Allocation}_i \times \frac{\min\left(\operatorname{EligibleBlocks}_i(\operatorname{Block}),\operatorname{FiveYearBlocks}\right)}{\operatorname{FiveYearBlocks}}$
 
-$\displaystyle C_i(b) = V_i(b) - R_i(b)$
+$\displaystyle \operatorname{Claimable}_i(\operatorname{Block}) = \operatorname{Vested}_i(\operatorname{Block}) - \operatorname{Released}_i(\operatorname{Block})$
 
 **Formula key**
 
 - **i** — the activated Member-State position being calculated;
-- **b** — the current blockchain block used for the calculation;
-- **Aᵢ** — the position's fixed reference allocation;
-- **Eᵢ(b)** — its eligible service completed by the current block;
-- **B₅ᵧ** — the configured number of blocks representing five years of eligible service;
-- **Vᵢ(b)** — the total amount vested by the current block;
-- **Rᵢ(b)** — the vested amount already released;
-- **Cᵢ(b)** — the amount currently available to claim.
+- **Block** — the current blockchain block used for the calculation;
+- **Allocationᵢ** — the position's fixed reference allocation;
+- **EligibleBlocksᵢ(Block)** — eligible service completed by that position at the current block;
+- **FiveYearBlocks** — the configured number of eligible-service blocks representing five years;
+- **Vestedᵢ(Block)** — the total amount vested for that position at the current block;
+- **Releasedᵢ(Block)** — the vested amount already released to that position;
+- **Claimableᵢ(Block)** — the amount currently available for that position to claim.
 
 In plain language, the first formula releases the fixed allocation progressively during five years of eligible service. The second subtracts amounts already released to determine what remains claimable.
 
