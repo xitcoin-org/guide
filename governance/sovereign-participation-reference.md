@@ -29,23 +29,20 @@ Every position starts with the same **1 500 000 XTC** base.
 
 ## Mathematical formula
 
-Before whole-XTC rounding, the exact reference for position (i) is:
+Before whole-XTC rounding, the exact reference for position \(i\) is:
 
-[
+\[
 A_i =
-390,000,000
-left(
-
-rac{0.75}{195}
+390{,}000{,}000
+\left(
+\frac{0.75}{195}
 +
 0.25
+\frac{\sqrt{P_i}}{\sum_{j=1}^{195}\sqrt{P_j}}
+\right)
+\]
 
-rac{sqrt{P_i}}{sum_{j=1}^{195}sqrt{P_j}}
-
-ight)
-]
-
-Where (P_i) is the consolidated population reference for 1 July 2026.
+Where \(P_i\) is the consolidated population reference for 1 July 2026.
 
 Square-root weighting recognizes population differences while limiting concentration. Four times the population produces twice the demographic weight, not four times the weight.
 
@@ -353,17 +350,25 @@ Before activation, the relevant State must independently satisfy:
 
 The sovereign allocation cannot be counted toward the five-million-XTC activation minimum.
 
-## Five-year allocation release
+## Activation-based five-year allocation
 
-After activation, the fixed ISO3 allocation is intended to be released over five years in **20 quarterly tranches**:
+Each position receives an individual five-year vesting schedule when it is activated. A position may join years or decades after network launch without requiring a new global calendar or a recurring company transaction.
+
+The allocation accrues linearly through deterministic on-chain accounting during eligible service:
 
 ```
-quarterly tranche = fixed ISO3 allocation / 20
+vested allocation =
+fixed ISO3 allocation × eligible service blocks / five-year service blocks
+
+claimable allocation =
+vested allocation - allocation already released
 ```
 
-A tranche is released only while the position satisfies the applicable institutional, staking, availability and security conditions. If those conditions are interrupted, future releases pause under the defined remediation process. Unreleased quantities remain in the sovereign reserve.
+The authorized institutional controller may claim the accrued amount at any time. An unclaimed amount remains recorded as claimable.
 
-The reserve is fixed at 390,000,000 XTC. The release does not create new supply.
+If the position no longer satisfies the applicable institutional, staking, availability or security conditions, future accrual pauses. Reactivation resumes the schedule without retroactive accrual for the suspended interval. An amount already vested cannot be removed arbitrarily.
+
+The reserve is fixed at 390,000,000 XTC. This release does not create new supply.
 
 ## Institutional continuity
 
@@ -385,13 +390,17 @@ After all 20 valid tranches have been released, no further sovereign allocation 
 
 ## How an institutional review begins
 
-A relevant public authority or formally authorized representative can initiate contact through the [official Xitcoin channels](../start/official-links.md).
+A public authority or formally authorized representative may initiate a review through the [institutional contact pathway](../start/official-links.md).
 
-No position activates automatically. Every activation requires verified authority, the five-million-XTC self-delegation, operational review and explicit on-chain admission.
+The first contact creates a case reference only. Before any application is accepted, Xitcoin independently verifies the public institution, official-domain contact, authority of the representative and operating mandate through separate official sources and a secure communication channel.
+
+Personal email, social-media identity or submitted documentation alone never proves governmental authority. No credentials, private keys or confidential identity documents should be sent through social media.
+
+No position activates automatically. Activation requires verified institutional authority, the five-million-XTC self-delegation, operational review and explicit on-chain admission.
 
 ## Current boundary
 
-The sovereign position registry, institutional succession controls and quarterly release mechanism remain under development and are not deployed.
+The sovereign position registry, institutional succession controls and activation-based vesting mechanism remain under development and are not deployed.
 
 The complete allocation data and technical verification sources are maintained in the Xitcoin blockchain repository:
 
