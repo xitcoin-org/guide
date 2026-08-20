@@ -5,53 +5,62 @@ icon: building-columns
 
 # Participation framework
 
-This page records the current validator-participation design. It does not grant a validator seat, a sovereign allocation or an economic entitlement.
+Xitcoin separates validator admission, institutional continuity, sovereign allocation and ordinary staking rewards. No reference position activates automatically.
 
-## Current planning record
+## Target configuration
 
-| Parameter | Current value | Status |
+| Parameter | Target value | Status |
 |---|---:|---|
 | Initially approved validators | 4 | Atlas, Borealis, Meridian and Zenith |
-| Additional validators announced | 0 | Every future validator requires separate approval |
-| Maximum validator capacity | 258 | Candidate network parameter |
-| Sovereign reference positions | 195 | Planning capacity; not automatic admission |
-| Public positions | 63 | Future capacity; not active validators |
-| Protocol minimum self-delegation | 1,000,000 XTC | Candidate network parameter |
-| Initial self-delegation per core validator | 5,000,000 XTC | Current release candidate |
-| Sovereign reference reserve | 390,000,000 XTC | Planning reference; not an active transfer |
-| Automatic validator rights | None | Enforced admission boundary |
+| Maximum validator capacity | 258 | Protocol target |
+| Sovereign positions | 195 | Reserved institutional capacity |
+| Public positions | 63 | Public validator capacity |
+| Minimum self-delegation | 5,000,000 XTC | Same rule for every validator |
+| Aggregate minimum at full capacity | 1,290,000,000 XTC | 258 × 5,000,000 XTC |
+| Sovereign allocation reserve | 390,000,000 XTC | Finite, separately accounted reserve |
+| Automatic validator rights | None | Admission remains mandatory |
 
-The 258-position model is the sum of 195 sovereign reference positions and 63 public positions. It does not announce 258 validators and does not commit the network to filling those positions.
+The minimum self-delegation is supplied by the validator. A sovereign allocation cannot be counted toward that minimum.
 
-The sovereign reference set contains 193 United Nations Member States, the Holy See and the State of Palestine. The 39 territorial consolidations in the allocation dataset are statistical population mappings, not additional validator positions.
+## Sovereign institutional continuity
 
-## Allocation boundary
+Each sovereign position remains attached to the relevant State rather than to an individual office-holder, administration or service provider.
 
-The 390 million XTC reference methodology and validator admission are separate controls:
+Successive administrations of the same State may transfer the institutional governance and operating mandate to their authorized successors. This succession may update the responsible representatives, mandatary, operator and payment instructions without replacing the State position, its on-chain history or its remaining allocation.
 
-- 292,500,000 XTC equal component, representing 75%;
-- 97,500,000 XTC demographic component, representing 25%;
-- square-root population weighting for the demographic component;
-- exact aggregate of 390,000,000 XTC.
+An expired or revoked mandate suspends the relevant operational authority. It does not transfer the position to another State or to the former operator.
 
-The index does not transfer tokens, approve an operator, activate a validator or create ownership by itself.
+## Sovereign allocation
 
-The exact formula, verified examples, United Nations statistical mappings, deterministic rounding rule and sovereign review pathway are published in [Sovereign participation reference](sovereign-participation-reference.md).
+The fixed 390,000,000 XTC reserve uses the published 75% equal and 25% demographic methodology.
 
-## Admission and decision authority
+After a sovereign position has independently satisfied the five-million-XTC minimum and all admission requirements, its fixed allocation is intended to be released over five years in 20 quarterly tranches.
 
-Every validator requires explicit approval by the canonical on-chain validator-admission authority. During the current launch phase, that authority is controlled through the project's authorized custody process.
+The allocation:
 
-Holding, staking or delegating XTC does not create an admission right. Token-weighted voting does not approve, revoke or replace a validator and does not override the admission authority.
+- is additional to the State-provided self-delegation;
+- is funded from the existing sovereign reserve;
+- does not create new supply;
+- is separate from ordinary validator rewards;
+- pauses when the position no longer satisfies the applicable institutional, staking or operational conditions;
+- ends after the fixed allocation has been fully released.
 
-Any future expansion beyond the four initially approved validators must be assessed and authorized individually. The 63 public positions are capacity only; they are not a list of planned operators.
+Unreleased quantities remain in the sovereign reserve. Previously released quantities and every mandate transition remain subject to the final protocol, legal and custody controls.
 
-Approval, revocation and parameter actions must remain visible in blockchain state. Production custody, recovery and signer-change procedures must be verified before mainnet.
+## Ordinary validator rights
+
+An activated sovereign validator participates under the same ordinary network rules as other validators. It may receive rewards attributable to its own stake and validator commission on delegations, subject to availability, commission, distribution and slashing rules.
+
+After the five-year sovereign allocation has ended, the position receives no new sovereign allocation. It may continue validating and earning ordinary network rewards while it remains eligible.
 
 ## Equal technical standard
 
-Every active validator must satisfy the same consensus, key-management, uptime, monitoring and incident-response requirements. A sovereign, institutional or public designation cannot bypass protocol security controls.
+Founder, sovereign and public validators must satisfy the same minimum self-delegation and the same consensus, uptime, monitoring, incident-response and slashing requirements.
 
-## Publication rule
+A reserved institutional designation cannot bypass protocol security controls. The 63 public positions remain part of the target capacity to preserve independent and community participation.
 
-Only deployed parameters and formally authorized allocations should be described as active. Planning records remain labeled as such until the relevant addresses, authority action and transaction evidence are public.
+## Implementation boundary
+
+The framework remains a target policy until the position registry, institutional succession, mandate controls, quarterly release accounting and five-million-XTC admission rule have been implemented, tested, independently reviewed and activated through the required network process.
+
+The canonical allocation calculations and technical specification are maintained in the [Xitcoin PoS Chain repository](https://github.com/xitcoin-org/pos-chain).
