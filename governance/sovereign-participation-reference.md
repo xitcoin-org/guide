@@ -35,11 +35,14 @@ Before whole-XTC rounding, the exact reference for position (i) is:
 A_i =
 390,000,000
 left(
-rac{0.75}{195}
+
+rac{0.75}{195}
 +
 0.25
-rac{sqrt{P_i}}{sum_{j=1}^{195}sqrt{P_j}}
-ight)
+
+rac{sqrt{P_i}}{sum_{j=1}^{195}sqrt{P_j}}
+
+ight)
 ]
 
 Where (P_i) is the consolidated population reference for 1 July 2026.
@@ -335,53 +338,65 @@ The first column displays national flag images sourced through Wikimedia Commons
 | ![Zambia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Zambia.svg?width=48) | Zambia | `ZMB` | 22 521 915 | 1 500 000 XTC | 553 478 XTC | **2 053 478 XTC** |
 | ![Zimbabwe flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Zimbabwe.svg?width=48) | Zimbabwe | `ZWE` | 17 273 580 | 1 500 000 XTC | 484 717 XTC | **1 984 717 XTC** |
 
-## Reserved participation and activation framework
+## Reserved sovereign validator participation
 
-The reference quantity is not a gift, an airdrop, an executed sale or an immediately transferable entitlement. Until a participation agreement is approved and settled, the corresponding XTC remains unactivated within the sovereign reference reserve and earns no staking reward.
+The reference quantity is a finite protocol-funded contribution supporting an activated sovereign validator position. It is not an automatic validator right, an immediate distribution or a substitute for the validator's own commitment.
 
-A potential activation requires, at minimum:
+Before activation, the relevant State must independently satisfy:
 
-1. verified institutional identity, authority and applicable compliance review;
-2. an approved legal and economic agreement;
-3. settlement of the agreed consideration through an appropriate regulated or institutional custody path;
-4. allocation to a disclosed custody or escrow structure;
-5. an approved lock-up and vesting schedule;
-6. separate review for validator admission or protocol delegation.
+1. verified institutional identity and authority;
+2. a valid institutional governance mandate;
+3. an authorized operating team;
+4. legal, security, custody and infrastructure review;
+5. at least **5,000,000 XTC** of State-provided self-delegation;
+6. explicit approval by the canonical validator-admission authority.
 
-The planning baseline is a **48-month principal schedule**, comprising a **12-month transfer cliff** followed by **36 months of quarterly linear vesting**. This baseline is not an executed offer and remains subject to applicable law, sanctions screening, custody feasibility and the final approved agreement.
+The sovereign allocation cannot be counted toward the five-million-XTC activation minimum.
 
-Locked principal may be eligible for canonical native staking when technically and legally approved. Staking does not shorten the principal schedule. Rewards are accounted for separately under the active network policy.
+## Five-year allocation release
 
-A sovereign participant cannot obtain immediate unrestricted bridge withdrawal merely by activating a reference quantity. Transfers of vested principal remain subject to normal bridge finality, liquidity, security and rate-limit controls.
+After activation, the fixed ISO3 allocation is intended to be released over five years in **20 quarterly tranches**:
 
-If applicable law currently prohibits or prevents participation, the reference remains dormant. It is not automatically transferred to another participant solely because of that restriction. This preserves consistent treatment if the legal environment changes in the future.
+```
+quarterly tranche = fixed ISO3 allocation / 20
+```
 
-A sovereign reference quantity does not provide diplomatic recognition, governance control, validator admission or immunity from protocol rules.
+A tranche is released only while the position satisfies the applicable institutional, staking, availability and security conditions. If those conditions are interrupted, future releases pause under the defined remediation process. Unreleased quantities remain in the sovereign reserve.
 
-## How a sovereign participant can initiate review
+The reserve is fixed at 390,000,000 XTC. The release does not create new supply.
+
+## Institutional continuity
+
+Each position remains attached to the relevant State. It is not attached permanently to a president, minister, administration, individual signatory or infrastructure provider.
+
+Successive administrations of the same State may transfer the institutional governance and operating mandate to their authorized successors without replacing the State position, its history or its remaining allocation.
+
+A mandate transition may update the responsible representatives, mandatary, operator and payment instructions. The former team loses its authority when its mandate expires or is revoked. The State position continues under the authorized successor.
+
+Buying tokens from a State or former operator does not grant control of the State position.
+
+## Ordinary validator rights
+
+Sovereign allocation and ordinary validator rewards are separate.
+
+An activated sovereign validator participates under the same ordinary staking, commission, delegation, fee-distribution and slashing rules as other eligible validators. The sovereign position receives its finite allocation over five years while also participating in ordinary network rewards.
+
+After all 20 valid tranches have been released, no further sovereign allocation is created. The position may continue validating and receiving ordinary network rewards while it remains eligible.
+
+## How an institutional review begins
 
 A relevant public authority or formally authorized representative can initiate contact through the [official Xitcoin channels](../start/official-links.md).
 
-The review pathway is:
-
-1. identify the relevant authority and authorized representative;
-2. verify mandate and official contact provenance;
-3. designate the proposed technical operator;
-4. complete legal, security, custody and infrastructure review;
-5. determine whether and how the reference quantity may be reserved, vested, delegated or used for operating support;
-6. independently satisfy the validator minimum and operational requirements unless a separate mechanism is formally approved;
-7. receive explicit on-chain approval from the canonical validator-admission authority;
-8. retain and publish appropriate authorization and transaction evidence.
-
-No position activates automatically. The table is a deterministic reference index, not a transfer, promise, entitlement or validator approval.
+No position activates automatically. Every activation requires verified authority, the five-million-XTC self-delegation, operational review and explicit on-chain admission.
 
 ## Current boundary
 
-Only Atlas, Borealis, Meridian and Zenith are currently approved validators. No sovereign reference position is currently described as activated by this methodology.
+The sovereign position registry, institutional succession controls and quarterly release mechanism remain under development and are not deployed.
 
-The complete Xitcoin Sovereign Reference Index 2026 data and verification sources are maintained in the Xitcoin blockchain repository:
+The complete allocation data and technical verification sources are maintained in the Xitcoin blockchain repository:
 
 - `docs/sovereign-allocation-2026.md`;
+- `docs/sovereign-validator-framework.md`;
 - `networks/testnet/sovereign-allocation-index-2026.csv`;
 - `networks/testnet/sovereign-allocation-index-2026.json`;
 - `networks/testnet/territorial-consolidation-2026.csv`;
