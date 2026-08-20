@@ -11,15 +11,15 @@ This publication defines a deterministic technical reference for potential insti
 **Protocol neutrality.** Xitcoin is general-purpose digital infrastructure. Like electricity and communications networks, it operates through common technical rules that do not depend on political alignment. A statistical reference in this index has no diplomatic, legal or political effect.
 {% endhint %}
 
-The methodology covers **195 reference positions** derived from a published United Nations statistical set. The precise composition and its limited methodological purpose are documented in the final note on this page.
+The methodology covers **193 reference positions** derived from a published United Nations statistical set. The precise composition and its limited methodological purpose are documented in the final note on this page.
 
 ## Fixed reference envelope
 
 | Component | Quantity | Weight |
 |---|---:|---:|
-| Equal component | 292 500 000 XTC | 75% |
-| Demographic component | 97 500 000 XTC | 25% |
-| Total | **390 000 000 XTC** | 100% |
+| Equal component | 289 500 000 XTC | 75% |
+| Demographic component | 96 500 000 XTC | 25% |
+| Total | **386 000 000 XTC** | 100% |
 
 Every position starts with the same **1 500 000 XTC** base.
 
@@ -27,7 +27,7 @@ Every position starts with the same **1 500 000 XTC** base.
 
 Before rounding to integer XTC, the reference quantity for position $i$ is:
 
-$A_i = 390{,}000{,}000 \left( \frac{0.75}{195} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{195}\sqrt{P_j}} \right)$
+$A_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{193}\sqrt{P_j}} \right)$
 
 Here, $P_i$ is the consolidated population reference for 1 July 2026.
 
@@ -43,7 +43,7 @@ The methodology uses only two components: an identical base and a pinned populat
 - current XTC holdings, investment size or ability to purchase tokens;
 - discretionary scoring by the Xitcoin operator.
 
-Because 75% of the envelope is equal, every reference receives the same 1 500 000 XTC base. Only 25% varies, and the square-root transformation deliberately compresses population differences. The same source, date, formula, precision and rounding rule apply to all 195 references.
+Because 75% of the envelope is equal, every reference receives the same 1 500 000 XTC base. Only 25% varies, and the square-root transformation deliberately compresses population differences. The same source, date, formula, precision and rounding rule apply to all 193 references.
 
 ## Integer allocation and rounding
 
@@ -55,7 +55,7 @@ The published allocation table uses integer XTC only:
 4. distribute the remaining XTC in that order;
 5. use ascending ISO3 code to resolve an exact tie.
 
-The 195 floors total **389 999 907 XTC**. The method distributes the remaining **93 XTC**, producing exactly **390 000 000 XTC**.
+The 193 floors total **385,999,899 XTC**. The method distributes the remaining **101 XTC**, producing exactly **386,000,000 XTC**.
 
 ## Population source
 
@@ -122,205 +122,203 @@ Every consolidation above is applied before the formula. The complete target pop
 
 ## Complete Xitcoin Sovereign Reference Index 2026
 
-The first column displays national flag images sourced through Wikimedia Commons, the media repository used by Wikipedia. They are non-authoritative and do not affect identity, eligibility or quantity. United Nations M49 and ISO identifiers remain canonical.
+The first column displays locally hosted reference flags for navigation. They are non-authoritative and do not affect identity, eligibility or quantity. United Nations M49 and ISO identifiers remain canonical.
 
 | Reference flag | Sovereign reference | ISO3 | 2026 reference population | Equal component | Demographic component | 2026 reference quantity |
 |---|---|---:|---:|---:|---:|---:|
-| ![Afghanistan reference flag (2013–2021)](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg?width=48) | Afghanistan | `AFG` | 45 047 069 | 1 500 000 XTC | 782 764 XTC | **2 282 764 XTC** |
-| ![Albania flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Albania.svg?width=48) | Albania | `ALB` | 2 751 025 | 1 500 000 XTC | 193 439 XTC | **1 693 439 XTC** |
-| ![Algeria flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Algeria.svg?width=48) | Algeria | `DZA` | 48 028 334 | 1 500 000 XTC | 808 251 XTC | **2 308 251 XTC** |
-| ![Andorra flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Andorra.svg?width=48) | Andorra | `AND` | 83 753 | 1 500 000 XTC | 33 752 XTC | **1 533 752 XTC** |
-| ![Angola flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Angola.svg?width=48) | Angola | `AGO` | 40 215 179 | 1 500 000 XTC | 739 592 XTC | **2 239 592 XTC** |
-| ![Antigua and Barbuda flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Antigua_and_Barbuda.svg?width=48) | Antigua and Barbuda | `ATG` | 94 626 | 1 500 000 XTC | 35 876 XTC | **1 535 876 XTC** |
-| ![Argentina flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Argentina.svg?width=48) | Argentina | `ARG` | 46 003 734 | 1 500 000 XTC | 791 032 XTC | **2 291 032 XTC** |
-| ![Armenia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Armenia.svg?width=48) | Armenia | `ARM` | 2 930 915 | 1 500 000 XTC | 199 664 XTC | **1 699 664 XTC** |
-| ![Australia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Australia.svg?width=48) | Australia | `AUS` | 27 227 096 | 1 500 000 XTC | 608 553 XTC | **2 108 553 XTC** |
-| ![Austria flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Austria.svg?width=48) | Austria | `AUT` | 9 107 266 | 1 500 000 XTC | 351 959 XTC | **1 851 959 XTC** |
-| ![Azerbaijan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Azerbaijan.svg?width=48) | Azerbaijan | `AZE` | 10 454 855 | 1 500 000 XTC | 377 100 XTC | **1 877 100 XTC** |
-| ![Bahamas flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_Bahamas.svg?width=48) | Bahamas | `BHS` | 404 628 | 1 500 000 XTC | 74 187 XTC | **1 574 187 XTC** |
-| ![Bahrain flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Bahrain.svg?width=48) | Bahrain | `BHR` | 1 675 572 | 1 500 000 XTC | 150 966 XTC | **1 650 966 XTC** |
-| ![Bangladesh flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Bangladesh.svg?width=48) | Bangladesh | `BGD` | 177 818 044 | 1 500 000 XTC | 1 555 197 XTC | **3 055 197 XTC** |
-| ![Barbados flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Barbados.svg?width=48) | Barbados | `BRB` | 282 724 | 1 500 000 XTC | 62 012 XTC | **1 562 012 XTC** |
-| ![Belarus flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Belarus.svg?width=48) | Belarus | `BLR` | 8 937 018 | 1 500 000 XTC | 348 653 XTC | **1 848 653 XTC** |
-| ![Belgium flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Belgium.svg?width=48) | Belgium | `BEL` | 11 774 642 | 1 500 000 XTC | 400 195 XTC | **1 900 195 XTC** |
-| ![Belize flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Belize.svg?width=48) | Belize | `BLZ` | 428 644 | 1 500 000 XTC | 76 356 XTC | **1 576 356 XTC** |
-| ![Benin flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Benin.svg?width=48) | Benin | `BEN` | 15 170 419 | 1 500 000 XTC | 454 251 XTC | **1 954 251 XTC** |
-| ![Bhutan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Bhutan.svg?width=48) | Bhutan | `BTN` | 802 214 | 1 500 000 XTC | 104 458 XTC | **1 604 458 XTC** |
-| ![Bolivia (Plurinational State of) flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Bolivia.svg?width=48) | Bolivia (Plurinational State of) | `BOL` | 12 749 291 | 1 500 000 XTC | 416 429 XTC | **1 916 429 XTC** |
-| ![Bosnia and Herzegovina flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Bosnia_and_Herzegovina.svg?width=48) | Bosnia and Herzegovina | `BIH` | 3 114 242 | 1 500 000 XTC | 205 813 XTC | **1 705 813 XTC** |
-| ![Botswana flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Botswana.svg?width=48) | Botswana | `BWA` | 2 603 388 | 1 500 000 XTC | 188 177 XTC | **1 688 177 XTC** |
-| ![Brazil flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Brazil.svg?width=48) | Brazil | `BRA` | 213 562 666 | 1 500 000 XTC | 1 704 355 XTC | **3 204 355 XTC** |
-| ![Brunei Darussalam flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Brunei.svg?width=48) | Brunei Darussalam | `BRN` | 469 775 | 1 500 000 XTC | 79 936 XTC | **1 579 936 XTC** |
-| ![Bulgaria flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Bulgaria.svg?width=48) | Bulgaria | `BGR` | 6 667 659 | 1 500 000 XTC | 301 151 XTC | **1 801 151 XTC** |
-| ![Burkina Faso flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Burkina_Faso.svg?width=48) | Burkina Faso | `BFA` | 24 601 700 | 1 500 000 XTC | 578 469 XTC | **2 078 469 XTC** |
-| ![Burundi flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Burundi.svg?width=48) | Burundi | `BDI` | 14 729 157 | 1 500 000 XTC | 447 596 XTC | **1 947 596 XTC** |
-| ![Cabo Verde flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Cape_Verde.svg?width=48) | Cabo Verde | `CPV` | 529 630 | 1 500 000 XTC | 84 876 XTC | **1 584 876 XTC** |
-| ![Cambodia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Cambodia.svg?width=48) | Cambodia | `KHM` | 18 051 219 | 1 500 000 XTC | 495 508 XTC | **1 995 508 XTC** |
-| ![Cameroon flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Cameroon.svg?width=48) | Cameroon | `CMR` | 30 640 817 | 1 500 000 XTC | 645 576 XTC | **2 145 576 XTC** |
-| ![Canada flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Canada.svg?width=48) | Canada | `CAN` | 40 467 728 | 1 500 000 XTC | 741 911 XTC | **2 241 911 XTC** |
-| ![Central African Republic flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Central_African_Republic.svg?width=48) | Central African Republic | `CAF` | 5 698 984 | 1 500 000 XTC | 278 417 XTC | **1 778 417 XTC** |
-| ![Chad flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Chad.svg?width=48) | Chad | `TCD` | 21 560 380 | 1 500 000 XTC | 541 534 XTC | **2 041 534 XTC** |
-| ![Chile flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Chile.svg?width=48) | Chile | `CHL` | 19 945 850 | 1 500 000 XTC | 520 863 XTC | **2 020 863 XTC** |
-| ![China flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_China.svg?width=48) | China | `CHN` | 1 444 027 171 | 1 500 000 XTC | 4 431 851 XTC | **5 931 851 XTC** |
-| ![Colombia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Colombia.svg?width=48) | Colombia | `COL` | 53 936 226 | 1 500 000 XTC | 856 520 XTC | **2 356 520 XTC** |
-| ![Comoros flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Comoros.svg?width=48) | Comoros | `COM` | 899 010 | 1 500 000 XTC | 110 581 XTC | **1 610 581 XTC** |
-| ![Congo flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_Republic_of_the_Congo.svg?width=48) | Congo | `COG` | 6 637 785 | 1 500 000 XTC | 300 476 XTC | **1 800 476 XTC** |
-| ![Costa Rica flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Costa_Rica.svg?width=48) | Costa Rica | `CRI` | 5 174 789 | 1 500 000 XTC | 265 304 XTC | **1 765 304 XTC** |
-| ![Croatia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Croatia.svg?width=48) | Croatia | `HRV` | 3 822 345 | 1 500 000 XTC | 228 014 XTC | **1 728 014 XTC** |
-| ![Cuba flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Cuba.svg?width=48) | Cuba | `CUB` | 10 892 659 | 1 500 000 XTC | 384 915 XTC | **1 884 915 XTC** |
-| ![Cyprus flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Cyprus.svg?width=48) | Cyprus | `CYP` | 1 382 334 | 1 500 000 XTC | 137 121 XTC | **1 637 121 XTC** |
-| ![Czechia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_Czech_Republic.svg?width=48) | Czechia | `CZE` | 10 527 781 | 1 500 000 XTC | 378 413 XTC | **1 878 413 XTC** |
-| ![Côte d'Ivoire flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Ivory_Coast.svg?width=48) | Côte d'Ivoire | `CIV` | 33 494 346 | 1 500 000 XTC | 674 968 XTC | **2 174 968 XTC** |
-| ![Democratic People’s Republic of Korea flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_North_Korea.svg?width=48) | Democratic People’s Republic of Korea | `PRK` | 26 633 691 | 1 500 000 XTC | 601 885 XTC | **2 101 885 XTC** |
-| ![Democratic Republic of the Congo flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Democratic_Republic_of_the_Congo.svg?width=48) | Democratic Republic of the Congo | `COD` | 116 452 162 | 1 500 000 XTC | 1 258 552 XTC | **2 758 552 XTC** |
-| ![Denmark flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Denmark.svg?width=48) | Denmark | `DNK` | 6 135 675 | 1 500 000 XTC | 288 887 XTC | **1 788 887 XTC** |
-| ![Djibouti flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Djibouti.svg?width=48) | Djibouti | `DJI` | 1 199 459 | 1 500 000 XTC | 127 729 XTC | **1 627 729 XTC** |
-| ![Dominica flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Dominica.svg?width=48) | Dominica | `DMA` | 65 511 | 1 500 000 XTC | 29 851 XTC | **1 529 851 XTC** |
-| ![Dominican Republic flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Dominican_Republic.svg?width=48) | Dominican Republic | `DOM` | 11 609 500 | 1 500 000 XTC | 397 378 XTC | **1 897 378 XTC** |
-| ![Ecuador flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Ecuador.svg?width=48) | Ecuador | `ECU` | 18 444 506 | 1 500 000 XTC | 500 877 XTC | **2 000 877 XTC** |
-| ![Egypt flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Egypt.svg?width=48) | Egypt | `EGY` | 120 101 175 | 1 500 000 XTC | 1 278 118 XTC | **2 778 118 XTC** |
-| ![El Salvador flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_El_Salvador.svg?width=48) | El Salvador | `SLV` | 6 391 253 | 1 500 000 XTC | 294 843 XTC | **1 794 843 XTC** |
-| ![Equatorial Guinea flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Equatorial_Guinea.svg?width=48) | Equatorial Guinea | `GNQ` | 1 984 468 | 1 500 000 XTC | 164 293 XTC | **1 664 293 XTC** |
-| ![Eritrea flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Eritrea.svg?width=48) | Eritrea | `ERI` | 3 682 669 | 1 500 000 XTC | 223 810 XTC | **1 723 810 XTC** |
-| ![Estonia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Estonia.svg?width=48) | Estonia | `EST` | 1 331 062 | 1 500 000 XTC | 134 554 XTC | **1 634 554 XTC** |
-| ![Eswatini flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Eswatini.svg?width=48) | Eswatini | `SWZ` | 1 269 859 | 1 500 000 XTC | 131 424 XTC | **1 631 424 XTC** |
-| ![Ethiopia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Ethiopia.svg?width=48) | Ethiopia | `ETH` | 138 902 185 | 1 500 000 XTC | 1 374 523 XTC | **2 874 523 XTC** |
-| ![Fiji flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Fiji.svg?width=48) | Fiji | `FJI` | 937 282 | 1 500 000 XTC | 112 910 XTC | **1 612 910 XTC** |
-| ![Finland flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Finland.svg?width=48) | Finland | `FIN` | 5 621 739 | 1 500 000 XTC | 276 524 XTC | **1 776 524 XTC** |
-| ![France flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_France.svg?width=48) | France | `FRA` | 69 642 313 | 1 500 000 XTC | 973 272 XTC | **2 473 272 XTC** |
-| ![Gabon flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Gabon.svg?width=48) | Gabon | `GAB` | 2 647 399 | 1 500 000 XTC | 189 761 XTC | **1 689 761 XTC** |
-| ![Gambia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_Gambia.svg?width=48) | Gambia | `GMB` | 2 884 079 | 1 500 000 XTC | 198 062 XTC | **1 698 062 XTC** |
-| ![Georgia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Georgia.svg?width=48) | Georgia | `GEO` | 3 804 642 | 1 500 000 XTC | 227 486 XTC | **1 727 486 XTC** |
-| ![Germany flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Germany.svg?width=48) | Germany | `DEU` | 83 644 258 | 1 500 000 XTC | 1 066 634 XTC | **2 566 634 XTC** |
-| ![Ghana flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Ghana.svg?width=48) | Ghana | `GHA` | 35 697 557 | 1 500 000 XTC | 696 814 XTC | **2 196 814 XTC** |
-| ![Greece flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Greece.svg?width=48) | Greece | `GRC` | 9 897 115 | 1 500 000 XTC | 366 903 XTC | **1 866 903 XTC** |
-| ![Grenada flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Grenada.svg?width=48) | Grenada | `GRD` | 117 362 | 1 500 000 XTC | 39 954 XTC | **1 539 954 XTC** |
-| ![Guatemala flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Guatemala.svg?width=48) | Guatemala | `GTM` | 18 967 978 | 1 500 000 XTC | 507 935 XTC | **2 007 935 XTC** |
-| ![Guinea flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Guinea.svg?width=48) | Guinea | `GIN` | 15 441 993 | 1 500 000 XTC | 458 299 XTC | **1 958 299 XTC** |
-| ![Guinea-Bissau flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Guinea-Bissau.svg?width=48) | Guinea-Bissau | `GNB` | 2 297 808 | 1 500 000 XTC | 176 789 XTC | **1 676 789 XTC** |
-| ![Guyana flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Guyana.svg?width=48) | Guyana | `GUY` | 840 890 | 1 500 000 XTC | 106 947 XTC | **1 606 947 XTC** |
-| ![Haiti flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Haiti.svg?width=48) | Haiti | `HTI` | 12 037 506 | 1 500 000 XTC | 404 637 XTC | **1 904 637 XTC** |
-| ![Holy See flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Vatican_City.svg?width=48) | Holy See | `VAT` | 506 | 1 500 000 XTC | 2 623 XTC | **1 502 623 XTC** |
-| ![Honduras flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Honduras.svg?width=48) | Honduras | `HND` | 11 184 760 | 1 500 000 XTC | 390 042 XTC | **1 890 042 XTC** |
-| ![Hungary flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Hungary.svg?width=48) | Hungary | `HUN` | 9 585 818 | 1 500 000 XTC | 361 087 XTC | **1 861 087 XTC** |
-| ![Iceland flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Iceland.svg?width=48) | Iceland | `ISL` | 402 329 | 1 500 000 XTC | 73 976 XTC | **1 573 976 XTC** |
-| ![India flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_India.svg?width=48) | India | `IND` | 1 476 625 576 | 1 500 000 XTC | 4 481 596 XTC | **5 981 596 XTC** |
-| ![Indonesia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Indonesia.svg?width=48) | Indonesia | `IDN` | 287 886 782 | 1 500 000 XTC | 1 978 829 XTC | **3 478 829 XTC** |
-| ![Iran (Islamic Republic of) flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Iran.svg?width=48) | Iran (Islamic Republic of) | `IRN` | 93 168 497 | 1 500 000 XTC | 1 125 724 XTC | **2 625 724 XTC** |
-| ![Iraq flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Iraq.svg?width=48) | Iraq | `IRQ` | 48 007 437 | 1 500 000 XTC | 808 075 XTC | **2 308 075 XTC** |
-| ![Ireland flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Ireland.svg?width=48) | Ireland | `IRL` | 5 356 950 | 1 500 000 XTC | 269 933 XTC | **1 769 933 XTC** |
-| ![Israel flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Israel.svg?width=48) | Israel | `ISR` | 9 647 689 | 1 500 000 XTC | 362 251 XTC | **1 862 251 XTC** |
-| ![Italy flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Italy.svg?width=48) | Italy | `ITA` | 58 926 166 | 1 500 000 XTC | 895 265 XTC | **2 395 265 XTC** |
-| ![Jamaica flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Jamaica.svg?width=48) | Jamaica | `JAM` | 2 833 403 | 1 500 000 XTC | 196 314 XTC | **1 696 314 XTC** |
-| ![Japan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Japan.svg?width=48) | Japan | `JPN` | 122 427 731 | 1 500 000 XTC | 1 290 439 XTC | **2 790 439 XTC** |
-| ![Jordan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Jordan.svg?width=48) | Jordan | `JOR` | 11 589 532 | 1 500 000 XTC | 397 037 XTC | **1 897 037 XTC** |
-| ![Kazakhstan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Kazakhstan.svg?width=48) | Kazakhstan | `KAZ` | 21 083 626 | 1 500 000 XTC | 535 513 XTC | **2 035 513 XTC** |
-| ![Kenya flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Kenya.svg?width=48) | Kenya | `KEN` | 58 636 412 | 1 500 000 XTC | 893 061 XTC | **2 393 061 XTC** |
-| ![Kiribati flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Kiribati.svg?width=48) | Kiribati | `KIR` | 138 445 | 1 500 000 XTC | 43 395 XTC | **1 543 395 XTC** |
-| ![Kuwait flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Kuwait.svg?width=48) | Kuwait | `KWT` | 5 102 773 | 1 500 000 XTC | 263 451 XTC | **1 763 451 XTC** |
-| ![Kyrgyzstan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Kyrgyzstan.svg?width=48) | Kyrgyzstan | `KGZ` | 7 400 465 | 1 500 000 XTC | 317 269 XTC | **1 817 269 XTC** |
-| ![Lao People's Democratic Republic flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Laos.svg?width=48) | Lao People's Democratic Republic | `LAO` | 7 974 017 | 1 500 000 XTC | 329 334 XTC | **1 829 334 XTC** |
-| ![Latvia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Latvia.svg?width=48) | Latvia | `LVA` | 1 835 935 | 1 500 000 XTC | 158 025 XTC | **1 658 025 XTC** |
-| ![Lebanon flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Lebanon.svg?width=48) | Lebanon | `LBN` | 5 897 467 | 1 500 000 XTC | 283 224 XTC | **1 783 224 XTC** |
-| ![Lesotho flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Lesotho.svg?width=48) | Lesotho | `LSO` | 2 389 336 | 1 500 000 XTC | 180 275 XTC | **1 680 275 XTC** |
-| ![Liberia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Liberia.svg?width=48) | Liberia | `LBR` | 5 853 949 | 1 500 000 XTC | 282 177 XTC | **1 782 177 XTC** |
-| ![Libya flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Libya.svg?width=48) | Libya | `LBY` | 7 539 851 | 1 500 000 XTC | 320 242 XTC | **1 820 242 XTC** |
-| ![Liechtenstein flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Liechtenstein.svg?width=48) | Liechtenstein | `LIE` | 40 368 | 1 500 000 XTC | 23 432 XTC | **1 523 432 XTC** |
-| ![Lithuania flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Lithuania.svg?width=48) | Lithuania | `LTU` | 2 797 338 | 1 500 000 XTC | 195 061 XTC | **1 695 061 XTC** |
-| ![Luxembourg flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Luxembourg.svg?width=48) | Luxembourg | `LUX` | 687 448 | 1 500 000 XTC | 96 698 XTC | **1 596 698 XTC** |
-| ![Madagascar flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Madagascar.svg?width=48) | Madagascar | `MDG` | 33 522 052 | 1 500 000 XTC | 675 247 XTC | **2 175 247 XTC** |
-| ![Malawi flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Malawi.svg?width=48) | Malawi | `MWI` | 22 785 535 | 1 500 000 XTC | 556 708 XTC | **2 056 708 XTC** |
-| ![Malaysia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Malaysia.svg?width=48) | Malaysia | `MYS` | 36 385 115 | 1 500 000 XTC | 703 492 XTC | **2 203 492 XTC** |
-| ![Maldives flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Maldives.svg?width=48) | Maldives | `MDV` | 531 517 | 1 500 000 XTC | 85 027 XTC | **1 585 027 XTC** |
-| ![Mali flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mali.svg?width=48) | Mali | `MLI` | 25 932 275 | 1 500 000 XTC | 593 906 XTC | **2 093 906 XTC** |
-| ![Malta flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Malta.svg?width=48) | Malta | `MLT` | 549 011 | 1 500 000 XTC | 86 415 XTC | **1 586 415 XTC** |
-| ![Marshall Islands flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Marshall_Islands.svg?width=48) | Marshall Islands | `MHL` | 35 075 | 1 500 000 XTC | 21 842 XTC | **1 521 842 XTC** |
-| ![Mauritania flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mauritania.svg?width=48) | Mauritania | `MRT` | 5 461 319 | 1 500 000 XTC | 272 550 XTC | **1 772 550 XTC** |
-| ![Mauritius flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mauritius.svg?width=48) | Mauritius | `MUS` | 1 265 059 | 1 500 000 XTC | 131 176 XTC | **1 631 176 XTC** |
-| ![Mexico flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mexico.svg?width=48) | Mexico | `MEX` | 132 997 658 | 1 500 000 XTC | 1 344 991 XTC | **2 844 991 XTC** |
-| ![Federated States of Micronesia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_Federated_States_of_Micronesia.svg?width=48) | Federated States of Micronesia | `FSM` | 114 183 | 1 500 000 XTC | 39 409 XTC | **1 539 409 XTC** |
-| ![Monaco flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Monaco.svg?width=48) | Monaco | `MCO` | 38 087 | 1 500 000 XTC | 22 761 XTC | **1 522 761 XTC** |
-| ![Mongolia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mongolia.svg?width=48) | Mongolia | `MNG` | 3 556 798 | 1 500 000 XTC | 219 952 XTC | **1 719 952 XTC** |
-| ![Montenegro flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Montenegro.svg?width=48) | Montenegro | `MNE` | 626 233 | 1 500 000 XTC | 92 292 XTC | **1 592 292 XTC** |
-| ![Morocco flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Morocco.svg?width=48) | Morocco | `MAR` | 38 762 441 | 1 500 000 XTC | 726 111 XTC | **2 226 111 XTC** |
-| ![Mozambique flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mozambique.svg?width=48) | Mozambique | `MOZ` | 36 639 851 | 1 500 000 XTC | 705 951 XTC | **2 205 951 XTC** |
-| ![Myanmar flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Myanmar.svg?width=48) | Myanmar | `MMR` | 55 184 819 | 1 500 000 XTC | 866 378 XTC | **2 366 378 XTC** |
-| ![Namibia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Namibia.svg?width=48) | Namibia | `NAM` | 3 153 246 | 1 500 000 XTC | 207 098 XTC | **1 707 098 XTC** |
-| ![Nauru flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Nauru.svg?width=48) | Nauru | `NRU` | 12 101 | 1 500 000 XTC | 12 829 XTC | **1 512 829 XTC** |
-| ![Nepal flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Nepal.svg?width=48) | Nepal | `NPL` | 29 629 410 | 1 500 000 XTC | 634 832 XTC | **2 134 832 XTC** |
-| ![Netherlands flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_Netherlands.svg?width=48) | Netherlands | `NLD` | 18 818 739 | 1 500 000 XTC | 505 933 XTC | **2 005 933 XTC** |
-| ![New Zealand flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_New_Zealand.svg?width=48) | New Zealand | `NZL` | 5 290 170 | 1 500 000 XTC | 268 245 XTC | **1 768 245 XTC** |
-| ![Nicaragua flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Nicaragua.svg?width=48) | Nicaragua | `NIC` | 7 097 329 | 1 500 000 XTC | 310 703 XTC | **1 810 703 XTC** |
-| ![Niger flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Niger.svg?width=48) | Niger | `NER` | 28 814 878 | 1 500 000 XTC | 626 045 XTC | **2 126 045 XTC** |
-| ![Nigeria flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Nigeria.svg?width=48) | Nigeria | `NGA` | 242 431 832 | 1 500 000 XTC | 1 815 902 XTC | **3 315 902 XTC** |
-| ![North Macedonia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_North_Macedonia.svg?width=48) | North Macedonia | `MKD` | 1 804 063 | 1 500 000 XTC | 156 647 XTC | **1 656 647 XTC** |
-| ![Norway flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Norway.svg?width=48) | Norway | `NOR` | 5 652 989 | 1 500 000 XTC | 277 292 XTC | **1 777 292 XTC** |
-| ![Oman flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Oman.svg?width=48) | Oman | `OMN` | 5 671 458 | 1 500 000 XTC | 277 744 XTC | **1 777 744 XTC** |
-| ![Pakistan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Pakistan.svg?width=48) | Pakistan | `PAK` | 259 299 791 | 1 500 000 XTC | 1 878 013 XTC | **3 378 013 XTC** |
-| ![Palau flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Palau.svg?width=48) | Palau | `PLW` | 17 614 | 1 500 000 XTC | 15 478 XTC | **1 515 478 XTC** |
-| ![Panama flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Panama.svg?width=48) | Panama | `PAN` | 4 625 718 | 1 500 000 XTC | 250 834 XTC | **1 750 834 XTC** |
-| ![Papua New Guinea flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Papua_New_Guinea.svg?width=48) | Papua New Guinea | `PNG` | 10 947 848 | 1 500 000 XTC | 385 889 XTC | **1 885 889 XTC** |
-| ![Paraguay flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Paraguay.svg?width=48) | Paraguay | `PRY` | 7 095 279 | 1 500 000 XTC | 310 658 XTC | **1 810 658 XTC** |
-| ![Peru flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Peru.svg?width=48) | Peru | `PER` | 34 922 148 | 1 500 000 XTC | 689 204 XTC | **2 189 204 XTC** |
-| ![Philippines flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_Philippines.svg?width=48) | Philippines | `PHL` | 117 724 471 | 1 500 000 XTC | 1 265 409 XTC | **2 765 409 XTC** |
-| ![Poland flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Poland.svg?width=48) | Poland | `POL` | 37 843 188 | 1 500 000 XTC | 717 449 XTC | **2 217 449 XTC** |
-| ![Portugal flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Portugal.svg?width=48) | Portugal | `PRT` | 10 395 362 | 1 500 000 XTC | 376 026 XTC | **1 876 026 XTC** |
-| ![Qatar flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Qatar.svg?width=48) | Qatar | `QAT` | 3 173 559 | 1 500 000 XTC | 207 764 XTC | **1 707 764 XTC** |
-| ![Republic of Korea flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_South_Korea.svg?width=48) | Republic of Korea | `KOR` | 51 600 388 | 1 500 000 XTC | 837 768 XTC | **2 337 768 XTC** |
-| ![Republic of Moldova flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Moldova.svg?width=48) | Republic of Moldova | `MDA` | 2 961 253 | 1 500 000 XTC | 200 694 XTC | **1 700 694 XTC** |
-| ![Romania flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Romania.svg?width=48) | Romania | `ROU` | 18 800 605 | 1 500 000 XTC | 505 689 XTC | **2 005 689 XTC** |
-| ![Russian Federation flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Russia.svg?width=48) | Russian Federation | `RUS` | 143 394 458 | 1 500 000 XTC | 1 396 573 XTC | **2 896 573 XTC** |
-| ![Rwanda flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Rwanda.svg?width=48) | Rwanda | `RWA` | 14 889 693 | 1 500 000 XTC | 450 029 XTC | **1 950 029 XTC** |
-| ![Saint Kitts and Nevis flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Saint_Kitts_and_Nevis.svg?width=48) | Saint Kitts and Nevis | `KNA` | 46 992 | 1 500 000 XTC | 25 282 XTC | **1 525 282 XTC** |
-| ![Saint Lucia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Saint_Lucia.svg?width=48) | Saint Lucia | `LCA` | 180 488 | 1 500 000 XTC | 49 548 XTC | **1 549 548 XTC** |
-| ![Saint Vincent and the Grenadines flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Saint_Vincent_and_the_Grenadines.svg?width=48) | Saint Vincent and the Grenadines | `VCT` | 99 245 | 1 500 000 XTC | 36 741 XTC | **1 536 741 XTC** |
-| ![Samoa flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Samoa.svg?width=48) | Samoa | `WSM` | 220 528 | 1 500 000 XTC | 54 768 XTC | **1 554 768 XTC** |
-| ![San Marino flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_San_Marino.svg?width=48) | San Marino | `SMR` | 33 605 | 1 500 000 XTC | 21 380 XTC | **1 521 380 XTC** |
-| ![Sao Tome and Principe flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg?width=48) | Sao Tome and Principe | `STP` | 244 994 | 1 500 000 XTC | 57 727 XTC | **1 557 727 XTC** |
-| ![Saudi Arabia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Saudi_Arabia.svg?width=48) | Saudi Arabia | `SAU` | 35 165 787 | 1 500 000 XTC | 691 604 XTC | **2 191 604 XTC** |
-| ![Senegal flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Senegal.svg?width=48) | Senegal | `SEN` | 19 366 548 | 1 500 000 XTC | 513 244 XTC | **2 013 244 XTC** |
-| ![Serbia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Serbia.svg?width=48) | Serbia | `SRB` | 8 308 956 | 1 500 000 XTC | 336 179 XTC | **1 836 179 XTC** |
-| ![Seychelles flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Seychelles.svg?width=48) | Seychelles | `SYC` | 134 959 | 1 500 000 XTC | 42 845 XTC | **1 542 845 XTC** |
-| ![Sierra Leone flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Sierra_Leone.svg?width=48) | Sierra Leone | `SLE` | 8 996 745 | 1 500 000 XTC | 349 816 XTC | **1 849 816 XTC** |
-| ![Singapore flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Singapore.svg?width=48) | Singapore | `SGP` | 5 905 748 | 1 500 000 XTC | 283 423 XTC | **1 783 423 XTC** |
-| ![Slovakia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Slovakia.svg?width=48) | Slovakia | `SVK` | 5 451 342 | 1 500 000 XTC | 272 301 XTC | **1 772 301 XTC** |
-| ![Slovenia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Slovenia.svg?width=48) | Slovenia | `SVN` | 2 114 573 | 1 500 000 XTC | 169 593 XTC | **1 669 593 XTC** |
-| ![Solomon Islands flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Solomon_Islands.svg?width=48) | Solomon Islands | `SLB` | 858 288 | 1 500 000 XTC | 108 047 XTC | **1 608 047 XTC** |
-| ![Somalia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Somalia.svg?width=48) | Somalia | `SOM` | 20 305 907 | 1 500 000 XTC | 525 544 XTC | **2 025 544 XTC** |
-| ![South Africa flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_South_Africa.svg?width=48) | South Africa | `ZAF` | 65 453 084 | 1 500 000 XTC | 943 545 XTC | **2 443 545 XTC** |
-| ![South Sudan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_South_Sudan.svg?width=48) | South Sudan | `SSD` | 12 436 037 | 1 500 000 XTC | 411 281 XTC | **1 911 281 XTC** |
-| ![Spain flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Spain.svg?width=48) | Spain | `ESP` | 47 850 793 | 1 500 000 XTC | 806 756 XTC | **2 306 756 XTC** |
-| ![Sri Lanka flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Sri_Lanka.svg?width=48) | Sri Lanka | `LKA` | 23 348 315 | 1 500 000 XTC | 563 541 XTC | **2 063 541 XTC** |
-| ![State of Palestine flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Palestine.svg?width=48) | State of Palestine | `PSE` | 5 692 790 | 1 500 000 XTC | 278 266 XTC | **1 778 266 XTC** |
-| ![Sudan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Sudan.svg?width=48) | Sudan | `SDN` | 53 282 719 | 1 500 000 XTC | 851 316 XTC | **2 351 316 XTC** |
-| ![Suriname flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Suriname.svg?width=48) | Suriname | `SUR` | 645 256 | 1 500 000 XTC | 93 684 XTC | **1 593 684 XTC** |
-| ![Sweden flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Sweden.svg?width=48) | Sweden | `SWE` | 10 701 047 | 1 500 000 XTC | 381 514 XTC | **1 881 514 XTC** |
-| ![Switzerland flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Switzerland.svg?width=48) | Switzerland | `CHE` | 9 007 798 | 1 500 000 XTC | 350 031 XTC | **1 850 031 XTC** |
-| ![Syrian Arab Republic flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Syria.svg?width=48) | Syrian Arab Republic | `SYR` | 26 472 497 | 1 500 000 XTC | 600 060 XTC | **2 100 060 XTC** |
-| ![Tajikistan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Tajikistan.svg?width=48) | Tajikistan | `TJK` | 10 978 599 | 1 500 000 XTC | 386 430 XTC | **1 886 430 XTC** |
-| ![Thailand flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Thailand.svg?width=48) | Thailand | `THA` | 71 559 614 | 1 500 000 XTC | 986 578 XTC | **2 486 578 XTC** |
-| ![Timor-Leste flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Timor-Leste.svg?width=48) | Timor-Leste | `TLS` | 1 436 923 | 1 500 000 XTC | 139 802 XTC | **1 639 802 XTC** |
-| ![Togo flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Togo.svg?width=48) | Togo | `TGO` | 9 930 918 | 1 500 000 XTC | 367 529 XTC | **1 867 529 XTC** |
-| ![Tonga flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Tonga.svg?width=48) | Tonga | `TON` | 103 291 | 1 500 000 XTC | 37 483 XTC | **1 537 483 XTC** |
-| ![Trinidad and Tobago flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Trinidad_and_Tobago.svg?width=48) | Trinidad and Tobago | `TTO` | 1 513 268 | 1 500 000 XTC | 143 468 XTC | **1 643 468 XTC** |
-| ![Tunisia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Tunisia.svg?width=48) | Tunisia | `TUN` | 12 415 138 | 1 500 000 XTC | 410 935 XTC | **1 910 935 XTC** |
-| ![Turkmenistan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Turkmenistan.svg?width=48) | Turkmenistan | `TKM` | 7 736 632 | 1 500 000 XTC | 324 394 XTC | **1 824 394 XTC** |
-| ![Tuvalu flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Tuvalu.svg?width=48) | Tuvalu | `TUV` | 9 362 | 1 500 000 XTC | 11 285 XTC | **1 511 285 XTC** |
-| ![Türkiye flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Turkey.svg?width=48) | Türkiye | `TUR` | 87 926 082 | 1 500 000 XTC | 1 093 595 XTC | **2 593 595 XTC** |
-| ![Uganda flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Uganda.svg?width=48) | Uganda | `UGA` | 52 761 469 | 1 500 000 XTC | 847 141 XTC | **2 347 141 XTC** |
-| ![Ukraine flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Ukraine.svg?width=48) | Ukraine | `UKR` | 39 535 849 | 1 500 000 XTC | 733 319 XTC | **2 233 319 XTC** |
-| ![United Arab Emirates flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_United_Arab_Emirates.svg?width=48) | United Arab Emirates | `ARE` | 11 574 682 | 1 500 000 XTC | 396 782 XTC | **1 896 782 XTC** |
-| ![United Kingdom flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_United_Kingdom.svg?width=48) | United Kingdom | `GBR` | 70 481 661 | 1 500 000 XTC | 979 119 XTC | **2 479 119 XTC** |
-| ![United Republic of Tanzania flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Tanzania.svg?width=48) | United Republic of Tanzania | `TZA` | 72 563 780 | 1 500 000 XTC | 993 476 XTC | **2 493 476 XTC** |
-| ![United States of America flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_United_States.svg?width=48) | United States of America | `USA` | 352 600 000 | 1 500 000 XTC | 2 189 972 XTC | **3 689 972 XTC** |
-| ![Uruguay flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Uruguay.svg?width=48) | Uruguay | `URY` | 3 382 537 | 1 500 000 XTC | 214 496 XTC | **1 714 496 XTC** |
-| ![Uzbekistan flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Uzbekistan.svg?width=48) | Uzbekistan | `UZB` | 37 724 223 | 1 500 000 XTC | 716 321 XTC | **2 216 321 XTC** |
-| ![Vanuatu flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Vanuatu.svg?width=48) | Vanuatu | `VUT` | 342 564 | 1 500 000 XTC | 68 260 XTC | **1 568 260 XTC** |
-| ![Venezuela (Bolivarian Republic of) flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Venezuela.svg?width=48) | Venezuela (Bolivarian Republic of) | `VEN` | 28 633 711 | 1 500 000 XTC | 624 074 XTC | **2 124 074 XTC** |
-| ![Viet Nam flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Vietnam.svg?width=48) | Viet Nam | `VNM` | 102 177 431 | 1 500 000 XTC | 1 178 895 XTC | **2 678 895 XTC** |
-| ![Yemen flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Yemen.svg?width=48) | Yemen | `YEM` | 42 961 653 | 1 500 000 XTC | 764 430 XTC | **2 264 430 XTC** |
-| ![Zambia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Zambia.svg?width=48) | Zambia | `ZMB` | 22 521 915 | 1 500 000 XTC | 553 478 XTC | **2 053 478 XTC** |
-| ![Zimbabwe flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Zimbabwe.svg?width=48) | Zimbabwe | `ZWE` | 17 273 580 | 1 500 000 XTC | 484 717 XTC | **1 984 717 XTC** |
+| ![Afghanistan flag](../.gitbook/assets/flags/af.svg) | Afghanistan | `AFG` | 45 047 069 | 1 500 000 XTC | 776 974 XTC | **2 276 974 XTC** |
+| ![Albania flag](../.gitbook/assets/flags/al.svg) | Albania | `ALB` | 2 751 025 | 1 500 000 XTC | 192 008 XTC | **1 692 008 XTC** |
+| ![Algeria flag](../.gitbook/assets/flags/dz.svg) | Algeria | `DZA` | 48 028 334 | 1 500 000 XTC | 802 272 XTC | **2 302 272 XTC** |
+| ![Andorra flag](../.gitbook/assets/flags/ad.svg) | Andorra | `AND` | 83 753 | 1 500 000 XTC | 33 502 XTC | **1 533 502 XTC** |
+| ![Angola flag](../.gitbook/assets/flags/ao.svg) | Angola | `AGO` | 40 215 179 | 1 500 000 XTC | 734 122 XTC | **2 234 122 XTC** |
+| ![Antigua and Barbuda flag](../.gitbook/assets/flags/ag.svg) | Antigua and Barbuda | `ATG` | 94 626 | 1 500 000 XTC | 35 611 XTC | **1 535 611 XTC** |
+| ![Argentina flag](../.gitbook/assets/flags/ar.svg) | Argentina | `ARG` | 46 003 734 | 1 500 000 XTC | 785 181 XTC | **2 285 181 XTC** |
+| ![Armenia flag](../.gitbook/assets/flags/am.svg) | Armenia | `ARM` | 2 930 915 | 1 500 000 XTC | 198 187 XTC | **1 698 187 XTC** |
+| ![Australia flag](../.gitbook/assets/flags/au.svg) | Australia | `AUS` | 27 227 096 | 1 500 000 XTC | 604 051 XTC | **2 104 051 XTC** |
+| ![Austria flag](../.gitbook/assets/flags/at.svg) | Austria | `AUT` | 9 107 266 | 1 500 000 XTC | 349 355 XTC | **1 849 355 XTC** |
+| ![Azerbaijan flag](../.gitbook/assets/flags/az.svg) | Azerbaijan | `AZE` | 10 454 855 | 1 500 000 XTC | 374 311 XTC | **1 874 311 XTC** |
+| ![Bahamas flag](../.gitbook/assets/flags/bs.svg) | Bahamas | `BHS` | 404 628 | 1 500 000 XTC | 73 638 XTC | **1 573 638 XTC** |
+| ![Bahrain flag](../.gitbook/assets/flags/bh.svg) | Bahrain | `BHR` | 1 675 572 | 1 500 000 XTC | 149 849 XTC | **1 649 849 XTC** |
+| ![Bangladesh flag](../.gitbook/assets/flags/bd.svg) | Bangladesh | `BGD` | 177 818 044 | 1 500 000 XTC | 1 543 693 XTC | **3 043 693 XTC** |
+| ![Barbados flag](../.gitbook/assets/flags/bb.svg) | Barbados | `BRB` | 282 724 | 1 500 000 XTC | 61 554 XTC | **1 561 554 XTC** |
+| ![Belarus flag](../.gitbook/assets/flags/by.svg) | Belarus | `BLR` | 8 937 018 | 1 500 000 XTC | 346 074 XTC | **1 846 074 XTC** |
+| ![Belgium flag](../.gitbook/assets/flags/be.svg) | Belgium | `BEL` | 11 774 642 | 1 500 000 XTC | 397 235 XTC | **1 897 235 XTC** |
+| ![Belize flag](../.gitbook/assets/flags/bz.svg) | Belize | `BLZ` | 428 644 | 1 500 000 XTC | 75 792 XTC | **1 575 792 XTC** |
+| ![Benin flag](../.gitbook/assets/flags/bj.svg) | Benin | `BEN` | 15 170 419 | 1 500 000 XTC | 450 891 XTC | **1 950 891 XTC** |
+| ![Bhutan flag](../.gitbook/assets/flags/bt.svg) | Bhutan | `BTN` | 802 214 | 1 500 000 XTC | 103 686 XTC | **1 603 686 XTC** |
+| ![Bolivia (Plurinational State of) flag](../.gitbook/assets/flags/bo.svg) | Bolivia (Plurinational State of) | `BOL` | 12 749 291 | 1 500 000 XTC | 413 348 XTC | **1 913 348 XTC** |
+| ![Bosnia and Herzegovina flag](../.gitbook/assets/flags/ba.svg) | Bosnia and Herzegovina | `BIH` | 3 114 242 | 1 500 000 XTC | 204 291 XTC | **1 704 291 XTC** |
+| ![Botswana flag](../.gitbook/assets/flags/bw.svg) | Botswana | `BWA` | 2 603 388 | 1 500 000 XTC | 186 785 XTC | **1 686 785 XTC** |
+| ![Brazil flag](../.gitbook/assets/flags/br.svg) | Brazil | `BRA` | 213 562 666 | 1 500 000 XTC | 1 691 749 XTC | **3 191 749 XTC** |
+| ![Brunei Darussalam flag](../.gitbook/assets/flags/bn.svg) | Brunei Darussalam | `BRN` | 469 775 | 1 500 000 XTC | 79 345 XTC | **1 579 345 XTC** |
+| ![Bulgaria flag](../.gitbook/assets/flags/bg.svg) | Bulgaria | `BGR` | 6 667 659 | 1 500 000 XTC | 298 923 XTC | **1 798 923 XTC** |
+| ![Burkina Faso flag](../.gitbook/assets/flags/bf.svg) | Burkina Faso | `BFA` | 24 601 700 | 1 500 000 XTC | 574 190 XTC | **2 074 190 XTC** |
+| ![Burundi flag](../.gitbook/assets/flags/bi.svg) | Burundi | `BDI` | 14 729 157 | 1 500 000 XTC | 444 285 XTC | **1 944 285 XTC** |
+| ![Cabo Verde flag](../.gitbook/assets/flags/cv.svg) | Cabo Verde | `CPV` | 529 630 | 1 500 000 XTC | 84 248 XTC | **1 584 248 XTC** |
+| ![Cambodia flag](../.gitbook/assets/flags/kh.svg) | Cambodia | `KHM` | 18 051 219 | 1 500 000 XTC | 491 843 XTC | **1 991 843 XTC** |
+| ![Cameroon flag](../.gitbook/assets/flags/cm.svg) | Cameroon | `CMR` | 30 640 817 | 1 500 000 XTC | 640 801 XTC | **2 140 801 XTC** |
+| ![Canada flag](../.gitbook/assets/flags/ca.svg) | Canada | `CAN` | 40 467 728 | 1 500 000 XTC | 736 423 XTC | **2 236 423 XTC** |
+| ![Central African Republic flag](../.gitbook/assets/flags/cf.svg) | Central African Republic | `CAF` | 5 698 984 | 1 500 000 XTC | 276 358 XTC | **1 776 358 XTC** |
+| ![Chad flag](../.gitbook/assets/flags/td.svg) | Chad | `TCD` | 21 560 380 | 1 500 000 XTC | 537 528 XTC | **2 037 528 XTC** |
+| ![Chile flag](../.gitbook/assets/flags/cl.svg) | Chile | `CHL` | 19 945 850 | 1 500 000 XTC | 517 011 XTC | **2 017 011 XTC** |
+| ![China flag](../.gitbook/assets/flags/cn.svg) | China | `CHN` | 1 444 027 171 | 1 500 000 XTC | 4 399 069 XTC | **5 899 069 XTC** |
+| ![Colombia flag](../.gitbook/assets/flags/co.svg) | Colombia | `COL` | 53 936 226 | 1 500 000 XTC | 850 185 XTC | **2 350 185 XTC** |
+| ![Comoros flag](../.gitbook/assets/flags/km.svg) | Comoros | `COM` | 899 010 | 1 500 000 XTC | 109 763 XTC | **1 609 763 XTC** |
+| ![Congo flag](../.gitbook/assets/flags/cg.svg) | Congo | `COG` | 6 637 785 | 1 500 000 XTC | 298 253 XTC | **1 798 253 XTC** |
+| ![Costa Rica flag](../.gitbook/assets/flags/cr.svg) | Costa Rica | `CRI` | 5 174 789 | 1 500 000 XTC | 263 342 XTC | **1 763 342 XTC** |
+| ![Croatia flag](../.gitbook/assets/flags/hr.svg) | Croatia | `HRV` | 3 822 345 | 1 500 000 XTC | 226 328 XTC | **1 726 328 XTC** |
+| ![Cuba flag](../.gitbook/assets/flags/cu.svg) | Cuba | `CUB` | 10 892 659 | 1 500 000 XTC | 382 067 XTC | **1 882 067 XTC** |
+| ![Cyprus flag](../.gitbook/assets/flags/cy.svg) | Cyprus | `CYP` | 1 382 334 | 1 500 000 XTC | 136 107 XTC | **1 636 107 XTC** |
+| ![Czechia flag](../.gitbook/assets/flags/cz.svg) | Czechia | `CZE` | 10 527 781 | 1 500 000 XTC | 375 614 XTC | **1 875 614 XTC** |
+| ![Côte d'Ivoire flag](../.gitbook/assets/flags/ci.svg) | Côte d'Ivoire | `CIV` | 33 494 346 | 1 500 000 XTC | 669 975 XTC | **2 169 975 XTC** |
+| ![Dem. People's Republic of Korea flag](../.gitbook/assets/flags/kp.svg) | Dem. People's Republic of Korea | `PRK` | 26 633 691 | 1 500 000 XTC | 597 432 XTC | **2 097 432 XTC** |
+| ![Democratic Republic of the Congo flag](../.gitbook/assets/flags/cd.svg) | Democratic Republic of the Congo | `COD` | 116 452 162 | 1 500 000 XTC | 1 249 243 XTC | **2 749 243 XTC** |
+| ![Denmark flag](../.gitbook/assets/flags/dk.svg) | Denmark | `DNK` | 6 135 675 | 1 500 000 XTC | 286 751 XTC | **1 786 751 XTC** |
+| ![Djibouti flag](../.gitbook/assets/flags/dj.svg) | Djibouti | `DJI` | 1 199 459 | 1 500 000 XTC | 126 784 XTC | **1 626 784 XTC** |
+| ![Dominica flag](../.gitbook/assets/flags/dm.svg) | Dominica | `DMA` | 65 511 | 1 500 000 XTC | 29 630 XTC | **1 529 630 XTC** |
+| ![Dominican Republic flag](../.gitbook/assets/flags/do.svg) | Dominican Republic | `DOM` | 11 609 500 | 1 500 000 XTC | 394 439 XTC | **1 894 439 XTC** |
+| ![Ecuador flag](../.gitbook/assets/flags/ec.svg) | Ecuador | `ECU` | 18 444 506 | 1 500 000 XTC | 497 172 XTC | **1 997 172 XTC** |
+| ![Egypt flag](../.gitbook/assets/flags/eg.svg) | Egypt | `EGY` | 120 101 175 | 1 500 000 XTC | 1 268 664 XTC | **2 768 664 XTC** |
+| ![El Salvador flag](../.gitbook/assets/flags/sv.svg) | El Salvador | `SLV` | 6 391 253 | 1 500 000 XTC | 292 662 XTC | **1 792 662 XTC** |
+| ![Equatorial Guinea flag](../.gitbook/assets/flags/gq.svg) | Equatorial Guinea | `GNQ` | 1 984 468 | 1 500 000 XTC | 163 078 XTC | **1 663 078 XTC** |
+| ![Eritrea flag](../.gitbook/assets/flags/er.svg) | Eritrea | `ERI` | 3 682 669 | 1 500 000 XTC | 222 154 XTC | **1 722 154 XTC** |
+| ![Estonia flag](../.gitbook/assets/flags/ee.svg) | Estonia | `EST` | 1 331 062 | 1 500 000 XTC | 133 559 XTC | **1 633 559 XTC** |
+| ![Eswatini flag](../.gitbook/assets/flags/sz.svg) | Eswatini | `SWZ` | 1 269 859 | 1 500 000 XTC | 130 452 XTC | **1 630 452 XTC** |
+| ![Ethiopia flag](../.gitbook/assets/flags/et.svg) | Ethiopia | `ETH` | 138 902 185 | 1 500 000 XTC | 1 364 356 XTC | **2 864 356 XTC** |
+| ![Fiji flag](../.gitbook/assets/flags/fj.svg) | Fiji | `FJI` | 937 282 | 1 500 000 XTC | 112 075 XTC | **1 612 075 XTC** |
+| ![Finland flag](../.gitbook/assets/flags/fi.svg) | Finland | `FIN` | 5 621 739 | 1 500 000 XTC | 274 479 XTC | **1 774 479 XTC** |
+| ![France flag](../.gitbook/assets/flags/fr.svg) | France | `FRA` | 69 642 313 | 1 500 000 XTC | 966 073 XTC | **2 466 073 XTC** |
+| ![Gabon flag](../.gitbook/assets/flags/ga.svg) | Gabon | `GAB` | 2 647 399 | 1 500 000 XTC | 188 357 XTC | **1 688 357 XTC** |
+| ![Gambia flag](../.gitbook/assets/flags/gm.svg) | Gambia | `GMB` | 2 884 079 | 1 500 000 XTC | 196 597 XTC | **1 696 597 XTC** |
+| ![Georgia flag](../.gitbook/assets/flags/ge.svg) | Georgia | `GEO` | 3 804 642 | 1 500 000 XTC | 225 803 XTC | **1 725 803 XTC** |
+| ![Germany flag](../.gitbook/assets/flags/de.svg) | Germany | `DEU` | 83 644 258 | 1 500 000 XTC | 1 058 745 XTC | **2 558 745 XTC** |
+| ![Ghana flag](../.gitbook/assets/flags/gh.svg) | Ghana | `GHA` | 35 697 557 | 1 500 000 XTC | 691 660 XTC | **2 191 660 XTC** |
+| ![Greece flag](../.gitbook/assets/flags/gr.svg) | Greece | `GRC` | 9 897 115 | 1 500 000 XTC | 364 190 XTC | **1 864 190 XTC** |
+| ![Grenada flag](../.gitbook/assets/flags/gd.svg) | Grenada | `GRD` | 117 362 | 1 500 000 XTC | 39 659 XTC | **1 539 659 XTC** |
+| ![Guatemala flag](../.gitbook/assets/flags/gt.svg) | Guatemala | `GTM` | 18 967 978 | 1 500 000 XTC | 504 178 XTC | **2 004 178 XTC** |
+| ![Guinea flag](../.gitbook/assets/flags/gn.svg) | Guinea | `GIN` | 15 441 993 | 1 500 000 XTC | 454 909 XTC | **1 954 909 XTC** |
+| ![Guinea-Bissau flag](../.gitbook/assets/flags/gw.svg) | Guinea-Bissau | `GNB` | 2 297 808 | 1 500 000 XTC | 175 481 XTC | **1 675 481 XTC** |
+| ![Guyana flag](../.gitbook/assets/flags/gy.svg) | Guyana | `GUY` | 840 890 | 1 500 000 XTC | 106 156 XTC | **1 606 156 XTC** |
+| ![Haiti flag](../.gitbook/assets/flags/ht.svg) | Haiti | `HTI` | 12 037 506 | 1 500 000 XTC | 401 644 XTC | **1 901 644 XTC** |
+| ![Honduras flag](../.gitbook/assets/flags/hn.svg) | Honduras | `HND` | 11 184 760 | 1 500 000 XTC | 387 156 XTC | **1 887 156 XTC** |
+| ![Hungary flag](../.gitbook/assets/flags/hu.svg) | Hungary | `HUN` | 9 585 818 | 1 500 000 XTC | 358 416 XTC | **1 858 416 XTC** |
+| ![Iceland flag](../.gitbook/assets/flags/is.svg) | Iceland | `ISL` | 402 329 | 1 500 000 XTC | 73 428 XTC | **1 573 428 XTC** |
+| ![India flag](../.gitbook/assets/flags/in.svg) | India | `IND` | 1 476 625 576 | 1 500 000 XTC | 4 448 446 XTC | **5 948 446 XTC** |
+| ![Indonesia flag](../.gitbook/assets/flags/id.svg) | Indonesia | `IDN` | 287 886 782 | 1 500 000 XTC | 1 964 192 XTC | **3 464 192 XTC** |
+| ![Iran (Islamic Republic of) flag](../.gitbook/assets/flags/ir.svg) | Iran (Islamic Republic of) | `IRN` | 93 168 497 | 1 500 000 XTC | 1 117 397 XTC | **2 617 397 XTC** |
+| ![Iraq flag](../.gitbook/assets/flags/iq.svg) | Iraq | `IRQ` | 48 007 437 | 1 500 000 XTC | 802 098 XTC | **2 302 098 XTC** |
+| ![Ireland flag](../.gitbook/assets/flags/ie.svg) | Ireland | `IRL` | 5 356 950 | 1 500 000 XTC | 267 937 XTC | **1 767 937 XTC** |
+| ![Israel flag](../.gitbook/assets/flags/il.svg) | Israel | `ISR` | 9 647 689 | 1 500 000 XTC | 359 571 XTC | **1 859 571 XTC** |
+| ![Italy flag](../.gitbook/assets/flags/it.svg) | Italy | `ITA` | 58 926 166 | 1 500 000 XTC | 888 643 XTC | **2 388 643 XTC** |
+| ![Jamaica flag](../.gitbook/assets/flags/jm.svg) | Jamaica | `JAM` | 2 833 403 | 1 500 000 XTC | 194 862 XTC | **1 694 862 XTC** |
+| ![Japan flag](../.gitbook/assets/flags/jp.svg) | Japan | `JPN` | 122 427 731 | 1 500 000 XTC | 1 280 894 XTC | **2 780 894 XTC** |
+| ![Jordan flag](../.gitbook/assets/flags/jo.svg) | Jordan | `JOR` | 11 589 532 | 1 500 000 XTC | 394 100 XTC | **1 894 100 XTC** |
+| ![Kazakhstan flag](../.gitbook/assets/flags/kz.svg) | Kazakhstan | `KAZ` | 21 083 626 | 1 500 000 XTC | 531 552 XTC | **2 031 552 XTC** |
+| ![Kenya flag](../.gitbook/assets/flags/ke.svg) | Kenya | `KEN` | 58 636 412 | 1 500 000 XTC | 886 455 XTC | **2 386 455 XTC** |
+| ![Kiribati flag](../.gitbook/assets/flags/ki.svg) | Kiribati | `KIR` | 138 445 | 1 500 000 XTC | 43 074 XTC | **1 543 074 XTC** |
+| ![Kuwait flag](../.gitbook/assets/flags/kw.svg) | Kuwait | `KWT` | 5 102 773 | 1 500 000 XTC | 261 503 XTC | **1 761 503 XTC** |
+| ![Kyrgyzstan flag](../.gitbook/assets/flags/kg.svg) | Kyrgyzstan | `KGZ` | 7 400 465 | 1 500 000 XTC | 314 922 XTC | **1 814 922 XTC** |
+| ![Lao People's Democratic Republic flag](../.gitbook/assets/flags/la.svg) | Lao People's Democratic Republic | `LAO` | 7 974 017 | 1 500 000 XTC | 326 898 XTC | **1 826 898 XTC** |
+| ![Latvia flag](../.gitbook/assets/flags/lv.svg) | Latvia | `LVA` | 1 835 935 | 1 500 000 XTC | 156 856 XTC | **1 656 856 XTC** |
+| ![Lebanon flag](../.gitbook/assets/flags/lb.svg) | Lebanon | `LBN` | 5 897 467 | 1 500 000 XTC | 281 129 XTC | **1 781 129 XTC** |
+| ![Lesotho flag](../.gitbook/assets/flags/ls.svg) | Lesotho | `LSO` | 2 389 336 | 1 500 000 XTC | 178 942 XTC | **1 678 942 XTC** |
+| ![Liberia flag](../.gitbook/assets/flags/lr.svg) | Liberia | `LBR` | 5 853 949 | 1 500 000 XTC | 280 090 XTC | **1 780 090 XTC** |
+| ![Libya flag](../.gitbook/assets/flags/ly.svg) | Libya | `LBY` | 7 539 851 | 1 500 000 XTC | 317 874 XTC | **1 817 874 XTC** |
+| ![Liechtenstein flag](../.gitbook/assets/flags/li.svg) | Liechtenstein | `LIE` | 40 368 | 1 500 000 XTC | 23 259 XTC | **1 523 259 XTC** |
+| ![Lithuania flag](../.gitbook/assets/flags/lt.svg) | Lithuania | `LTU` | 2 797 338 | 1 500 000 XTC | 193 618 XTC | **1 693 618 XTC** |
+| ![Luxembourg flag](../.gitbook/assets/flags/lu.svg) | Luxembourg | `LUX` | 687 448 | 1 500 000 XTC | 95 983 XTC | **1 595 983 XTC** |
+| ![Madagascar flag](../.gitbook/assets/flags/mg.svg) | Madagascar | `MDG` | 33 522 052 | 1 500 000 XTC | 670 252 XTC | **2 170 252 XTC** |
+| ![Malawi flag](../.gitbook/assets/flags/mw.svg) | Malawi | `MWI` | 22 785 535 | 1 500 000 XTC | 552 590 XTC | **2 052 590 XTC** |
+| ![Malaysia flag](../.gitbook/assets/flags/my.svg) | Malaysia | `MYS` | 36 385 115 | 1 500 000 XTC | 698 289 XTC | **2 198 289 XTC** |
+| ![Maldives flag](../.gitbook/assets/flags/mv.svg) | Maldives | `MDV` | 531 517 | 1 500 000 XTC | 84 398 XTC | **1 584 398 XTC** |
+| ![Mali flag](../.gitbook/assets/flags/ml.svg) | Mali | `MLI` | 25 932 275 | 1 500 000 XTC | 589 513 XTC | **2 089 513 XTC** |
+| ![Malta flag](../.gitbook/assets/flags/mt.svg) | Malta | `MLT` | 549 011 | 1 500 000 XTC | 85 776 XTC | **1 585 776 XTC** |
+| ![Marshall Islands flag](../.gitbook/assets/flags/mh.svg) | Marshall Islands | `MHL` | 35 075 | 1 500 000 XTC | 21 681 XTC | **1 521 681 XTC** |
+| ![Mauritania flag](../.gitbook/assets/flags/mr.svg) | Mauritania | `MRT` | 5 461 319 | 1 500 000 XTC | 270 534 XTC | **1 770 534 XTC** |
+| ![Mauritius flag](../.gitbook/assets/flags/mu.svg) | Mauritius | `MUS` | 1 265 059 | 1 500 000 XTC | 130 205 XTC | **1 630 205 XTC** |
+| ![Mexico flag](../.gitbook/assets/flags/mx.svg) | Mexico | `MEX` | 132 997 658 | 1 500 000 XTC | 1 335 043 XTC | **2 835 043 XTC** |
+| ![Micronesia (Fed. States of) flag](../.gitbook/assets/flags/fm.svg) | Micronesia (Fed. States of) | `FSM` | 114 183 | 1 500 000 XTC | 39 118 XTC | **1 539 118 XTC** |
+| ![Monaco flag](../.gitbook/assets/flags/mc.svg) | Monaco | `MCO` | 38 087 | 1 500 000 XTC | 22 592 XTC | **1 522 592 XTC** |
+| ![Mongolia flag](../.gitbook/assets/flags/mn.svg) | Mongolia | `MNG` | 3 556 798 | 1 500 000 XTC | 218 325 XTC | **1 718 325 XTC** |
+| ![Montenegro flag](../.gitbook/assets/flags/me.svg) | Montenegro | `MNE` | 626 233 | 1 500 000 XTC | 91 610 XTC | **1 591 610 XTC** |
+| ![Morocco flag](../.gitbook/assets/flags/ma.svg) | Morocco | `MAR` | 38 762 441 | 1 500 000 XTC | 720 740 XTC | **2 220 740 XTC** |
+| ![Mozambique flag](../.gitbook/assets/flags/mz.svg) | Mozambique | `MOZ` | 36 639 851 | 1 500 000 XTC | 700 729 XTC | **2 200 729 XTC** |
+| ![Myanmar flag](../.gitbook/assets/flags/mm.svg) | Myanmar | `MMR` | 55 184 819 | 1 500 000 XTC | 859 969 XTC | **2 359 969 XTC** |
+| ![Namibia flag](../.gitbook/assets/flags/na.svg) | Namibia | `NAM` | 3 153 246 | 1 500 000 XTC | 205 566 XTC | **1 705 566 XTC** |
+| ![Nauru flag](../.gitbook/assets/flags/nr.svg) | Nauru | `NRU` | 12 101 | 1 500 000 XTC | 12 735 XTC | **1 512 735 XTC** |
+| ![Nepal flag](../.gitbook/assets/flags/np.svg) | Nepal | `NPL` | 29 629 410 | 1 500 000 XTC | 630 136 XTC | **2 130 136 XTC** |
+| ![Netherlands flag](../.gitbook/assets/flags/nl.svg) | Netherlands | `NLD` | 18 818 739 | 1 500 000 XTC | 502 190 XTC | **2 002 190 XTC** |
+| ![New Zealand flag](../.gitbook/assets/flags/nz.svg) | New Zealand | `NZL` | 5 290 170 | 1 500 000 XTC | 266 261 XTC | **1 766 261 XTC** |
+| ![Nicaragua flag](../.gitbook/assets/flags/ni.svg) | Nicaragua | `NIC` | 7 097 329 | 1 500 000 XTC | 308 404 XTC | **1 808 404 XTC** |
+| ![Niger flag](../.gitbook/assets/flags/ne.svg) | Niger | `NER` | 28 814 878 | 1 500 000 XTC | 621 415 XTC | **2 121 415 XTC** |
+| ![Nigeria flag](../.gitbook/assets/flags/ng.svg) | Nigeria | `NGA` | 242 431 832 | 1 500 000 XTC | 1 802 470 XTC | **3 302 470 XTC** |
+| ![North Macedonia flag](../.gitbook/assets/flags/mk.svg) | North Macedonia | `MKD` | 1 804 063 | 1 500 000 XTC | 155 489 XTC | **1 655 489 XTC** |
+| ![Norway flag](../.gitbook/assets/flags/no.svg) | Norway | `NOR` | 5 652 989 | 1 500 000 XTC | 275 240 XTC | **1 775 240 XTC** |
+| ![Oman flag](../.gitbook/assets/flags/om.svg) | Oman | `OMN` | 5 671 458 | 1 500 000 XTC | 275 690 XTC | **1 775 690 XTC** |
+| ![Pakistan flag](../.gitbook/assets/flags/pk.svg) | Pakistan | `PAK` | 259 299 791 | 1 500 000 XTC | 1 864 122 XTC | **3 364 122 XTC** |
+| ![Palau flag](../.gitbook/assets/flags/pw.svg) | Palau | `PLW` | 17 614 | 1 500 000 XTC | 15 364 XTC | **1 515 364 XTC** |
+| ![Panama flag](../.gitbook/assets/flags/pa.svg) | Panama | `PAN` | 4 625 718 | 1 500 000 XTC | 248 979 XTC | **1 748 979 XTC** |
+| ![Papua New Guinea flag](../.gitbook/assets/flags/pg.svg) | Papua New Guinea | `PNG` | 10 947 848 | 1 500 000 XTC | 383 034 XTC | **1 883 034 XTC** |
+| ![Paraguay flag](../.gitbook/assets/flags/py.svg) | Paraguay | `PRY` | 7 095 279 | 1 500 000 XTC | 308 360 XTC | **1 808 360 XTC** |
+| ![Peru flag](../.gitbook/assets/flags/pe.svg) | Peru | `PER` | 34 922 148 | 1 500 000 XTC | 684 106 XTC | **2 184 106 XTC** |
+| ![Philippines flag](../.gitbook/assets/flags/ph.svg) | Philippines | `PHL` | 117 724 471 | 1 500 000 XTC | 1 256 049 XTC | **2 756 049 XTC** |
+| ![Poland flag](../.gitbook/assets/flags/pl.svg) | Poland | `POL` | 37 843 188 | 1 500 000 XTC | 712 143 XTC | **2 212 143 XTC** |
+| ![Portugal flag](../.gitbook/assets/flags/pt.svg) | Portugal | `PRT` | 10 395 362 | 1 500 000 XTC | 373 244 XTC | **1 873 244 XTC** |
+| ![Qatar flag](../.gitbook/assets/flags/qa.svg) | Qatar | `QAT` | 3 173 559 | 1 500 000 XTC | 206 227 XTC | **1 706 227 XTC** |
+| ![Republic of Korea flag](../.gitbook/assets/flags/kr.svg) | Republic of Korea | `KOR` | 51 600 388 | 1 500 000 XTC | 831 572 XTC | **2 331 572 XTC** |
+| ![Republic of Moldova flag](../.gitbook/assets/flags/md.svg) | Republic of Moldova | `MDA` | 2 961 253 | 1 500 000 XTC | 199 210 XTC | **1 699 210 XTC** |
+| ![Romania flag](../.gitbook/assets/flags/ro.svg) | Romania | `ROU` | 18 800 605 | 1 500 000 XTC | 501 948 XTC | **2 001 948 XTC** |
+| ![Russian Federation flag](../.gitbook/assets/flags/ru.svg) | Russian Federation | `RUS` | 143 394 458 | 1 500 000 XTC | 1 386 243 XTC | **2 886 243 XTC** |
+| ![Rwanda flag](../.gitbook/assets/flags/rw.svg) | Rwanda | `RWA` | 14 889 693 | 1 500 000 XTC | 446 700 XTC | **1 946 700 XTC** |
+| ![Saint Kitts and Nevis flag](../.gitbook/assets/flags/kn.svg) | Saint Kitts and Nevis | `KNA` | 46 992 | 1 500 000 XTC | 25 095 XTC | **1 525 095 XTC** |
+| ![Saint Lucia flag](../.gitbook/assets/flags/lc.svg) | Saint Lucia | `LCA` | 180 488 | 1 500 000 XTC | 49 181 XTC | **1 549 181 XTC** |
+| ![Saint Vincent and the Grenadines flag](../.gitbook/assets/flags/vc.svg) | Saint Vincent and the Grenadines | `VCT` | 99 245 | 1 500 000 XTC | 36 469 XTC | **1 536 469 XTC** |
+| ![Samoa flag](../.gitbook/assets/flags/ws.svg) | Samoa | `WSM` | 220 528 | 1 500 000 XTC | 54 363 XTC | **1 554 363 XTC** |
+| ![San Marino flag](../.gitbook/assets/flags/sm.svg) | San Marino | `SMR` | 33 605 | 1 500 000 XTC | 21 221 XTC | **1 521 221 XTC** |
+| ![Sao Tome and Principe flag](../.gitbook/assets/flags/st.svg) | Sao Tome and Principe | `STP` | 244 994 | 1 500 000 XTC | 57 299 XTC | **1 557 299 XTC** |
+| ![Saudi Arabia flag](../.gitbook/assets/flags/sa.svg) | Saudi Arabia | `SAU` | 35 165 787 | 1 500 000 XTC | 686 489 XTC | **2 186 489 XTC** |
+| ![Senegal flag](../.gitbook/assets/flags/sn.svg) | Senegal | `SEN` | 19 366 548 | 1 500 000 XTC | 509 447 XTC | **2 009 447 XTC** |
+| ![Serbia flag](../.gitbook/assets/flags/rs.svg) | Serbia | `SRB` | 8 308 956 | 1 500 000 XTC | 333 692 XTC | **1 833 692 XTC** |
+| ![Seychelles flag](../.gitbook/assets/flags/sc.svg) | Seychelles | `SYC` | 134 959 | 1 500 000 XTC | 42 528 XTC | **1 542 528 XTC** |
+| ![Sierra Leone flag](../.gitbook/assets/flags/sl.svg) | Sierra Leone | `SLE` | 8 996 745 | 1 500 000 XTC | 347 229 XTC | **1 847 229 XTC** |
+| ![Singapore flag](../.gitbook/assets/flags/sg.svg) | Singapore | `SGP` | 5 905 748 | 1 500 000 XTC | 281 326 XTC | **1 781 326 XTC** |
+| ![Slovakia flag](../.gitbook/assets/flags/sk.svg) | Slovakia | `SVK` | 5 451 342 | 1 500 000 XTC | 270 287 XTC | **1 770 287 XTC** |
+| ![Slovenia flag](../.gitbook/assets/flags/si.svg) | Slovenia | `SVN` | 2 114 573 | 1 500 000 XTC | 168 339 XTC | **1 668 339 XTC** |
+| ![Solomon Islands flag](../.gitbook/assets/flags/sb.svg) | Solomon Islands | `SLB` | 858 288 | 1 500 000 XTC | 107 248 XTC | **1 607 248 XTC** |
+| ![Somalia flag](../.gitbook/assets/flags/so.svg) | Somalia | `SOM` | 20 305 907 | 1 500 000 XTC | 521 656 XTC | **2 021 656 XTC** |
+| ![South Africa flag](../.gitbook/assets/flags/za.svg) | South Africa | `ZAF` | 65 453 084 | 1 500 000 XTC | 936 566 XTC | **2 436 566 XTC** |
+| ![South Sudan flag](../.gitbook/assets/flags/ss.svg) | South Sudan | `SSD` | 12 436 037 | 1 500 000 XTC | 408 239 XTC | **1 908 239 XTC** |
+| ![Spain flag](../.gitbook/assets/flags/es.svg) | Spain | `ESP` | 47 850 793 | 1 500 000 XTC | 800 788 XTC | **2 300 788 XTC** |
+| ![Sri Lanka flag](../.gitbook/assets/flags/lk.svg) | Sri Lanka | `LKA` | 23 348 315 | 1 500 000 XTC | 559 372 XTC | **2 059 372 XTC** |
+| ![Sudan flag](../.gitbook/assets/flags/sd.svg) | Sudan | `SDN` | 53 282 719 | 1 500 000 XTC | 845 019 XTC | **2 345 019 XTC** |
+| ![Suriname flag](../.gitbook/assets/flags/sr.svg) | Suriname | `SUR` | 645 256 | 1 500 000 XTC | 92 991 XTC | **1 592 991 XTC** |
+| ![Sweden flag](../.gitbook/assets/flags/se.svg) | Sweden | `SWE` | 10 701 047 | 1 500 000 XTC | 378 692 XTC | **1 878 692 XTC** |
+| ![Switzerland flag](../.gitbook/assets/flags/ch.svg) | Switzerland | `CHE` | 9 007 798 | 1 500 000 XTC | 347 442 XTC | **1 847 442 XTC** |
+| ![Syrian Arab Republic flag](../.gitbook/assets/flags/sy.svg) | Syrian Arab Republic | `SYR` | 26 472 497 | 1 500 000 XTC | 595 622 XTC | **2 095 622 XTC** |
+| ![Tajikistan flag](../.gitbook/assets/flags/tj.svg) | Tajikistan | `TJK` | 10 978 599 | 1 500 000 XTC | 383 572 XTC | **1 883 572 XTC** |
+| ![Thailand flag](../.gitbook/assets/flags/th.svg) | Thailand | `THA` | 71 559 614 | 1 500 000 XTC | 979 281 XTC | **2 479 281 XTC** |
+| ![Timor-Leste flag](../.gitbook/assets/flags/tl.svg) | Timor-Leste | `TLS` | 1 436 923 | 1 500 000 XTC | 138 768 XTC | **1 638 768 XTC** |
+| ![Togo flag](../.gitbook/assets/flags/tg.svg) | Togo | `TGO` | 9 930 918 | 1 500 000 XTC | 364 811 XTC | **1 864 811 XTC** |
+| ![Tonga flag](../.gitbook/assets/flags/to.svg) | Tonga | `TON` | 103 291 | 1 500 000 XTC | 37 205 XTC | **1 537 205 XTC** |
+| ![Trinidad and Tobago flag](../.gitbook/assets/flags/tt.svg) | Trinidad and Tobago | `TTO` | 1 513 268 | 1 500 000 XTC | 142 407 XTC | **1 642 407 XTC** |
+| ![Tunisia flag](../.gitbook/assets/flags/tn.svg) | Tunisia | `TUN` | 12 415 138 | 1 500 000 XTC | 407 895 XTC | **1 907 895 XTC** |
+| ![Turkmenistan flag](../.gitbook/assets/flags/tm.svg) | Turkmenistan | `TKM` | 7 736 632 | 1 500 000 XTC | 321 995 XTC | **1 821 995 XTC** |
+| ![Tuvalu flag](../.gitbook/assets/flags/tv.svg) | Tuvalu | `TUV` | 9 362 | 1 500 000 XTC | 11 201 XTC | **1 511 201 XTC** |
+| ![Türkiye flag](../.gitbook/assets/flags/tr.svg) | Türkiye | `TUR` | 87 926 082 | 1 500 000 XTC | 1 085 505 XTC | **2 585 505 XTC** |
+| ![Uganda flag](../.gitbook/assets/flags/ug.svg) | Uganda | `UGA` | 52 761 469 | 1 500 000 XTC | 840 875 XTC | **2 340 875 XTC** |
+| ![Ukraine flag](../.gitbook/assets/flags/ua.svg) | Ukraine | `UKR` | 39 535 849 | 1 500 000 XTC | 727 895 XTC | **2 227 895 XTC** |
+| ![United Arab Emirates flag](../.gitbook/assets/flags/ae.svg) | United Arab Emirates | `ARE` | 11 574 682 | 1 500 000 XTC | 393 847 XTC | **1 893 847 XTC** |
+| ![United Kingdom flag](../.gitbook/assets/flags/gb.svg) | United Kingdom | `GBR` | 70 481 661 | 1 500 000 XTC | 971 877 XTC | **2 471 877 XTC** |
+| ![United Republic of Tanzania flag](../.gitbook/assets/flags/tz.svg) | United Republic of Tanzania | `TZA` | 72 563 780 | 1 500 000 XTC | 986 128 XTC | **2 486 128 XTC** |
+| ![United States of America flag](../.gitbook/assets/flags/us.svg) | United States of America | `USA` | 352 600 000 | 1 500 000 XTC | 2 173 773 XTC | **3 673 773 XTC** |
+| ![Uruguay flag](../.gitbook/assets/flags/uy.svg) | Uruguay | `URY` | 3 382 537 | 1 500 000 XTC | 212 909 XTC | **1 712 909 XTC** |
+| ![Uzbekistan flag](../.gitbook/assets/flags/uz.svg) | Uzbekistan | `UZB` | 37 724 223 | 1 500 000 XTC | 711 022 XTC | **2 211 022 XTC** |
+| ![Vanuatu flag](../.gitbook/assets/flags/vu.svg) | Vanuatu | `VUT` | 342 564 | 1 500 000 XTC | 67 755 XTC | **1 567 755 XTC** |
+| ![Venezuela (Bolivarian Republic of) flag](../.gitbook/assets/flags/ve.svg) | Venezuela (Bolivarian Republic of) | `VEN` | 28 633 711 | 1 500 000 XTC | 619 458 XTC | **2 119 458 XTC** |
+| ![Viet Nam flag](../.gitbook/assets/flags/vn.svg) | Viet Nam | `VNM` | 102 177 431 | 1 500 000 XTC | 1 170 174 XTC | **2 670 174 XTC** |
+| ![Yemen flag](../.gitbook/assets/flags/ye.svg) | Yemen | `YEM` | 42 961 653 | 1 500 000 XTC | 758 776 XTC | **2 258 776 XTC** |
+| ![Zambia flag](../.gitbook/assets/flags/zm.svg) | Zambia | `ZMB` | 22 521 915 | 1 500 000 XTC | 549 384 XTC | **2 049 384 XTC** |
+| ![Zimbabwe flag](../.gitbook/assets/flags/zw.svg) | Zimbabwe | `ZWE` | 17 273 580 | 1 500 000 XTC | 481 132 XTC | **1 981 132 XTC** |
 
 ## Reserved sovereign validator participation
 
@@ -353,7 +351,7 @@ The authorized institutional controller may claim the accrued amount at any time
 
 If the position no longer satisfies the applicable institutional, staking, availability or security conditions, future accrual pauses. Reactivation resumes the schedule without retroactive accrual for the suspended interval. An amount already vested cannot be removed arbitrarily.
 
-The reserve is fixed at 390,000,000 XTC. This release does not create new supply.
+The reserve is fixed at 386,000,000 XTC. This release does not create new supply.
 
 ## Institutional continuity
 
@@ -383,15 +381,31 @@ Personal email, social-media identity or submitted documentation alone never pro
 
 No position activates automatically. Activation requires verified institutional authority, the five-million-XTC self-delegation, operational review and explicit on-chain admission.
 
+
+## Validator-capacity governance
+
+The target network capacity remains **258 validator positions**: 193 reserved
+Member-State positions and 65 general validator positions.
+
+An approved increase in the reserved category reduces the general category by
+the same number of positions. An approved decrease increases the general
+category by the same number. Changing the total capacity requires a separate
+on-chain governance decision.
+
+Registry changes require an objective change in United Nations membership and
+an explicit governance proposal. No change may create tokens, rewrite vested
+allocations or reduce accrued rights. A new allocation must identify an
+available, unallocated funding source.
+
 ## Current boundary
 
 The sovereign position registry, institutional succession controls and activation-based vesting mechanism are under development and are not deployed. No application, position or allocation is active at this stage.
 
 ## Methodological scope and legal neutrality
 
-For reproducibility, the 195-position statistical set consists of 193 United Nations Member States, the Holy See and the State of Palestine. This composition follows published United Nations identifiers solely to define a stable technical dataset.
+For reproducibility, the reserved registry follows the 193 United Nations Member States recorded at the reference date. Xitcoin applies that external membership list as an objective technical criterion and does not create a separate diplomatic classification.
 
-Its use does not express a Xitcoin position on sovereignty, recognition, borders, jurisdiction, diplomatic relations or governmental legitimacy. Inclusion creates no entitlement; exclusion creates no adverse determination. Legal and institutional eligibility is assessed separately during the verified participation process.
+A future membership change does not modify the registry automatically. It requires an on-chain governance proposal, objective supporting evidence and the capacity and funding controls defined by the protocol. The process cannot create supply, rewrite vested allocations or reduce accrued rights.
 
 The complete allocation data and technical verification sources are maintained in the Xitcoin blockchain repository:
 
