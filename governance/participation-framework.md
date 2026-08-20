@@ -34,7 +34,9 @@ An expired or revoked mandate suspends the relevant operational authority. It do
 
 The fixed 390,000,000 XTC reserve uses the published 75% equal and 25% demographic methodology.
 
-After a sovereign position has independently satisfied the five-million-XTC minimum and all admission requirements, its fixed allocation is intended to be released over five years in 20 quarterly tranches.
+After a sovereign position has independently satisfied the five-million-XTC minimum and all admission requirements, its own five-year vesting schedule begins at that position's activation. A position may therefore join at any future date without changing a global distribution calendar.
+
+The allocation accrues linearly through deterministic on-chain accounting during eligible service. No quarterly company transaction or recurring manual intervention is required. The authorized institutional controller may claim the amount accrued at any time.
 
 The allocation:
 
@@ -42,7 +44,7 @@ The allocation:
 - is funded from the existing sovereign reserve;
 - does not create new supply;
 - is separate from ordinary validator rewards;
-- pauses when the position no longer satisfies the applicable institutional, staking or operational conditions;
+- pauses its future accrual when the position no longer satisfies the applicable institutional, staking or operational conditions;
 - ends after the fixed allocation has been fully released.
 
 Unreleased quantities remain in the sovereign reserve. Previously released quantities and every mandate transition remain subject to the final protocol, legal and custody controls.
@@ -61,6 +63,6 @@ A reserved institutional designation cannot bypass protocol security controls. T
 
 ## Implementation boundary
 
-The framework remains a target policy until the position registry, institutional succession, mandate controls, quarterly release accounting and five-million-XTC admission rule have been implemented, tested, independently reviewed and activated through the required network process.
+The framework remains a target policy until the position registry, institutional succession, mandate controls, activation-based vesting accounting and five-million-XTC admission rule have been implemented, tested, independently reviewed and activated through the required network process.
 
 The canonical allocation calculations and technical specification are maintained in the [Xitcoin PoS Chain repository](https://github.com/xitcoin-org/pos-chain).
