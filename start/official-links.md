@@ -12,6 +12,13 @@ icon: link
 * [GitHub organization](https://github.com/xitcoin-org)
 * [PoS chain source](https://github.com/xitcoin-org/pos-chain)
 
+## Market information
+
+* [CoinGecko — Xitcoin](https://www.coingecko.com/fr/coins/xitcoin)
+* [CoinMarketCap — Xitcoin](https://coinmarketcap.com/fr/currencies/xitcoin/)
+
+These third-party pages may display the Cronos market symbol as **$XTC**. Always verify the complete Cronos contract address: `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`.
+
 ## Testnet services
 
 * [Cosmos RPC](https://rpc-testnet.xitcoin.org/status)
