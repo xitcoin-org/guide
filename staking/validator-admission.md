@@ -39,8 +39,8 @@ The 258-position parameter is a maximum capacity, not an announcement that every
 
 The planning model separates:
 
-- 195 positions reserved for sovereign institutional participation;
-- 63 public positions;
+- 193 positions reserved for United Nations Member-State participation;
+- 65 general validator positions;
 - 258 positions in total.
 
 A sovereign position remains attached to the relevant State. Successive administrations of that State may transfer the institutional governance and operating mandate to their authorized successors without changing the position, its history or its remaining allocation.
