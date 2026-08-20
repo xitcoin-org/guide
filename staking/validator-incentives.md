@@ -161,61 +161,14 @@ New validators provide their own required stake and remain subject to admission 
 
 A participant receives validator or delegator rewards only through active, eligible stake under the live protocol rules.
 
-## Verified implementation progress
+## Technical specification and verification
 
-The development branch was verified on **20 August 2026** without deployment
-or movement of funds.
+The public guide describes the intended economic model and user-facing safety boundaries. Implementation details, governance message formats, test cases and release evidence are maintained with the source code:
 
-The verified implementation scope currently includes:
+- [Xitcoin PoS Chain repository](https://github.com/xitcoin-org/pos-chain)
+- [Validator Incentive governance operations](https://github.com/xitcoin-org/pos-chain/blob/feat/validator-incentive-treasury/docs/validator-incentives-governance.md)
 
-- protocol parameters with an initial 8% operating APR and a hard 20% ceiling;
-- a maximum increase of one percentage point per reward period;
-- deterministic prefunded reward-period calculation;
-- rejection of overlapping periods and distributions outside the active period;
-- rejection of distributions exceeding the remaining period provision;
-- persistent period state and cumulative distribution accounting;
-- a Cosmos module-account treasury with no private key and no mint or burn permission;
-- real treasury balances read from the Bank keeper;
-- eligible bonded stake read from the Staking keeper;
-- rejection of caller-supplied treasury balances or eligible stake;
-- accounting updated only after a successful bank transfer;
-- governance-module authority for parameter updates and funded-period activation;
-- complete Cosmos messages, validation, message server and transaction CLI;
-- application store, keeper, module, codec and genesis integration;
-- read-only gRPC and REST queries for parameters, period state and treasury balance;
-- tests covering invalid authorities, invalid budgets, empty treasuries,
-  failed transfers, period limits, application wiring and public query results.
-
-The public read-only paths are:
-
-- `/cosmos/evm/validatorincentives/v1/params`
-- `/cosmos/evm/validatorincentives/v1/period`
-- `/cosmos/evm/validatorincentives/v1/treasury`
-
-Reward-policy governance remains separate from validator admission. A funded
-incentive proposal cannot approve, protect or revoke a validator.
-
-The incentive module never mints bridge assets. Bridge lock/mint and
-burn/unlock accounting belongs to the separately controlled bridge subsystem.
-The incentive treasury distributes only native XTC already credited to its
-module account.
-
-These successful development tests do not constitute a production deployment,
-a security audit or evidence that the treasury has been funded.
-
-## Security and release status
-
-Before activation, the system requires:
-
-- deterministic accounting tests;
-- funded-APR, solvency and reward-period tests;
-- four- and five-validator distribution tests;
-- bridge replay and finality protection;
-- vault, router and module access controls;
-- emergency pause and recovery procedures;
-- supply reconciliation across Cronos and Xitcoin;
-- independent security review;
-- public contract, module and deployment records.
+The development implementation is not a production deployment. Activation requires funded on-chain configuration, release validation, supply reconciliation, security review and public deployment records.
 
 {% hint style="warning" %}
 The Validator Incentive Treasury, Reward Router and cross-chain revenue flywheel remain pre-launch components until their code, funding, security controls and deployment records have been validated.
