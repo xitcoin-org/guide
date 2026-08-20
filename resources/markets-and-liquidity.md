@@ -1,6 +1,6 @@
 ---
 description: Verified market-information pages and rules for identifying XTC venues and liquidity pools.
-icon: chart-line
+icon: chart-candlestick
 ---
 
 # Markets and liquidity
