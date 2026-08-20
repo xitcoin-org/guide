@@ -44,6 +44,8 @@ Do not send identity documents, credentials, private keys or confidential materi
 
 A social-media profile, personal email address or submitted document is never sufficient proof of governmental authority.
 
+Before production activation, Xitcoin will publish a dedicated institutional email address or secure intake form on an official Xitcoin domain. Until then, LinkedIn is an initial contact route only and must not be used to exchange confidential application material.
+
 ## Community
 
 * [Discord](https://discord.gg/xitcoin)
