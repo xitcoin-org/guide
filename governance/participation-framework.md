@@ -22,6 +22,13 @@ Xitcoin separates validator admission, institutional continuity, sovereign alloc
 
 The minimum self-delegation is supplied by the validator. A sovereign allocation cannot be counted toward that minimum.
 
+The 258-position capacity is conserved between categories. A governance-approved
+increase in reserved Member-State positions reduces general validator positions
+one-for-one; a decrease increases them one-for-one. Changing the total capacity
+requires a separate on-chain governance decision. Registry changes must follow
+an objective change in United Nations membership and cannot create supply,
+rewrite vested allocations or reduce accrued rights.
+
 ## Sovereign institutional continuity
 
 Each sovereign position remains attached to the relevant State rather than to an individual office-holder, administration or service provider.
