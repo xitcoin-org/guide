@@ -3,7 +3,7 @@ description: Methodology, allocation reference and participation requirements fo
 icon: globe
 ---
 
-# Sovereign Participation Reference 2026
+# Sovereign Index 2026
 
 This publication defines a deterministic technical reference for potential institutional participation in the Xitcoin validator network. It standardizes allocation calculations, eligibility requirements and operational continuity. It does not confer asset ownership, validator appointment, legal status, diplomatic recognition, endorsement or automatic access.
 
@@ -27,7 +27,9 @@ Every position starts with the same **1 500 000 XTC** base.
 
 Before rounding to whole XTC, each Member State's reference quantity is calculated as follows:
 
-$$\displaystyle A_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{193}\sqrt{P_j}} \right)$$
+$$
+\displaystyle A_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{193}\sqrt{P_j}} \right)
+$$
 
 **Formula key**
 
@@ -87,7 +89,7 @@ The complete 39-record consolidation mapping is maintained with the blockchain
 source in
 `networks/testnet/territorial-consolidation-2026.csv`.
 
-## Complete Xitcoin Sovereign Reference Index 2026
+## Complete allocation index
 
 The first column displays locally hosted reference flags for navigation. They are non-authoritative and do not affect identity, eligibility or quantity. United Nations M49 and ISO identifiers remain canonical.
 
@@ -310,9 +312,13 @@ Each position receives an individual five-year vesting schedule when it is activ
 
 During eligible service, the protocol calculates the vested and claimable amounts at the current block:
 
-$$\displaystyle V_i(b) = A_i \times \frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}$$
+$$
+\displaystyle V_i(b) = A_i \times \frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}
+$$
 
-$$\displaystyle C_i(b) = V_i(b) - R_i(b)$$
+$$
+\displaystyle C_i(b) = V_i(b) - R_i(b)
+$$
 
 **Formula key**
 
@@ -355,7 +361,7 @@ After five years of eligible service have fully vested, no further sovereign all
 
 A public authority or formally authorized representative may initiate a review through the [institutional contact pathway](../start/official-links.md).
 
-The first contact creates a case reference only. Before any application is accepted, Xitcoin independently verifies the public institution, official-domain contact, authority of the representative and operating mandate through separate official sources and a secure communication channel.
+The first contact creates a case reference only. Before any application is accepted, KCALB LTD independently verifies the public institution, official-domain contact, authority of the representative and operating mandate through separate official sources and a secure communication channel.
 
 Personal email, social-media identity or submitted documentation alone never proves governmental authority. No credentials, private keys or confidential identity documents should be sent through social media.
 
