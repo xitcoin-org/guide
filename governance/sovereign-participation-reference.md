@@ -1,21 +1,17 @@
 ---
-description: Whole-XTC sovereign reference methodology, complete table and participation pathway.
+description: Methodology, allocation reference and participation requirements for institutional validator positions.
 icon: globe
 ---
 
-# Xitcoin Sovereign Reference Index 2026
+# Sovereign Participation Reference 2026
 
-The Xitcoin Sovereign Reference Index 2026 establishes a deterministic framework for potential sovereign participation. It provides a common technical method without granting ownership, validator status, diplomatic recognition or automatic access.
+This publication defines a deterministic technical reference for potential institutional participation in the Xitcoin validator network. It standardizes allocation calculations, eligibility requirements and operational continuity. It does not confer asset ownership, validator appointment, legal status, diplomatic recognition, endorsement or automatic access.
 
-## Reference set
+{% hint style="info" %}
+**Protocol neutrality.** Xitcoin is general-purpose digital infrastructure. Like electricity and communications networks, it operates through common technical rules that do not depend on political alignment. A statistical reference in this index has no diplomatic, legal or political effect.
+{% endhint %}
 
-The framework contains **195 sovereign reference positions**:
-
-- 193 United Nations Member States;
-- the Holy See;
-- the State of Palestine.
-
-The set follows published United Nations identifiers for deterministic technical and statistical processing. It is not an independent statement on sovereignty, borders or diplomatic recognition.
+The methodology covers **195 reference positions** derived from a published United Nations statistical set. The precise composition and its limited methodological purpose are documented in the final note on this page.
 
 ## Fixed reference envelope
 
@@ -27,11 +23,11 @@ The set follows published United Nations identifiers for deterministic technical
 
 Every position starts with the same **1 500 000 XTC** base.
 
-## Mathematical formula
+## Allocation formula
 
-Before whole-XTC rounding, the exact reference for position \(i\) is:
+Before rounding to integer XTC, the reference quantity for position $i$ is:
 
-\[
+$
 A_i =
 390{,}000{,}000
 \left(
@@ -40,11 +36,11 @@ A_i =
 0.25
 \frac{\sqrt{P_i}}{\sum_{j=1}^{195}\sqrt{P_j}}
 \right)
-\]
+$
 
-Where \(P_i\) is the consolidated population reference for 1 July 2026.
+Here, $P_i$ is the consolidated population reference for 1 July 2026.
 
-Square-root weighting recognizes population differences while limiting concentration. Four times the population produces twice the demographic weight, not four times the weight.
+The square-root function recognizes population differences while limiting concentration: four times the population produces twice the demographic weight, rather than four times the weight.
 
 ## Neutrality and equal treatment
 
@@ -58,12 +54,12 @@ The methodology uses only two components: an identical base and a pinned populat
 
 Because 75% of the envelope is equal, every reference receives the same 1 500 000 XTC base. Only 25% varies, and the square-root transformation deliberately compresses population differences. The same source, date, formula, precision and rounding rule apply to all 195 references.
 
-## Whole-XTC rounding
+## Integer allocation and rounding
 
-The published table contains no fractional XTC:
+The published allocation table uses integer XTC only:
 
 1. calculate every exact result with deterministic decimal arithmetic;
-2. take its whole-XTC floor;
+2. take its integer floor;
 3. rank fractional remainders from largest to smallest;
 4. distribute the remaining XTC in that order;
 5. use ascending ISO3 code to resolve an exact tie.
@@ -137,9 +133,9 @@ Every consolidation above is applied before the formula. The complete target pop
 
 The first column displays national flag images sourced through Wikimedia Commons, the media repository used by Wikipedia. They are non-authoritative and do not affect identity, eligibility or quantity. United Nations M49 and ISO identifiers remain canonical.
 
-| Wikipedia/Wikimedia flag | Sovereign reference | ISO3 | 2026 reference population | Equal component | Demographic component | 2026 reference quantity |
+| Reference flag | Sovereign reference | ISO3 | 2026 reference population | Equal component | Demographic component | 2026 reference quantity |
 |---|---|---:|---:|---:|---:|---:|
-| ![Afghanistan reference flag (2013–2021)](https://upload.wikimedia.org/wikipedia/commons/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg) | Afghanistan | `AFG` | 45 047 069 | 1 500 000 XTC | 782 764 XTC | **2 282 764 XTC** |
+| ![Afghanistan reference flag (2013–2021)](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg?width=48) | Afghanistan | `AFG` | 45 047 069 | 1 500 000 XTC | 782 764 XTC | **2 282 764 XTC** |
 | ![Albania flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Albania.svg?width=48) | Albania | `ALB` | 2 751 025 | 1 500 000 XTC | 193 439 XTC | **1 693 439 XTC** |
 | ![Algeria flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Algeria.svg?width=48) | Algeria | `DZA` | 48 028 334 | 1 500 000 XTC | 808 251 XTC | **2 308 251 XTC** |
 | ![Andorra flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Andorra.svg?width=48) | Andorra | `AND` | 83 753 | 1 500 000 XTC | 33 752 XTC | **1 533 752 XTC** |
@@ -184,7 +180,7 @@ The first column displays national flag images sourced through Wikimedia Commons
 | ![Cyprus flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Cyprus.svg?width=48) | Cyprus | `CYP` | 1 382 334 | 1 500 000 XTC | 137 121 XTC | **1 637 121 XTC** |
 | ![Czechia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_Czech_Republic.svg?width=48) | Czechia | `CZE` | 10 527 781 | 1 500 000 XTC | 378 413 XTC | **1 878 413 XTC** |
 | ![Côte d'Ivoire flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Ivory_Coast.svg?width=48) | Côte d'Ivoire | `CIV` | 33 494 346 | 1 500 000 XTC | 674 968 XTC | **2 174 968 XTC** |
-| ![Democratic People’s Republic of Korea flag](https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg) | Democratic People’s Republic of Korea | `PRK` | 26 633 691 | 1 500 000 XTC | 601 885 XTC | **2 101 885 XTC** |
+| ![Democratic People’s Republic of Korea flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_North_Korea.svg?width=48) | Democratic People’s Republic of Korea | `PRK` | 26 633 691 | 1 500 000 XTC | 601 885 XTC | **2 101 885 XTC** |
 | ![Democratic Republic of the Congo flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Democratic_Republic_of_the_Congo.svg?width=48) | Democratic Republic of the Congo | `COD` | 116 452 162 | 1 500 000 XTC | 1 258 552 XTC | **2 758 552 XTC** |
 | ![Denmark flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Denmark.svg?width=48) | Denmark | `DNK` | 6 135 675 | 1 500 000 XTC | 288 887 XTC | **1 788 887 XTC** |
 | ![Djibouti flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Djibouti.svg?width=48) | Djibouti | `DJI` | 1 199 459 | 1 500 000 XTC | 127 729 XTC | **1 627 729 XTC** |
@@ -251,7 +247,7 @@ The first column displays national flag images sourced through Wikimedia Commons
 | ![Mauritania flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mauritania.svg?width=48) | Mauritania | `MRT` | 5 461 319 | 1 500 000 XTC | 272 550 XTC | **1 772 550 XTC** |
 | ![Mauritius flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mauritius.svg?width=48) | Mauritius | `MUS` | 1 265 059 | 1 500 000 XTC | 131 176 XTC | **1 631 176 XTC** |
 | ![Mexico flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mexico.svg?width=48) | Mexico | `MEX` | 132 997 658 | 1 500 000 XTC | 1 344 991 XTC | **2 844 991 XTC** |
-| ![Federated States of Micronesia flag](https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg) | Federated States of Micronesia | `FSM` | 114 183 | 1 500 000 XTC | 39 409 XTC | **1 539 409 XTC** |
+| ![Federated States of Micronesia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_the_Federated_States_of_Micronesia.svg?width=48) | Federated States of Micronesia | `FSM` | 114 183 | 1 500 000 XTC | 39 409 XTC | **1 539 409 XTC** |
 | ![Monaco flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Monaco.svg?width=48) | Monaco | `MCO` | 38 087 | 1 500 000 XTC | 22 761 XTC | **1 522 761 XTC** |
 | ![Mongolia flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Mongolia.svg?width=48) | Mongolia | `MNG` | 3 556 798 | 1 500 000 XTC | 219 952 XTC | **1 719 952 XTC** |
 | ![Montenegro flag](https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Montenegro.svg?width=48) | Montenegro | `MNE` | 626 233 | 1 500 000 XTC | 92 292 XTC | **1 592 292 XTC** |
@@ -354,15 +350,20 @@ The sovereign allocation cannot be counted toward the five-million-XTC activatio
 
 Each position receives an individual five-year vesting schedule when it is activated. A position may join years or decades after network launch without requiring a new global calendar or a recurring company transaction.
 
-The allocation accrues linearly through deterministic on-chain accounting during eligible service:
+The allocation accrues linearly through deterministic on-chain accounting during eligible service. For position $i$ at block $b$:
 
-```
-vested allocation =
-fixed ISO3 allocation × eligible service blocks / five-year service blocks
+$
+V_i(b) =
+A_i
+\times
+\frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}
+$
 
-claimable allocation =
-vested allocation - allocation already released
-```
+$
+C_i(b) = V_i(b) - R_i(b)
+$
+
+Where $A_i$ is the fixed reference allocation, $E_i(b)$ is eligible service measured in blocks, $B_{5y}$ is the configured five-year service duration in blocks, $V_i(b)$ is vested allocation, $R_i(b)$ is allocation already released and $C_i(b)$ is claimable allocation.
 
 The authorized institutional controller may claim the accrued amount at any time. An unclaimed amount remains recorded as claimable.
 
@@ -400,7 +401,13 @@ No position activates automatically. Activation requires verified institutional 
 
 ## Current boundary
 
-The sovereign position registry, institutional succession controls and activation-based vesting mechanism are under development and are not deployed.
+The sovereign position registry, institutional succession controls and activation-based vesting mechanism are under development and are not deployed. No application, position or allocation is active at this stage.
+
+## Methodological scope and legal neutrality
+
+For reproducibility, the 195-position statistical set consists of 193 United Nations Member States, the Holy See and the State of Palestine. This composition follows published United Nations identifiers solely to define a stable technical dataset.
+
+Its use does not express a Xitcoin position on sovereignty, recognition, borders, jurisdiction, diplomatic relations or governmental legitimacy. Inclusion creates no entitlement; exclusion creates no adverse determination. Legal and institutional eligibility is assessed separately during the verified participation process.
 
 The complete allocation data and technical verification sources are maintained in the Xitcoin blockchain repository:
 
