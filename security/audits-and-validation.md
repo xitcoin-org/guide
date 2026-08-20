@@ -1,6 +1,6 @@
 ---
 description: Public overview of independent XTC contract reviews and Xitcoin security evidence.
-icon: shield-check
+icon: shield-heart
 ---
 
 # Xitcoin security and verification
