@@ -13,11 +13,11 @@ Xitcoin separates validator admission, institutional continuity, sovereign alloc
 |---|---:|---|
 | Initially approved validators | 4 | Atlas, Borealis, Meridian and Zenith |
 | Maximum validator capacity | 258 | Protocol target |
-| Sovereign positions | 195 | Reserved institutional capacity |
-| Public positions | 63 | Public validator capacity |
+| Reserved Member-State positions | 193 | Institutional capacity |
+| General validator positions | 65 | Open validator capacity |
 | Minimum self-delegation | 5,000,000 XTC | Same rule for every validator |
 | Aggregate minimum at full capacity | 1,290,000,000 XTC | 258 × 5,000,000 XTC |
-| Sovereign allocation reserve | 390,000,000 XTC | Finite, separately accounted reserve |
+| Member-State allocation reserve | 386,000,000 XTC | Finite, separately accounted reserve |
 | Automatic validator rights | None | Admission remains mandatory |
 
 The minimum self-delegation is supplied by the validator. A sovereign allocation cannot be counted toward that minimum.
@@ -32,7 +32,7 @@ An expired or revoked mandate suspends the relevant operational authority. It do
 
 ## Sovereign allocation
 
-The fixed 390,000,000 XTC reserve uses the published 75% equal and 25% demographic methodology.
+The fixed 386,000,000 XTC reserve uses the published 75% equal and 25% demographic methodology.
 
 After a sovereign position has independently satisfied the five-million-XTC minimum and all admission requirements, its own five-year vesting schedule begins at that position's activation. A position may therefore join at any future date without changing a global distribution calendar.
 
@@ -59,7 +59,7 @@ After the five-year sovereign allocation has ended, the position receives no new
 
 Founder, sovereign and public validators must satisfy the same minimum self-delegation and the same consensus, uptime, monitoring, incident-response and slashing requirements.
 
-A reserved institutional designation cannot bypass protocol security controls. The 63 public positions remain part of the target capacity to preserve independent and community participation.
+A reserved institutional designation cannot bypass protocol security controls. The 65 general validator positions remain part of the target capacity to preserve independent and community participation.
 
 ## Implementation boundary
 
