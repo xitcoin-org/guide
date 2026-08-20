@@ -11,7 +11,7 @@ This publication defines a deterministic technical reference for potential insti
 **Protocol neutrality.** Xitcoin is general-purpose digital infrastructure. Like electricity and communications networks, it operates through common technical rules that do not depend on political alignment. A statistical reference in this index has no diplomatic, legal or political effect.
 {% endhint %}
 
-The methodology covers **193 reference positions** derived from a published United Nations statistical set. The precise composition and its limited methodological purpose are documented in the final note on this page.
+The methodology covers **193 reserved positions**, corresponding to the United Nations Member States recorded at the 2026 reference date.
 
 ## Fixed reference envelope
 
@@ -64,61 +64,21 @@ The 193 floors total **385,999,899 XTC**. The method distributes the remaining *
 - reference date: **1 July 2026**;
 - source SHA-256: `98e34d9b65b53858cd08a57a566e45050b08093ad85ba5714fe6fbd78055ae6d`.
 
-## Statistical consolidation
+## Statistical treatment
 
-The index contains 39 statistical consolidations. They contribute population data to an existing reference and do not create extra positions.
+Population inputs follow the United Nations World Population Prospects dataset
+and the United Nations M49 statistical framework. Statistical records do not
+create additional validator positions.
 
-Following the United Nations M49 statistical framework used by the dataset, the China calculation consolidates China, China Hong Kong SAR, China Macao SAR and China Taiwan Province of China.
+For the China calculation, the source data for China, Hong Kong SAR, Macao SAR
+and Taiwan Province of China are consolidated into the single China reference.
+This is a reproducible statistical treatment inherited from the cited United
+Nations framework; it is not a political or diplomatic determination by
+Xitcoin.
 
-This is a statistical processing rule inherited from the cited dataset. It is not a separate political or diplomatic determination by Xitcoin.
-
-Cook Islands, Niue and Western Sahara remain non-consolidated statistical records. They do not create positions and are not added to another position.
-
-### Complete consolidation table
-
-| Statistical record | ISO3 | 2026 reference population | Consolidated into reference | Target ISO3 |
-|---|---:|---:|---|---:|
-| Aruba | `ABW` | 108 164 | Netherlands | `NLD` |
-| Anguilla | `AIA` | 14 817 | United Kingdom | `GBR` |
-| American Samoa | `ASM` | 45 319 | United States of America | `USA` |
-| Bonaire, Sint Eustatius and Saba | `BES` | 31 913 | Netherlands | `NLD` |
-| Saint Barthélemy | `BLM` | 11 550 | France | `FRA` |
-| Bermuda | `BMU` | 64 459 | United Kingdom | `GBR` |
-| Curaçao | `CUW` | 185 440 | Netherlands | `NLD` |
-| Cayman Islands | `CYM` | 77 196 | United Kingdom | `GBR` |
-| Falkland Islands (Malvinas) | `FLK` | 3 465 | United Kingdom | `GBR` |
-| Faroe Islands | `FRO` | 56 526 | Denmark | `DNK` |
-| Guernsey | `GGY` | 64 609 | United Kingdom | `GBR` |
-| Gibraltar | `GIB` | 40 867 | United Kingdom | `GBR` |
-| Guadeloupe | `GLP` | 372 453 | France | `FRA` |
-| Greenland | `GRL` | 55 629 | Denmark | `DNK` |
-| French Guiana | `GUF` | 318 872 | France | `FRA` |
-| Guam | `GUM` | 170 185 | United States of America | `USA` |
-| China, Hong Kong SAR | `HKG` | 7 378 602 | China | `CHN` |
-| Isle of Man | `IMN` | 84 055 | United Kingdom | `GBR` |
-| Jersey | `JEY` | 104 106 | United Kingdom | `GBR` |
-| China, Macao SAR | `MAC` | 723 188 | China | `CHN` |
-| Saint Martin (French part) | `MAF` | 23 898 | France | `FRA` |
-| Northern Mariana Islands | `MNP` | 42 914 | United States of America | `USA` |
-| Montserrat | `MSR` | 4 328 | United Kingdom | `GBR` |
-| Martinique | `MTQ` | 337 711 | France | `FRA` |
-| Mayotte | `MYT` | 347 536 | France | `FRA` |
-| New Caledonia | `NCL` | 297 892 | France | `FRA` |
-| Puerto Rico | `PRI` | 3 222 688 | United States of America | `USA` |
-| French Polynesia | `PYF` | 283 076 | France | `FRA` |
-| Réunion | `REU` | 886 298 | France | `FRA` |
-| Saint Helena | `SHN` | 5 147 | United Kingdom | `GBR` |
-| Saint Pierre and Miquelon | `SPM` | 5 513 | France | `FRA` |
-| Sint Maarten (Dutch part) | `SXM` | 44 447 | Netherlands | `NLD` |
-| Turks and Caicos Islands | `TCA` | 47 148 | United Kingdom | `GBR` |
-| Tokelau | `TKL` | 2 691 | New Zealand | `NZL` |
-| China, Taiwan Province of China | `TWN` | 23 011 292 | China | `CHN` |
-| British Virgin Islands | `VGB` | 39 936 | United Kingdom | `GBR` |
-| United States Virgin Islands | `VIR` | 83 400 | United States of America | `USA` |
-| Wallis and Futuna Islands | `WLF` | 11 113 | France | `FRA` |
-| Kosovo (under UNSC res. 1244) | `XKX` | 1 666 992 | Serbia | `SRB` |
-
-Every consolidation above is applied before the formula. The complete target population is then used once in the demographic component. No consolidated record receives a separate position or a second quantity.
+The complete 39-record consolidation mapping is maintained with the blockchain
+source in
+`networks/testnet/territorial-consolidation-2026.csv`.
 
 ## Complete Xitcoin Sovereign Reference Index 2026
 
