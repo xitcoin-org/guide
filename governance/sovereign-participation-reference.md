@@ -25,13 +25,20 @@ Every position starts with the same **1 500 000 XTC** base.
 
 ## Allocation formula
 
-Before rounding to integer XTC, the reference quantity for position $i$ is:
+Before rounding to whole XTC, each Member State's reference quantity is calculated as follows:
 
-$$A_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{193}\sqrt{P_j}} \right)$$
+$$\displaystyle A_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{193}\sqrt{P_j}} \right)$$
 
-Here, $P_i$ is the consolidated population reference for 1 July 2026.
+**Formula key**
 
-The square-root function recognizes population differences while limiting concentration: four times the population produces twice the demographic weight, rather than four times the weight.
+- **i** — the Member State currently being calculated;
+- **Aᵢ** — its calculated reference quantity before rounding;
+- **Pᵢ** — its consolidated population on 1 July 2026;
+- **j** — each of the 193 Member States included in the population calculation;
+- **Σ** — add the values for all 193 Member States;
+- **√** — apply the square-root function to reduce concentration.
+
+In plain language, 75% of the reserve is divided equally. The remaining 25% is distributed using population, with the square-root function limiting the difference between larger and smaller populations. Four times the population therefore produces twice the demographic weight, rather than four times the weight.
 
 ## Neutrality and equal treatment
 
@@ -301,13 +308,24 @@ The sovereign allocation cannot be counted toward the five-million-XTC activatio
 
 Each position receives an individual five-year vesting schedule when it is activated. A position may join years or decades after network launch without requiring a new global calendar or a recurring company transaction.
 
-The allocation accrues linearly through deterministic on-chain accounting during eligible service. For position $i$ at block $b$:
+During eligible service, the protocol calculates the vested and claimable amounts at the current block:
 
-$$V_i(b) = A_i \times \frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}$$
+$$\displaystyle V_i(b) = A_i \times \frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}$$
 
-$$C_i(b) = V_i(b) - R_i(b)$$
+$$\displaystyle C_i(b) = V_i(b) - R_i(b)$$
 
-Where $A_i$ is the fixed reference allocation, $E_i(b)$ is eligible service measured in blocks, $B_{5y}$ is the configured five-year service duration in blocks, $V_i(b)$ is vested allocation, $R_i(b)$ is allocation already released and $C_i(b)$ is claimable allocation.
+**Formula key**
+
+- **i** — the activated Member-State position being calculated;
+- **b** — the current blockchain block used for the calculation;
+- **Aᵢ** — the position's fixed reference allocation;
+- **Eᵢ(b)** — its eligible service completed by the current block;
+- **B₅ᵧ** — the configured number of blocks representing five years of eligible service;
+- **Vᵢ(b)** — the total amount vested by the current block;
+- **Rᵢ(b)** — the vested amount already released;
+- **Cᵢ(b)** — the amount currently available to claim.
+
+In plain language, the first formula releases the fixed allocation progressively during five years of eligible service. The second subtracts amounts already released to determine what remains claimable.
 
 The authorized institutional controller may claim the accrued amount at any time. An unclaimed amount remains recorded as claimable.
 
