@@ -1,6 +1,6 @@
 ---
 description: Testnet and risk notice in the official Xitcoin Guide.
-icon: triangle-exclamation
+icon: flask
 ---
 
 # Testnet and risk notice
