@@ -19,8 +19,8 @@ Xitcoin uses delegated proof of stake. Approved validators participate in consen
 | Parameter | Target rule |
 |---|---:|
 | Maximum active validator capacity | 258 |
-| Sovereign institutional capacity | 195 |
-| Public validator capacity | 63 |
+| Reserved Member-State capacity | 193 |
+| General validator capacity | 65 |
 | Minimum self-delegation per validator | 5,000,000 XTC |
 | Currently approved validators | 4 |
 | Additional validators announced | 0 |
@@ -28,7 +28,7 @@ Xitcoin uses delegated proof of stake. Approved validators participate in consen
 
 The value 258 is a ceiling, not a statement that every position is already occupied. The same five-million-XTC self-delegation requirement applies to founder, sovereign and public validators.
 
-The 195 sovereign positions remain attached to their respective States. Their institutional governance and operating mandates may pass between successive authorized administrations without replacing the State position.
+The 193 reserved positions remain attached to their respective Member States. Their institutional governance and operating mandates may pass between successive authorized administrations without replacing the State position.
 
 ## Delegator boundary
 
