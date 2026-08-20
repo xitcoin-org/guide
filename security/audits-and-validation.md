@@ -1,165 +1,40 @@
 ---
-description: Independent XTC contract review, Cyberscope KYC, Xitcoin Layer 1 validation and release evidence.
+description: Public overview of independent XTC contract reviews and Xitcoin security evidence.
 icon: shield-check
 ---
 
 # Xitcoin security and verification
 
-This page organizes Xitcoin security evidence by asset, contract generation, network component and verification method. A token audit, an identity verification, a blockchain test and an operational check establish different facts and must not be merged into one claim.
+Xitcoin separates public security information from technical verification records. This guide explains what has been reviewed and where the canonical evidence is maintained. Detailed test logs, implementation checklists and release artifacts belong in the relevant GitHub repositories.
 
-| Component | Review or validation | Current public status |
+## Public security records
+
+| Scope | Public status | Canonical reference |
 |---|---|---|
-| XTC contract on Cronos | Independent smart-contract audit by Cyberscope | Published |
-| Xitcoin project KYC | Identity verification by Cyberscope | Passed; public certificate available |
-| Xitcoin Layer 1 | Engineering, consensus, genesis, build and compatibility validation | Test and CI evidence published by scope |
-| Canonical bridge | Contract, relayer and operational security review | Not yet presented as production-audited |
+| XTC contract on Cronos | Independent Cyberscope audit published | [Cyberscope XTC audit](https://www.cyberscope.io/audits/1-xtc) |
+| Xitcoin project identity | Cyberscope KYC passed | [KYC certificate](https://github.com/cyberscope-io/kyc/blob/main/1-xtc/kyc.png) |
+| XTC contract source and audit mapping | Published in the contracts repository | [Technical audit record](https://github.com/xitcoin-org/contracts/blob/main/audits/cyberscope-v2.md) |
+| Xitcoin Layer 1 | Source, CI, releases and engineering evidence maintained in GitHub | [Xitcoin PoS Chain](https://github.com/xitcoin-org/pos-chain) |
+| Canonical bridge | Not presented as production-audited or active | [Bridge status](../bridge/status-and-security.md) |
 
 ## XTC contract on Cronos
 
-### Version and naming record
+The current public Cronos proxy is [`0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991). Cyberscope's published record identifies the reviewed implementation and its audit history.
 
-| Label | Meaning | Status |
-|---|---|---|
-| V1 | Legacy standalone Cronos token, 8 decimals | Retired from new integrations |
-| V2 | Cronos proxy generation created for the 2025 migration, 18 decimals | Current public proxy address |
-| V3 | Audited implementation revision within the V2 proxy generation; Cyberscope source label `XitcoinV3_cyberscope.sol` | Current reviewed implementation record |
-| V4 | Planned Cronos revision adopting `WXTC` after the canonical native-XTC bridge is operational and verified | Planned; not deployed or active |
+The audit applies only to its stated contract, source and implementation scope. It does not automatically cover later upgrades, the Xitcoin Layer 1, validators, explorers, bridge software or operational infrastructure.
 
-The V2 proxy-generation label and V3 implementation-revision label describe different layers of the same upgradeable contract history. Integrators continue to use the proxy address. V4 must not be represented as active until its implementation, bytecode, bridge backing, deployment record and review scope are published.
+For source hashes, implementation mapping and revision history, use the [canonical contracts audit record](https://github.com/xitcoin-org/contracts/blob/main/audits/cyberscope-v2.md).
 
-### Independent Cyberscope audit
+## Layer 1 verification
 
-Cyberscope publishes the official [Xitcoin smart-contract audit record](https://www.cyberscope.io/audits/1-xtc) for the Cronos proxy contract [`0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991).
+Layer 1 tests, CI workflows, release checksums, genesis records and implementation-specific evidence are maintained in the [Xitcoin PoS Chain repository](https://github.com/xitcoin-org/pos-chain).
 
-| Field | Public record |
-|---|---|
-| Auditor | Cyberscope |
-| Network | Cronos EVM Mainnet, chain ID `25` |
-| Proxy | `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991` |
-| Reviewed implementation | `0x6c171952999421F0DA00E14F97B9C2DfBE71D8A0` |
-| Auditor source label | `XitcoinV3_cyberscope.sol` |
-| Canonical repository source | `contracts/cronos/v2/XTCV2.sol` |
-| SHA-256 | `b5de4f5c4f13334bf644ec8fa97f8b0cda836ddc76935dc14c7bfcda2a73ff14` |
-| Published iterations | 2 Jul 2025, 16 Jul 2025, 16 Feb 2026 and 17 Feb 2026 |
+A successful test or merged pull request proves only the recorded scope. Production status must additionally be confirmed through the applicable release, deployment record and live on-chain state.
 
-Public references:
+## Bridge boundary
 
-* [Cyberscope audit record and iteration history](https://www.cyberscope.io/audits/1-xtc)
-* [Xitcoin technical audit record](https://github.com/xitcoin-org/contracts/blob/main/audits/cyberscope-v2.md)
-* [Canonical reviewed source](https://github.com/xitcoin-org/contracts/blob/main/contracts/cronos/v2/XTCV2.sol)
-* [Cronos proxy](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991)
-* [Reviewed implementation](https://explorer.cronos.org/address/0x6c171952999421F0DA00E14F97B9C2DfBE71D8A0)
-* [Contract and migration history](../xtc/migration-history.md#contract-review-and-revisions)
-
-The auditor's historical filename and the canonical repository filename differ. The source hash identifies the reviewed code. The audit does not automatically extend to a later proxy implementation, the Layer 1, validators, explorers, migration services or bridge software.
-
-The score and project statistics displayed by an audit platform may change independently. Before relying on the record, verify the active implementation, deployed bytecode, source hash and applicable audit scope together.
-
-### Cyberscope KYC
-
-Cyberscope displays the Xitcoin KYC status as passed and publishes the corresponding [Xitcoin KYC certificate](https://github.com/cyberscope-io/kyc/blob/main/1-xtc/kyc.png).
-
-KYC verifies identity under the provider's process. It is separate from technical auditing and does not certify source code, token economics, blockchain security, bridge operation or future releases.
-
-## Xitcoin Layer 1 validation
-
-The Xitcoin Layer 1 is validated separately from the Cronos token contract. The current record consists of repository tests, continuous-integration definitions, deterministic build controls and recorded multi-validator operational checks.
-
-### Network and genesis verification
-
-The validation program covers:
-
-* deterministic genesis checksum verification;
-* genesis validation with the official binary;
-* signed genesis-transaction and validator-admission correspondence;
-* four-validator consensus, block-production and peer-connectivity testing;
-* consistent genesis state across validators;
-* Linux runtime and binary checksum comparison;
-* Cosmos and EVM chain-ID verification;
-* public RPC, REST, gRPC and JSON-RPC endpoint checks;
-* validator health, monitoring, backup and recovery checks.
-
-Status must be attached to a specific release. For the current `xitcoin-testnet-1` reset candidate, genesis identity, four validator identities, four signed genesis transactions, admission entries, chain IDs and the genesis SHA-256 are recorded in [PR 17](https://github.com/xitcoin-org/pos-chain/pull/17). That pull request remains a draft until isolated four-validator staging and transaction tests are complete. Earlier or separate testnet results must not be used to imply that this release gate has already passed.
-
-These are engineering and operational validations for identified releases and environments. They are not described as an independent third-party Layer 1 audit.
-
-### Repository test and build evidence
-
-| Control | What it validates | Public definition |
-|---|---|---|
-| Unit and coverage tests | Go modules, application logic and scripts | [Tests workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/test.yml) |
-| System tests | Integrated node and EVM system behaviour | [System Test workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/system-test.yml) |
-| JSON-RPC compatibility | Ethereum-compatible JSON-RPC behaviour and failure criteria | [JSON-RPC Compatibility workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/jsonrpc-compatibility.yml) |
-| Reproducible Linux builds | amd64 and arm64 binaries with commit identity and SHA-256 files | [Build workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/build.yml) |
-| Static Solidity analysis | Solidity security scanning | [Slither workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/slither.yml) |
-| Solidity tests | Smart-contract and EVM component testing | [Solidity Test workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/solidity-test.yml) |
-| Foundry compatibility | Ethereum tooling and contract compatibility | [Foundry workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/tests-compatibility-foundry.yml) |
-| Hardhat compatibility | Hardhat deployment and interaction compatibility | [Hardhat workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/tests-compatibility-hardhat.yml) |
-| viem compatibility | viem client integration | [viem workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/tests-compatibility-viem.yml) |
-| web3.js compatibility | web3.js client integration | [web3.js workflow](https://github.com/xitcoin-org/pos-chain/blob/main/.github/workflows/tests-compatibility-web3js.yml) |
-
-Workflow definitions prove which checks are encoded. A specific release claim must also reference the applicable commit, completed run and retained artifacts.
-
-### Recorded change and test evidence
-
-| Record | Security or validation scope | Recorded result and boundary |
-|---|---|---|
-| [PR 1 — Validator admission](https://github.com/xitcoin-org/pos-chain/pull/1) | Approval capacity, minimum self-delegation, authority updates and automated module tests | Module tests and compile checks recorded; no running validator or network was changed |
-| [PR 11 — Native XTC and bridge foundation](https://github.com/xitcoin-org/pos-chain/pull/11) | Native `axtc`, supply controls, disabled bridge foundations and genesis verification | Module, EVM integration, genesis validation and checksum commands recorded; activation remained separate |
-| [PR 12 — Native XTC bridge settlement](https://github.com/xitcoin-org/pos-chain/pull/12) | Signer threshold, owner-authorized burn, replay protection, limits, pause and supply ceilings | Targeted tests, race tests, integration test, build and genesis equivalence recorded; no route activation |
-| [PR 13 — Bridge attestation status query](https://github.com/xitcoin-org/pos-chain/pull/13) | Read-only replay-status query over CLI, gRPC and REST | Bridge tests and EVM compile checks recorded; no service restart, key use, deployment or transaction |
-| [PR 16 — Final testnet configuration](https://github.com/xitcoin-org/pos-chain/pull/16) | Chain identity, validator parameters and deterministic sovereign-allocation index | Genesis checksum, admission parameters, 195 unique positions, 39 consolidations and exact 390,000,000 XTC aggregate recorded |
-| [PR 17 — Secure testnet reset](https://github.com/xitcoin-org/pos-chain/pull/17) | `xitcoin-testnet-1`, four replacement validator identities, signed genesis transactions and final checksum | Draft release candidate; isolated four-validator staging and transaction tests remain required before merge |
-
-A merged pull request records reviewed source history and its stated validation. It does not prove deployment or activation unless the release record and live network state confirm that separately.
-
-### Validator-admission validation
-
-The validator-admission module is tested independently from ordinary staking behaviour. The required policy cases include:
-
-1. rejection of an unapproved validator creation;
-2. acceptance of an approved validator creation;
-3. deactivation after revocation;
-4. prevention of creation or unjailing after revocation;
-5. identical results across nodes starting from the same genesis.
-
-The public policy record is available in [XITCOIN-VALIDATOR-ADMISSION.md](https://github.com/xitcoin-org/pos-chain/blob/main/XITCOIN-VALIDATOR-ADMISSION.md). Release documentation must distinguish policy requirements from tests confirmed for a specific release.
-
-### What blockchain validation establishes
-
-The checks above provide evidence that the tested source, binary, genesis and validator set behave as recorded in the tested environment. They reduce implementation and operational uncertainty but do not eliminate software defects, validator failures, governance risk or economic risk.
-
-No statement about the Cronos token audit or KYC should be interpreted as an independent audit of the Xitcoin Layer 1.
-
-## Bridge review requirement
-
-The bridge is a separate security boundary. It must not be presented as production-audited or production-ready until the following are reviewed and published:
-
-1. canonical lock, mint, burn and release invariants;
-2. destination contracts and deployment addresses;
-3. relayer and signer authorization;
-4. replay protection and finality rules;
-5. rate limits and emergency controls;
-6. supply reconciliation;
-7. upgrade and incident procedures;
-8. independent review scope and report.
-
-## Release evidence standard
-
-For every network or contract release, retain and publish where appropriate:
-
-1. source commit;
-2. build environment and toolchain;
-3. binary checksums;
-4. genesis checksum;
-5. Cosmos and EVM chain IDs;
-6. completed test results and CI run;
-7. release artifacts;
-8. deployed addresses;
-9. audit scope and report links;
-10. known limitations;
-11. incident and recovery procedures.
+The bridge is a separate security boundary. It must not be described as production-audited or active until its contracts, deployment addresses, relayer authorization, replay protection, finality rules, supply reconciliation and independent review are published.
 
 {% hint style="warning" %}
-An audit, KYC certificate, test workflow or successful testnet run applies only to its stated scope. Verify the relevant source, release, network and deployed address before relying on it.
+An audit, KYC certificate or successful test applies only to its stated scope. Verify the relevant source, deployed address, release and live network before relying on it.
 {% endhint %}
