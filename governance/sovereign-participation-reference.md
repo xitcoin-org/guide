@@ -27,16 +27,7 @@ Every position starts with the same **1 500 000 XTC** base.
 
 Before rounding to integer XTC, the reference quantity for position $i$ is:
 
-$
-A_i =
-390{,}000{,}000
-\left(
-\frac{0.75}{195}
-+
-0.25
-\frac{\sqrt{P_i}}{\sum_{j=1}^{195}\sqrt{P_j}}
-\right)
-$
+$A_i = 390{,}000{,}000 \left( \frac{0.75}{195} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{195}\sqrt{P_j}} \right)$
 
 Here, $P_i$ is the consolidated population reference for 1 July 2026.
 
@@ -352,16 +343,9 @@ Each position receives an individual five-year vesting schedule when it is activ
 
 The allocation accrues linearly through deterministic on-chain accounting during eligible service. For position $i$ at block $b$:
 
-$
-V_i(b) =
-A_i
-\times
-\frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}
-$
+$V_i(b) = A_i \times \frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}$
 
-$
-C_i(b) = V_i(b) - R_i(b)
-$
+$C_i(b) = V_i(b) - R_i(b)$
 
 Where $A_i$ is the fixed reference allocation, $E_i(b)$ is eligible service measured in blocks, $B_{5y}$ is the configured five-year service duration in blocks, $V_i(b)$ is vested allocation, $R_i(b)$ is allocation already released and $C_i(b)$ is claimable allocation.
 
