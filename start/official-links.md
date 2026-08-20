@@ -40,11 +40,11 @@ The initial request should contain only:
 * purpose of the request;
 * proposed validator or infrastructure contact, if already designated.
 
-Do not send identity documents, credentials, private keys or confidential material through social media. The initial message creates only a contact request. Xitcoin must independently verify the institution and mandate through official government domains, published directories and a separate secure communication channel before opening an application.
+Do not send identity documents, credentials, private keys or confidential material through social media. The initial message creates only a contact request. KCALB LTD must independently verify the institution and mandate through official government domains, published directories and a separate secure communication channel before opening an application.
 
 A social-media profile, personal email address or submitted document is never sufficient proof of governmental authority.
 
-Before production activation, Xitcoin will publish a dedicated institutional email address or secure intake form on an official Xitcoin domain. Until then, LinkedIn is an initial contact route only and must not be used to exchange confidential application material.
+Before production activation, KCALB LTD will publish a dedicated institutional email address or secure intake form on an official Xitcoin domain. Until then, LinkedIn is an initial contact route only and must not be used to exchange confidential application material.
 
 ## Community
 
