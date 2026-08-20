@@ -27,9 +27,7 @@ Every position starts with the same **1 500 000 XTC** base.
 
 Before rounding to whole XTC, each Member State's reference quantity is calculated as follows:
 
-$$
-\displaystyle A_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{193}\sqrt{P_j}} \right)
-$$
+$\displaystyle A_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{P_i}}{\sum_{j=1}^{193}\sqrt{P_j}} \right)$
 
 **Formula key**
 
@@ -312,13 +310,9 @@ Each position receives an individual five-year vesting schedule when it is activ
 
 During eligible service, the protocol calculates the vested and claimable amounts at the current block:
 
-$$
-\displaystyle V_i(b) = A_i \times \frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}
-$$
+$\displaystyle V_i(b) = A_i \times \frac{\min\left(E_i(b), B_{5y}\right)}{B_{5y}}$
 
-$$
-\displaystyle C_i(b) = V_i(b) - R_i(b)
-$$
+$\displaystyle C_i(b) = V_i(b) - R_i(b)$
 
 **Formula key**
 
