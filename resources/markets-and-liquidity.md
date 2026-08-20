@@ -54,7 +54,7 @@ Anyone can create a pool or token with a similar name. Inclusion on a market-dat
 | Service | Reference |
 |---|---|
 | CoinMarketCap | [Xitcoin](https://coinmarketcap.com/currencies/xitcoin/) |
-| CoinGecko | [Search Xitcoin and verify the contract](https://www.coingecko.com/en/search?query=Xitcoin) |
+| CoinGecko | [Xitcoin](https://www.coingecko.com/fr/coins/xitcoin) |
 | GeckoTerminal | [Search by the canonical Cronos proxy](https://www.geckoterminal.com/search?query=0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) |
 | Cronos Explorer | [Canonical proxy contract](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) |
 
