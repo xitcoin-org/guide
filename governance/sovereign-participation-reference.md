@@ -386,7 +386,7 @@ Sovereign allocation and ordinary validator rewards are separate.
 
 An activated sovereign validator participates under the same ordinary staking, commission, delegation, fee-distribution and slashing rules as other eligible validators. The sovereign position receives its finite allocation over five years while also participating in ordinary network rewards.
 
-After all 20 valid tranches have been released, no further sovereign allocation is created. The position may continue validating and receiving ordinary network rewards while it remains eligible.
+After five years of eligible service have fully vested, no further sovereign allocation is created. The position may continue validating and receiving ordinary network rewards while it remains eligible.
 
 ## How an institutional review begins
 
@@ -400,7 +400,7 @@ No position activates automatically. Activation requires verified institutional 
 
 ## Current boundary
 
-The sovereign position registry, institutional succession controls and activation-based vesting mechanism remain under development and are not deployed.
+The sovereign position registry, institutional succession controls and activation-based vesting mechanism are under development and are not deployed.
 
 The complete allocation data and technical verification sources are maintained in the Xitcoin blockchain repository:
 
