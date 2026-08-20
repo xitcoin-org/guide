@@ -1,6 +1,6 @@
 ---
 description: Network endpoints in the official Xitcoin Guide.
-icon: globe
+icon: tower-broadcast
 ---
 
 # Network endpoints

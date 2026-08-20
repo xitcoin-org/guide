@@ -1,6 +1,6 @@
 ---
 description: Operator overview in the official Xitcoin Guide.
-icon: server
+icon: rectangle-server
 ---
 
 # Operator overview

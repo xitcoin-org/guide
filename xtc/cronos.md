@@ -1,9 +1,11 @@
 ---
 description: Cronos EVM network parameters, verified XTC contract generations and the planned transition to WXTC.
-icon: ethereum
+icon: hexagon
 ---
 
 # XTC on Cronos EVM
+
+<img src="../.gitbook/assets/cronos-logo.png" alt="Cronos logo" width="64">
 
 XTC was issued on Cronos EVM before the native Xitcoin network was launched. This page distinguishes the Cronos token contract from native XTC and records the public migration roadmap.
 
