@@ -13,7 +13,7 @@ XTC was issued on Cronos EVM mainnet, chain ID `25`, before development of the n
 |---|---|---|
 | Network | Cronos EVM — chain 25 | Cronos EVM — chain 25 |
 | Contract | `0xDD646291D2fff52c75F27CCDAdD0D4C2A24f37Dd` | `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991` |
-| Public display symbol | XTC | $XTC |
+| Public display symbol | XTC | XTC |
 | Decimals | 8 | 18 |
 | Supply reference | 21,000,000,000 | 5,250,000,000 |
 | Status | Legacy; do not use for new integrations | Current Cronos proxy |
@@ -63,8 +63,8 @@ V4 is the planned public transition for the Cronos representation after native X
 
 | Stage | Public identity | Meaning |
 |---|---|---|
-| V2 | $XTC | Temporary Cronos display symbol used while the native chain was under development |
-| V3 | $XTC | Current audited implementation revision within the V2 proxy generation |
+| V2 | XTC | Current Cronos proxy generation |
+| V3 | XTC | Current audited implementation revision within the V2 proxy generation |
 | V4 | WXTC | Planned verified 1:1 Cronos representation of canonical native XTC |
 | Native network | XTC | Canonical Xitcoin asset |
 
