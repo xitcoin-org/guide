@@ -43,13 +43,13 @@ Cross-network movement to Cronos is a separate bridge concern and must follow ve
 
 ## Sovereign participation pathway
 
-The participation framework keeps one reference position available for each of 195 sovereign references: 193 United Nations Member States, the Holy See and the State of Palestine.
+The participation framework reserves one validator position for each of the 193 United Nations Member States.
 
 A reserved position is a pathway made available for future participation. It becomes active only through the relevant participant's own initiative, an authorized operator and compliance with the same admission, security and operational standards applied across the network.
 
 This structure preserves equal technical treatment while allowing operator rotation, suspension or revocation when security, authorization or mandate conditions change.
 
-Alongside the sovereign framework, 63 positions are reserved for public participation. The network continues to develop through public infrastructure, applications, developers, companies, DeFi and community activity.
+Alongside the 193 reserved Member-State positions, 65 general validator positions remain available under the same published admission, security and operational requirements. The network continues to develop through public infrastructure, applications, developers, companies, DeFi and community activity.
 
 ## Intended use environments
 
