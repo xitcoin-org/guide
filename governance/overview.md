@@ -22,7 +22,7 @@ These concepts do not replace one another. Holding more XTC, staking more XTC or
 
 ## Current validator state
 
-The canonical Xitcoin Testnet staging network has exactly four initially approved validators:
+The canonical public Xitcoin Testnet network has exactly four initially approved validators:
 
 - Xitcoin Atlas;
 - Xitcoin Borealis;
