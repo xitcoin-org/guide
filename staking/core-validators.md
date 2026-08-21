@@ -5,7 +5,7 @@ icon: server
 
 # Core validators
 
-The reset genesis contains four KCALB Ltd core validators.
+The canonical Xitcoin Testnet genesis contains four KCALB Ltd core validators.
 
 | Moniker | Role |
 |---|---|

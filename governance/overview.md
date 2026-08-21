@@ -22,7 +22,7 @@ These concepts do not replace one another. Holding more XTC, staking more XTC or
 
 ## Current validator state
 
-The current Xitcoin Testnet release candidate has exactly four initially approved validators:
+The canonical Xitcoin Testnet staging network has exactly four initially approved validators:
 
 - Xitcoin Atlas;
 - Xitcoin Borealis;
@@ -35,16 +35,16 @@ No additional validator is announced or approved by the participation-capacity m
 
 The reference model provides a maximum capacity of 258 positions:
 
-- 195 sovereign reference positions;
-- 63 public positions.
+- 193 reserved Member-State positions;
+- 65 general validator positions.
 
 These are capacity and planning categories, not active validators. Each future activation requires a separately authorized operator, an explicit on-chain approval and compliance with the same security and operational requirements.
 
-The 195 sovereign references consist of 193 United Nations Member States, the Holy See and the State of Palestine. The 39 territorial consolidations in the allocation dataset are statistical mappings and do not create additional positions.
+The reserved category consists of the 193 United Nations Member States. The 39 territorial consolidations in the allocation dataset are statistical mappings and do not create additional validator positions.
 
 ## Admission authority
 
-The candidate network uses an on-chain validator-admission authority. Only that authority can execute the defined approval and revocation actions.
+The canonical testnet uses an on-chain validator-admission authority. Only that authority can execute the defined approval and revocation actions.
 
 The authority is controlled through the project's authorized custody process during the current launch phase. Token balances, staking balances, delegations and ordinary governance voting do not override it.
 

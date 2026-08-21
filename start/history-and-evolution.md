@@ -25,7 +25,7 @@ The current proxy is:
 
 `0xE45Fe733bC8617FA6DAC8437FC44B5FFFA949991`
 
-It uses 18 decimal places and is publicly displayed with the ticker **$XTC**. See [Contract and migration history](../xtc/migration-history.md).
+It uses 18 decimal places and the canonical public ticker **XTC**. See [Contract and migration history](../xtc/migration-history.md).
 
 ## Contract revisions and security record
 
@@ -44,7 +44,7 @@ The native network was developed with Cosmos SDK, CometBFT and Cosmos EVM. Nativ
 
 ## Public testnet
 
-The public testnet is used to validate consensus, EVM execution, staking, validator operations, explorers and public interfaces. The coordinated release target uses Cosmos chain ID `xitcoin-testnet-1` and EVM chain ID `101089`.
+Xitcoin Testnet is active as a four-validator canonical staging network using Cosmos chain ID `xitcoin-testnet-1` and EVM chain ID `101089`. Consensus and local interfaces are active; transaction acceptance and public endpoint cutover remain release gates.
 
 ## Mainnet preparation
 

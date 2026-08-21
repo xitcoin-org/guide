@@ -28,7 +28,7 @@ CRO pays Cronos network fees. XTC on Cronos is a CRC-20 token contract; it is no
 |---|---|---|
 | Network | Cronos EVM, chain 25 | Cronos EVM, chain 25 |
 | Contract | `0xDD646291D2fff52c75F27CCDAdD0D4C2A24f37Dd` | `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991` |
-| Public display symbol | XTC | $XTC |
+| Public display symbol | XTC | XTC |
 | Decimals | 8 | 18 |
 | Supply reference | 21,000,000,000 | 5,250,000,000 |
 | Integration status | Legacy — do not use for new integrations | Current Cronos proxy |
@@ -82,7 +82,7 @@ The historical interface is [migration.xitcoin.org](https://migration.xitcoin.or
 
 ## Planned V4 WXTC update
 
-The `$XTC` display symbol was introduced as a temporary market-facing identifier while the native Xitcoin blockchain was under development. The dollar sign is presentation metadata; it does not indicate a wrapped asset.
+Some historical market listings used the temporary display ticker `$XTC` while the native Xitcoin blockchain was under development. The canonical current display symbol is `XTC`; the dollar sign never indicated a wrapped asset.
 
 After native XTC becomes the canonical origin asset and the official bridge accounting is activated, the planned V4 update is:
 
@@ -91,7 +91,7 @@ After native XTC becomes the canonical origin asset and the official bridge acco
 | Native asset on the Xitcoin network | XTC |
 | Verified 1:1 representation of native XTC on Cronos EVM | WXTC |
 
-V4 and the transition from `$XTC` to `WXTC` must become public only with the corresponding bridge backing, contract release and public migration notice. Renaming a token without that technical backing would be misleading.
+V4 and the transition from Cronos `XTC` to `WXTC` must become public only with the corresponding bridge backing, contract release and public migration notice. Renaming a token without that technical backing would be misleading.
 
 Future bridge extensions may support additional compatible networks. Every representation must remain tied to canonical native XTC through verified contracts, published network identifiers and auditable 1:1 accounting.
 

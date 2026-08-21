@@ -21,7 +21,7 @@ The project has progressed through several connected phases:
 4. **Public testnet operation** validates the protocol and infrastructure.
 5. **Mainnet preparation** aligns code, economics, governance, bridge continuity and public services.
 
-Each phase is documented separately so users can understand what changed without confusing a token contract, a blockchain reset and a cross-network bridge.
+Each phase is documented separately so users can understand what changed without confusing a token-contract migration, a canonical testnet release and a cross-network bridge.
 
 ## What the network provides
 
@@ -74,6 +74,6 @@ Only after the purpose is understood does the technical architecture matter:
 
 ## Current phase
 
-Mainnet has not launched. The public testnet is validating the software and operating model, including the coordinated transition toward Cosmos chain ID `xitcoin-testnet-1` with EVM chain ID `101089`.
+Mainnet has not launched. Xitcoin Testnet is active as a four-validator canonical staging network using Cosmos chain ID `xitcoin-testnet-1` and EVM chain ID `101089`. Public endpoint cutover and transaction acceptance remain release gates.
 
 Continue with [Vision and purpose](vision-and-purpose.md), [History and evolution](history-and-evolution.md) or [Mainnet readiness](mainnet-readiness.md).
