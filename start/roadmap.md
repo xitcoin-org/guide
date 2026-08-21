@@ -18,7 +18,7 @@ The roadmap separates completed public records from infrastructure currently bei
 
 ## Current engineering phase
 
-* coordinated testnet release using Cosmos chain ID `xitcoin-testnet-1`;
+* canonical four-validator staging network using Cosmos chain ID `xitcoin-testnet-1`;
 * EVM chain ID `101089`;
 * clean validator and admission-authority identities;
 * four-validator consensus validation;
