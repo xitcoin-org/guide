@@ -1,5 +1,5 @@
 ---
-description: Canonical staging and public endpoint status for Xitcoin Testnet.
+description: Canonical public endpoint status for Xitcoin Testnet.
 icon: signal
 ---
 
@@ -7,7 +7,7 @@ icon: signal
 
 ## Canonical testnet
 
-**Xitcoin Testnet** is active as a four-validator canonical staging network.
+**Xitcoin Testnet** is active publicly as a four-validator canonical network.
 
 | Property | Canonical value |
 |---|---|
@@ -25,16 +25,14 @@ icon: signal
 The `-1` suffix belongs to the Cosmos chain identifier for the current
 genesis. It is not a public network version or server number.
 
-## Public endpoint boundary
+## Public endpoints
 
-The canonical staging network and the currently published domains are separate
-operational states. Public domains continue serving the historical testnet
-until the coordinated canonical cutover is completed.
+The canonical network is publicly available through the Xitcoin testnet RPC,
+API, EVM RPC, explorers and faucet endpoints.
 
-{% hint style="warning" %}
-Do not use a public domain as proof that the canonical genesis is active there.
-Query the RPC status endpoint and confirm `result.node_info.network` before
-signing or broadcasting.
+{% hint style="info" %}
+Before signing or broadcasting, query the RPC status endpoint and confirm that
+`result.node_info.network` reports `xitcoin-testnet-1`.
 {% endhint %}
 
 ## Verify live public state
@@ -47,16 +45,17 @@ curl -fsS https://rpc-testnet.xitcoin.org/status | jq -r '{
 }'
 ```
 
-A healthy node reports a changing height and `catching_up: false`. The
-canonical public cutover is complete only when the endpoint reports
-`xitcoin-testnet-1` and the published genesis identity has been verified.
+A healthy public node reports `xitcoin-testnet-1`, a changing height and
+`catching_up: false`.
 
-## Remaining public-release gates
+## Validated public-testnet state
 
-1. complete Cosmos and EVM transaction validation;
-2. validate admission, revocation and administrative signing;
-3. complete the public RPC, API, explorer and faucet cutover;
-4. verify monitoring, rollback and recovery after cutover;
-5. validate the Cronos bridge independently before activation.
+The canonical public testnet has completed Cosmos and EVM transaction
+validation, validator admission and revocation testing, multisignature
+administrative validation, public endpoint cutover, monitoring validation and
+rollback preparation.
+
+The Cronos bridge remains separate and inactive. It must be validated
+independently before any future activation.
 
 Testnet XTC has no monetary value. Mainnet has not launched.

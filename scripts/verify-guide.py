@@ -25,7 +25,7 @@ required = {
         "EVM chain ID | `101089`",
         "Base denomination | `axtc`",
         "Decimals | 18",
-        "Canonical staging active; public cutover pending",
+        "The canonical public testnet is active.",
         "Mainnet has not launched",
     ],
     "start/network-status.md": [
