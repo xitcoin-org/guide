@@ -74,6 +74,6 @@ Only after the purpose is understood does the technical architecture matter:
 
 ## Current phase
 
-Mainnet has not launched. Xitcoin Testnet is active as a four-validator canonical staging network using Cosmos chain ID `xitcoin-testnet-1` and EVM chain ID `101089`. Public endpoint cutover and transaction acceptance remain release gates.
+Mainnet has not launched. Xitcoin Testnet is active as a four-validator canonical public testnet using Cosmos chain ID `xitcoin-testnet-1` and EVM chain ID `101089`. Public endpoint cutover and transaction acceptance remain release gates.
 
 Continue with [Vision and purpose](vision-and-purpose.md), [History and evolution](history-and-evolution.md) or [Mainnet readiness](mainnet-readiness.md).
