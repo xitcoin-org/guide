@@ -21,9 +21,9 @@ else:
 
 required = {
     "README.md": [
-        "Cosmos chain ID | \`xitcoin-testnet-1\`",
-        "EVM chain ID | \`101089\`",
-        "Base denomination | \`axtc\`",
+        "Cosmos chain ID | `xitcoin-testnet-1`",
+        "EVM chain ID | `101089`",
+        "Base denomination | `axtc`",
         "Decimals | 18",
         "Canonical staging active; public cutover pending",
         "Mainnet has not launched",
