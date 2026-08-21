@@ -66,6 +66,10 @@ prohibited = {
     r"\brelease candidate\b": "obsolete release-candidate status",
     r"Current Cronos display symbol\s*\|\s*\$XTC": "obsolete current symbol",
     r"Public display symbol\s*\|\s*XTC\s*\|\s*\$XTC": "obsolete current symbol table",
+    r"Canonical staging active": "obsolete staging status",
+    r"public endpoint cutover and transaction acceptance remain release gates": "obsolete release gate",
+    r"transaction acceptance and public endpoint cutover remain release gates": "obsolete release gate",
+    r"Testnet staging network": "obsolete staging network wording",
 }
 
 for page in pages:

@@ -55,7 +55,7 @@ This is the canonical public guide for users, developers, validators, infrastruc
 | Native asset | XTC | XTC |
 | Base denomination | `axtc` | `axtc` |
 | Decimals | 18 | 18 |
-| Status | Canonical staging active; public endpoint cutover is complete | **Not launched** |
+| Status | Canonical public testnet active | **Not launched** |
 
 {% hint style="info" %}
 Testnet XTC has no monetary value. Mainnet has not launched, and no page in this guide should be interpreted as announcing a mainnet or bridge launch.
