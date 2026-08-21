@@ -58,7 +58,7 @@ Anyone can create a pool or token with a similar name. Inclusion on a market-dat
 | GeckoTerminal | [Search by the canonical Cronos proxy](https://www.geckoterminal.com/search?query=0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) |
 | Cronos Explorer | [Canonical proxy contract](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) |
 
-Listings may show the Cronos ticker as **$XTC**. Verify the complete contract address; ticker text and token names are not unique identifiers.
+Some legacy third-party listings may still show the historical ticker `$XTC`. The canonical display symbol is **XTC**. Verify the complete contract address; ticker text and token names are not unique identifiers.
 
 ## Transaction checks
 
