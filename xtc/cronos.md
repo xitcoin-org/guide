@@ -18,7 +18,7 @@ XTC was issued on Cronos EVM before the native Xitcoin network was launched. Thi
 | Chain ID hexadecimal | `0x19` |
 | Native gas asset | CRO |
 | Public RPC | `https://evm.cronos.org` |
-| Explorer | [explorer.cronos.org](https://explorer.cronos.org) |
+| Explorer | [Cronos Explorer](https://explorer.cronos.com) |
 
 CRO pays Cronos network fees. XTC on Cronos is a CRC-20 token contract; it is not the native gas asset of chain 25.
 
@@ -28,12 +28,12 @@ CRO pays Cronos network fees. XTC on Cronos is a CRC-20 token contract; it is no
 |---|---|---|
 | Network | Cronos EVM, chain 25 | Cronos EVM, chain 25 |
 | Contract | `0xDD646291D2fff52c75F27CCDAdD0D4C2A24f37Dd` | `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991` |
-| Public display symbol | XTC | XTC |
+| Public display symbol | XTC | `$XTC` |
 | Decimals | 8 | 18 |
 | Supply reference | 21,000,000,000 | 5,250,000,000 |
 | Integration status | Legacy — do not use for new integrations | Current Cronos proxy |
 
-Inspect the current proxy on the [Cronos Explorer](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991). The associated contract-audit record is published by [Cyberscope](https://www.cyberscope.io/audits/1-xtc).
+Inspect the current proxy on the [Cronos Explorer](https://explorer.cronos.com/token/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991). The associated contract-audit record is published by [Cyberscope](https://www.cyberscope.io/audits/1-xtc).
 
 ### Version terminology
 
@@ -47,9 +47,9 @@ Inspect the current proxy on the [Cronos Explorer](https://explorer.cronos.org/a
 The proxy-generation name and implementation-revision name must not be confused. The Cyberscope record labels the reviewed source `XitcoinV3_cyberscope.sol`, while the canonical contracts repository groups the current proxy generation under `contracts/cronos/v2/`. The reviewed source hash links those records.
 
 
-## Buy or swap XTC
+## Buy or swap current Cronos `$XTC`
 
-XTC can be obtained on Cronos through decentralized-market routes that reference the current proxy contract.
+The current `$XTC` token can be obtained on Cronos through decentralized-market routes that reference the current proxy contract.
 
 | Access route | Link | Purpose |
 |---|---|---|
@@ -82,7 +82,7 @@ The historical interface is [migration.xitcoin.org](https://migration.xitcoin.or
 
 ## Planned V4 WXTC update
 
-Some historical market listings used the temporary display ticker `$XTC` while the native Xitcoin blockchain was under development. The canonical current display symbol is `XTC`; the dollar sign never indicated a wrapped asset.
+The current Cronos proxy reports the on-chain symbol `$XTC`. This is the existing Cronos token identity and must not be confused with native `XTC` on the Xitcoin network or with the planned wrapped identity `WXTC`.
 
 After native XTC becomes the canonical origin asset and the official bridge accounting is activated, the planned V4 update is:
 
@@ -91,9 +91,9 @@ After native XTC becomes the canonical origin asset and the official bridge acco
 | Native asset on the Xitcoin network | XTC |
 | Verified 1:1 representation of native XTC on Cronos EVM | WXTC |
 
-V4 and the transition from Cronos `XTC` to `WXTC` must become public only with the corresponding bridge backing, contract release and public migration notice. Renaming a token without that technical backing would be misleading.
+V4 and the transition from Cronos `$XTC` to `WXTC` must become public only with the corresponding bridge backing, contract release and public migration notice. Renaming a token without that technical backing would be misleading.
 
-Future bridge extensions may support additional compatible networks. Every representation must remain tied to canonical native XTC through verified contracts, published network identifiers and auditable 1:1 accounting.
+Future bridge extensions may support additional compatible networks. The planned wrapped representation on Solana will also use `WXTC`, but it must be identified by its complete Solana mint address and may be presented as active only after deployment, verification and bridge activation. Every representation must remain tied to canonical native XTC through verified contracts, published network identifiers and auditable 1:1 accounting.
 
 {% hint style="warning" %}
 A symbol is not proof of origin. Verify the network, chain ID and complete contract address.
