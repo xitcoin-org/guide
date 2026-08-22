@@ -30,7 +30,7 @@ The 5,250,000,000 XTC figure is a global economic reference ceiling, not an amou
 At all times:
 
 ```
-Cronos XTC outside bridge escrow
+Cronos `$XTC` outside bridge escrow
 + active bridge-minted and fully backed XTC on Xitcoin
 + any future authorized external representation
 ≤ effective global XTC ceiling
@@ -38,13 +38,12 @@ Cronos XTC outside bridge escrow
 
 Xitcoin POS and Xitcoin EVM share the same native XTC economy and must not be counted as separate supplies.
 
-A bridge-authorized mint is permitted only when the same amount of canonical XTC has been finalized and locked on Cronos. It does not authorize an unbacked supply increase. The Validator Incentive Treasury and ordinary applications have no mint authority.
+A bridge-authorized mint is permitted only when the same amount of canonical `$XTC` has been finalized and locked on Cronos. It does not authorize an unbacked supply increase. The Validator Incentive Treasury and ordinary applications have no mint authority.
 
 ## Burn accounting
 
-A permanent burn of canonical XTC on Cronos reduces the effective global XTC ceiling. The corresponding unused bridge capacity on Xitcoin must be reduced by the same amount.
+A permanent burn of canonical `$XTC` on Cronos reduces the effective global XTC ceiling. The corresponding unused bridge capacity on Xitcoin must be reduced by the same amount.
 
 Burning bridge-minted XTC on Xitcoin in order to unlock the same XTC on Cronos is a transfer between representations, not an economic supply reduction.
 
-Canonical XTC locked as backing for an active Xitcoin representation must not be permanently burned unless the corresponding Xitcoin amount is retired first. Every permanent burn requires a public supply-reconciliation record.
-
+Canonical `$XTC` locked as backing for an active Xitcoin representation must not be permanently burned unless the corresponding Xitcoin amount is retired first. Every permanent burn requires a public supply-reconciliation record.
