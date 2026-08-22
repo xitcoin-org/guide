@@ -40,7 +40,10 @@ required = {
         "65 general validator positions",
     ],
     "resources/brand-assets.md": [
-        "Current Cronos display symbol | XTC",
+        "Canonical native asset | XTC",
+        "Current Cronos display symbol | `$XTC`",
+        "Planned Cronos bridge representation | V4 — WXTC",
+        "Planned Solana bridge representation | WXTC",
     ],
     "bridge/status-and-security.md": [
         "The canonical Xitcoin bridge is not currently presented as active",
@@ -64,8 +67,8 @@ prohibited = {
     r"\b1,000,000 XTC\b": "obsolete validator minimum",
     r"\breset candidate\b": "obsolete reset-candidate status",
     r"\brelease candidate\b": "obsolete release-candidate status",
-    r"Current Cronos display symbol\s*\|\s*\$XTC": "obsolete current symbol",
-    r"Public display symbol\s*\|\s*XTC\s*\|\s*\$XTC": "obsolete current symbol table",
+    r"Current Cronos display symbol\s*\|\s*XTC": "obsolete current Cronos symbol",
+    r"Public display symbol\s*\|\s*XTC\s*\|\s*XTC": "obsolete current Cronos symbol table",
     r"Canonical staging active": "obsolete staging status",
     r"public endpoint cutover and transaction acceptance remain release gates": "obsolete release gate",
     r"transaction acceptance and public endpoint cutover remain release gates": "obsolete release gate",
