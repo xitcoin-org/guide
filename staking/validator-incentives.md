@@ -131,7 +131,7 @@ At all times:
 
 ```
 bridge-authorized XTC on Xitcoin
-≤ canonical `$XTC` locked on Cronos
+≤ canonical $XTC locked on Cronos
 ```
 
 and:
