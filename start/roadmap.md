@@ -18,12 +18,13 @@ The roadmap separates completed public records from infrastructure currently bei
 
 ## Current engineering phase
 
-* canonical four-validator staging network using Cosmos chain ID `xitcoin-testnet-1`;
+* canonical four-validator public testnet active with Cosmos chain ID `xitcoin-testnet-1`;
 * EVM chain ID `101089`;
 * clean validator and admission-authority identities;
 * four-validator consensus validation;
-* endpoint, explorer, faucet and indexer cutover preparation;
-* release documentation and checksum reconciliation;
+* endpoint, explorer, faucet and indexer cutover completed on 21 August 2026;
+* release documentation, canonical genesis checksum and CI security lock completed;
+* reproducible Linux AMD64 `xitcoind` release artifact validation;
 * V4 WXTC specification and bridge security review before any Cronos identity transition.
 
 ## Mainnet target

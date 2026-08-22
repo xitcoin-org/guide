@@ -70,6 +70,8 @@ prohibited = {
     r"public endpoint cutover and transaction acceptance remain release gates": "obsolete release gate",
     r"transaction acceptance and public endpoint cutover remain release gates": "obsolete release gate",
     r"Testnet staging network": "obsolete staging network wording",
+    r"four-validator staging network": "obsolete staging network wording",
+    r"candidate testnet": "obsolete candidate-testnet wording",
 }
 
 for page in pages:

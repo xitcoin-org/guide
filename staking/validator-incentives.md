@@ -11,7 +11,7 @@ This page describes a **planned architecture**. It does not state that the treas
 
 ## Verified testnet reference
 
-The following parameters were verified on the coordinated candidate testnet on **19 August 2026**:
+The following parameters were verified on the canonical public testnet on **21 August 2026**:
 
 | Parameter | Verified value |
 |---|---:|
@@ -21,7 +21,7 @@ The following parameters were verified on the coordinated candidate testnet on *
 | Protocol inflation | 0% |
 | Community tax | 2% |
 | Maximum validator capacity | 258 |
-| Candidate unbonding period | 21 days |
+| Unbonding period | 21 days |
 | Native precision | 18 decimals |
 
 The four initial validators are Xitcoin Atlas, Xitcoin Borealis, Xitcoin Meridian and Xitcoin Zenith.
