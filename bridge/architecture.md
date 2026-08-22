@@ -120,7 +120,7 @@ The fundamental bridge invariant is:
 
 ```
 active bridge-minted XTC on Xitcoin
-= canonical `$XTC` locked in the Cronos Bridge Escrow Vault
+= canonical $XTC locked in the Cronos Bridge Escrow Vault
 ```
 
 Bridge administration must not provide an unrestricted public issuance path. The canonical Cronos `$XTC` token must not receive new mint authority for bridge operation.
