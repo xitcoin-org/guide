@@ -19,7 +19,7 @@ Xitcoin separates public security information from technical verification record
 
 ## XTC contract on Cronos
 
-The current public Cronos proxy is [`0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991). Cyberscope's published record identifies the reviewed implementation and its audit history.
+The current public Cronos proxy is [`0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`](https://explorer.cronos.com/token/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991). Cyberscope's published record identifies the reviewed implementation and its audit history.
 
 The audit applies only to its stated contract, source and implementation scope. It does not automatically cover later upgrades, the Xitcoin Layer 1, validators, explorers, bridge software or operational infrastructure.
 
