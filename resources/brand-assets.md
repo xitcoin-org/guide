@@ -56,8 +56,9 @@ These values specify the supplied artwork; they are not a general website theme.
 | Canonical native asset | XTC |
 | Current Cronos proxy generation | V2 |
 | Current audited implementation revision | V3 |
-| Current Cronos display symbol | XTC |
+| Current Cronos display symbol | `$XTC` |
 | Planned Cronos bridge representation | V4 — WXTC |
+| Planned Solana bridge representation | WXTC — mint address to be published after verification |
 
 The V4 WXTC designation becomes valid only when the representation is backed 1:1 by canonical native XTC and the official bridge release is published.
 

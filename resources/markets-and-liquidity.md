@@ -9,7 +9,7 @@ Market availability changes independently of the Xitcoin protocol. This page pro
 
 ## Buy or swap on Cronos
 
-The current Cronos XTC proxy is:
+The current Cronos `$XTC` proxy is:
 
 `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`
 
@@ -56,9 +56,9 @@ Anyone can create a pool or token with a similar name. Inclusion on a market-dat
 | CoinMarketCap | [Xitcoin](https://coinmarketcap.com/currencies/xitcoin/) |
 | CoinGecko | [Xitcoin](https://www.coingecko.com/fr/coins/xitcoin) |
 | GeckoTerminal | [Search by the canonical Cronos proxy](https://www.geckoterminal.com/search?query=0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) |
-| Cronos Explorer | [Canonical proxy contract](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) |
+| Cronos Explorer | [Canonical proxy contract](https://explorer.cronos.com/token/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991) |
 
-Some legacy third-party listings may still show the historical ticker `$XTC`. The canonical display symbol is **XTC**. Verify the complete contract address; ticker text and token names are not unique identifiers.
+The current Cronos proxy reports the on-chain symbol **`$XTC`**. Native XTC on the Xitcoin network uses **`XTC`**, and the planned bridged Cronos representation will use **`WXTC`** only after the verified V4 transition. Always verify the complete contract address; ticker text and token names are not unique identifiers.
 
 ## Transaction checks
 

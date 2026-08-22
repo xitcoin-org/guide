@@ -9,11 +9,11 @@ XTC was issued on Cronos EVM mainnet, chain ID `25`, before development of the n
 
 ## Contract generations
 
-| Record | V1 — legacy XTC | V2 — current Cronos XTC |
+| Record | V1 — legacy XTC | V2 — current Cronos `$XTC` |
 |---|---|---|
 | Network | Cronos EVM — chain 25 | Cronos EVM — chain 25 |
 | Contract | `0xDD646291D2fff52c75F27CCDAdD0D4C2A24f37Dd` | `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991` |
-| Public display symbol | XTC | XTC |
+| Public display symbol | XTC | `$XTC` |
 | Decimals | 8 | 18 |
 | Supply reference | 21,000,000,000 | 5,250,000,000 |
 | Status | Legacy; do not use for new integrations | Current Cronos proxy |
@@ -38,7 +38,7 @@ These controls must be assessed against the verified active implementation and o
 
 ## Contract review and revisions
 
-Cyberscope publishes the official [Xitcoin smart-contract audit record](https://www.cyberscope.io/audits/1-xtc) for the Cronos proxy contract [`0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`](https://explorer.cronos.org/address/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991).
+Cyberscope publishes the official [Xitcoin smart-contract audit record](https://www.cyberscope.io/audits/1-xtc) for the Cronos proxy contract [`0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`](https://explorer.cronos.com/token/0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991).
 
 The public record lists four audit iterations:
 
@@ -51,7 +51,7 @@ Cyberscope identifies the reviewed source as `XitcoinV3_cyberscope.sol`. The can
 
 `b5de4f5c4f13334bf644ec8fa97f8b0cda836ddc76935dc14c7bfcda2a73ff14`
 
-The implementation associated with this reviewed record is [`0x6c171952999421F0DA00E14F97B9C2DfBE71D8A0`](https://explorer.cronos.org/address/0x6c171952999421F0DA00E14F97B9C2DfBE71D8A0).
+The implementation associated with this reviewed record is [`0x6c171952999421F0DA00E14F97B9C2DfBE71D8A0`](https://explorer.cronos.com/address/0x6c171952999421F0DA00E14F97B9C2DfBE71D8A0).
 
 The auditor's historical filename and the canonical repository filename differ. The source hash identifies the reviewed code. This audit record covers the identified Cronos token-contract source only. It does not certify the Xitcoin Layer 1, validator infrastructure, explorers, migration services, bridge software or any later proxy implementation.
 
@@ -63,12 +63,14 @@ V4 is the planned public transition for the Cronos representation after native X
 
 | Stage | Public identity | Meaning |
 |---|---|---|
-| V2 | XTC | Current Cronos proxy generation |
-| V3 | XTC | Current audited implementation revision within the V2 proxy generation |
+| V2 | `$XTC` | Current Cronos proxy generation |
+| V3 | `$XTC` | Current audited implementation revision within the V2 proxy generation |
 | V4 | WXTC | Planned verified 1:1 Cronos representation of canonical native XTC |
 | Native network | XTC | Canonical Xitcoin asset |
 
 The `W` prefix must describe technical provenance, not marketing. V4 must not be presented as WXTC until bridge contracts, supply accounting, migration instructions and public verification records are released.
+
+Future wrapped representations on other networks, including Solana, may also use `WXTC`. The symbol alone is not an identifier: each release must publish the destination network and complete contract or mint address, and must remain backed one-to-one by canonical native XTC.
 
 ## Cross-network accounting
 
