@@ -30,7 +30,7 @@ The 5,250,000,000 XTC figure is a global economic reference ceiling, not an amou
 At all times:
 
 ```
-Cronos `$XTC` outside bridge escrow
+Cronos $XTC outside bridge escrow
 + active bridge-minted and fully backed XTC on Xitcoin
 + any future authorized external representation
 ≤ effective global XTC ceiling
