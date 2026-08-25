@@ -7,9 +7,9 @@ icon: user-shield
 
 Xitcoin includes an on-chain validator-admission policy. Holding, receiving, staking or delegating XTC does not grant the right to join the active validator set.
 
-## Target protocol configuration
+## Current Testnet policy and Mainnet target
 
-| Parameter | Target value |
+| Parameter | Value |
 |---|---:|
 | Maximum validator and admission capacity | 258 |
 | Initially approved validators | 4 |
@@ -56,5 +56,5 @@ Token holdings, staking balances, delegation weight and ordinary governance voti
 External full nodes can synchronize and relay data without becoming validators. Validator admission controls consensus participation, not public read access.
 
 {% hint style="warning" %}
-The five-million-XTC minimum is part of the target configuration under development. Mainnet activation requires validated source, final genesis or upgrade parameters, security review and verified on-chain state.
+The current Testnet genesis enforces the 258-position admission ceiling and the five-million-XTC minimum. These values are also the Mainnet target; they are not a Mainnet launch announcement. Mainnet activation still requires validated source, final genesis parameters, security review and verified on-chain state.
 {% endhint %}
