@@ -85,7 +85,7 @@ Xitcoin.
 
 The complete 39-record consolidation mapping is maintained with the blockchain
 source in
-`networks/testnet/territorial-consolidation-2026.csv`.
+`networks/xitcoin-testnet-1/territorial-consolidation-2026.csv`.
 
 ## Complete allocation index
 
@@ -391,7 +391,7 @@ The complete allocation data and technical verification sources are maintained i
 
 - `docs/sovereign-allocation-2026.md`;
 - `docs/sovereign-validator-framework.md`;
-- `networks/testnet/sovereign-allocation-index-2026.csv`;
-- `networks/testnet/sovereign-allocation-index-2026.json`;
-- `networks/testnet/territorial-consolidation-2026.csv`;
+- `networks/xitcoin-testnet-1/sovereign-allocation-index-2026.csv`;
+- `networks/xitcoin-testnet-1/sovereign-allocation-index-2026.json`;
+- `networks/xitcoin-testnet-1/territorial-consolidation-2026.csv`;
 - `scripts/verify-sovereign-allocation-2026.py`.
