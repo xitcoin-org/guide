@@ -9,7 +9,8 @@ Official source code is published under the [xitcoin-org GitHub organization](ht
 
 | Repository | Purpose |
 |---|---|
-| [pos-chain](https://github.com/xitcoin-org/pos-chain) | Xitcoin blockchain, network configuration and node documentation |
+| [pos-chain](https://github.com/xitcoin-org/pos-chain) | Xitcoin blockchain source and node documentation |
+| [testnets](https://github.com/xitcoin-org/testnets) | Canonical public Testnet network configuration and Genesis |
 | [guide](https://github.com/xitcoin-org/guide) | Source for this Xitcoin Guide |
 | [brand](https://github.com/xitcoin-org/brand) | Canonical logo and brand assets |
 | [contracts](https://github.com/xitcoin-org/contracts) | Public smart-contract source |
