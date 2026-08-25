@@ -18,7 +18,7 @@ Each identity uses a distinct operator key, consensus key and node identity. Pub
 
 ## Genesis commission
 
-The candidate configuration uses:
+The canonical Testnet genesis uses:
 
 * commission rate: 10%;
 * maximum commission rate: 20%;
