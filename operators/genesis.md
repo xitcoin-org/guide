@@ -5,26 +5,33 @@ icon: file-shield
 
 # Genesis and verification
 
-Download `genesis.json` and its checksum from the same validated network release.
+Clone the canonical network repository and verify the checksum:
 
 ```bash
+git clone https://github.com/xitcoin-org/testnets.git
+cd testnets/xitcoin-testnet-1
 sha256sum -c genesis.sha256
 xitcoind genesis validate-genesis genesis.json
 ```
 
-The canonical Xitcoin Testnet genesis has SHA-256:
+The deployed Xitcoin Testnet genesis has:
 
-`7d13d7ed6a19ea48e2ce3c408f1f457e0961e72df6dd480d8200a6db5bae8414`
+| Property | Canonical value |
+|---|---|
+| Cosmos Chain ID | `xitcoin-testnet-1` |
+| Genesis time | `2026-08-25T21:48:17.77229Z` |
+| Supply | 457,000,000 XTC |
+| SHA-256 | `55c8756a212b9e92c0e8427ea61caff7fa9dca40e801e4b848f59d1aa5f6dae6` |
 
-The verified Linux AMD64 testnet release deployed on 22 August 2026 was built
-from source revision
-`2aa39b8c2ce7ac06278d58f2970225fd450e2c2c`. Its `xitcoind` binary has
-SHA-256:
-
-`1958ca411353e79d3ff62a262960378141afb0343ab22689a759dffc610a9ecc`
+The current public repository no longer resolves the historical source
+revision, binary checksum and Actions run that were previously listed here.
+They are therefore not presented as independently verifiable provenance.
+Future releases must publish a reachable source revision and reproducible
+binary checksums.
 
 {% hint style="warning" %}
 Confirm these values against the canonical
+[Testnets repository](https://github.com/xitcoin-org/testnets), the
 [PoS Chain repository](https://github.com/xitcoin-org/pos-chain) and the target
 network before deployment. Never use the testnet genesis, node state or keys
 for mainnet.
