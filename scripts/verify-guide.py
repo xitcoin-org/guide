@@ -33,7 +33,7 @@ required = {
         "Initial validators | Atlas, Borealis, Meridian and Zenith",
         "Validator capacity | 258",
         "Minimum self-delegation | 5,000,000 XTC",
-        "7d13d7ed6a19ea48e2ce3c408f1f457e0961e72df6dd480d8200a6db5bae8414",
+        "55c8756a212b9e92c0e8427ea61caff7fa9dca40e801e4b848f59d1aa5f6dae6",
     ],
     "governance/overview.md": [
         "193 reserved Member-State positions",
