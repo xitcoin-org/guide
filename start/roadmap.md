@@ -25,7 +25,7 @@ The roadmap separates completed public records from infrastructure currently bei
 * endpoint, explorer, faucet and indexer cutover completed on 21 August 2026;
 * release documentation, canonical genesis checksum and CI security lock completed;
 * reproducible Linux AMD64 `xitcoind` release artifact validation;
-* V4 WXTC specification and bridge security review before any Cronos identity transition.
+* Cronos symbol-normalization specification, proxy authorization review and bridge security review before any production transition.
 
 ## Mainnet target
 
