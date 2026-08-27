@@ -79,7 +79,7 @@ Reward-policy decisions remain separate from validator admission. A reward-param
 ```mermaid
 flowchart TD
     A["EVM applications and services"] --> B["Revenue and approved buybacks"]
-    B --> C["Canonical $XTC on Cronos"]
+    B --> C["Canonical XTC on Cronos"]
     C --> D["Bridge Escrow Vault"]
     D --> E["Backed XTC on Xitcoin EVM"]
     E --> F["Reward Router"]
@@ -98,7 +98,7 @@ Contributions may support a higher future funded APR or extend the treasury's op
 The architecture uses separate components:
 
 1. **Revenue Collector** — receives the share of application revenue assigned by the contributing application.
-2. **Bridge Escrow Vault** — locks canonical Cronos `$XTC` used as backing.
+2. **Bridge Escrow Vault** — locks canonical Cronos `XTC` used as backing.
 3. **Reward Router** — routes verified, backed XTC from the EVM environment to the native reward layer.
 4. **Validator Incentive Treasury** — holds available native XTC and releases it under protocol limits.
 5. **Cosmos distribution layer** — accounts for validator commission, delegator rewards and applicable penalties.
@@ -117,11 +117,11 @@ Funding a vault does not confer control over it. Relayers may submit verified me
 
 The bridge and the reward module have different authorities:
 
-- the authorized Xitcoin bridge module may mint native XTC only after verifying an equivalent finalized lock of canonical `$XTC` on Cronos;
+- the authorized Xitcoin bridge module may mint native XTC only after verifying an equivalent finalized lock of canonical `XTC` on Cronos;
 - returning to Cronos burns the corresponding bridge-minted XTC before unlocking the original Cronos XTC;
 - the Validator Incentive Treasury has no mint authority and distributes only funded XTC already credited to it;
 - applications, relayers, validators and vault depositors have no arbitrary mint authority;
-- the canonical Cronos `$XTC` contract receives no new mint authority for bridge operation.
+- the canonical Cronos `XTC` contract receives no new mint authority for bridge operation.
 
 A strictly backed bridge mint changes the network representation of XTC without increasing global economic supply.
 
@@ -131,7 +131,7 @@ At all times:
 
 ```
 bridge-authorized XTC on Xitcoin
-≤ canonical $XTC locked on Cronos
+≤ canonical XTC locked on Cronos
 ```
 
 and:
