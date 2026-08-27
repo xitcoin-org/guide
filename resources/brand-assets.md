@@ -46,7 +46,7 @@ These values specify the supplied artwork; they are not a general website theme.
 * do not redraw, crop, stretch, rotate, outline, recolor or apply shadows and effects;
 * do not place the mark inside an unrelated coin, chain or company logo;
 * do not use the mark to imply endorsement, partnership or authorization;
-* do not create a modified “wrapped” logo: identify WXTC through product text and verified contract metadata.
+* use the standard Xitcoin mark for every official XTC representation and identify each asset by its verified network metadata.
 
 ## Naming standard
 
@@ -56,11 +56,12 @@ These values specify the supplied artwork; they are not a general website theme.
 | Canonical native asset | XTC |
 | Current Cronos proxy generation | V2 |
 | Current audited implementation revision | V3 |
-| Current Cronos display symbol | `$XTC` |
-| Planned Cronos bridge representation | V4 — WXTC |
-| Planned Solana bridge representation | WXTC — mint address to be published after verification |
+| Public asset symbol | XTC |
+| Current Cronos contract | `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991` |
+| Xitcoin native denomination | XTC (`axtc`) |
+| External representations | XTC, identified by network and verified contract, mint or IBC denomination |
 
-The V4 WXTC designation becomes valid only when the representation is backed 1:1 by canonical native XTC and the official bridge release is published.
+An external XTC representation is published only after its bridge, asset identifier and one-to-one accounting have been verified.
 
 ## Licensing and attribution
 
