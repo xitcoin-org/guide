@@ -57,20 +57,20 @@ The auditor's historical filename and the canonical repository filename differ. 
 
 Before relying on the audit after a proxy revision, verify the active implementation address, deployed bytecode, canonical source hash and applicable audit scope together.
 
-## Planned V4 WXTC update
+## Planned V4 symbol update
 
-V4 is the planned public transition for the Cronos representation after native XTC and the canonical bridge are operational and verified.
+V4 is reserved for normalization of the Cronos proxy display symbol to `XTC`.
 
 | Stage | Public identity | Meaning |
 |---|---|---|
 | V2 | `$XTC` | Current Cronos proxy generation |
 | V3 | `$XTC` | Current audited implementation revision within the V2 proxy generation |
-| V4 | WXTC | Planned verified 1:1 Cronos representation of canonical native XTC |
-| Native network | XTC | Canonical Xitcoin asset |
+| V4 | XTC | Planned metadata update; not active |
+| Native network | XTC | Native gas, staking and EVM asset |
 
-The `W` prefix must describe technical provenance, not marketing. V4 must not be presented as WXTC until bridge contracts, supply accounting, migration instructions and public verification records are released.
+The update is limited to public asset metadata and is intended to preserve the proxy address, holder balances, decimal precision and total supply. It requires authorization review, source and bytecode verification, independent security review and a public execution record.
 
-Future wrapped representations on other networks, including Solana, may also use `WXTC`. The symbol alone is not an identifier: each release must publish the destination network and complete contract or mint address, and must remain backed one-to-one by canonical native XTC.
+External representations use the public symbol `XTC` and are identified by their network and complete contract, mint or IBC denomination. Each release must preserve auditable one-to-one accounting.
 
 ## Cross-network accounting
 
