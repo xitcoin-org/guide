@@ -1,5 +1,5 @@
 ---
-description: Cronos EVM network parameters, verified XTC contract generations and the planned transition to WXTC.
+description: Cronos EVM parameters, verified XTC contract generations and planned symbol normalization.
 icon: hexagon
 ---
 
@@ -42,14 +42,14 @@ Inspect the current proxy on the [Cronos Explorer](https://explorer.cronos.com/t
 | V1 | Legacy standalone token contract | Legacy |
 | V2 | Upgradeable Cronos proxy generation and 2025 migration destination | Current public proxy |
 | V3 | Current audited implementation revision associated with the V2 proxy generation | Reviewed implementation record |
-| V4 | Planned implementation and identity transition to `WXTC` | Planned; not active |
+| V4 | Planned symbol normalization to `XTC`; authorization and release review pending | Planned; not active |
 
 The proxy-generation name and implementation-revision name must not be confused. The Cyberscope record labels the reviewed source `XitcoinV3_cyberscope.sol`, while the canonical contracts repository groups the current proxy generation under `contracts/cronos/v2/`. The reviewed source hash links those records.
 
 
-## Buy or swap current Cronos `$XTC`
+## Buy or swap XTC on Cronos
 
-The current `$XTC` token can be obtained on Cronos through decentralized-market routes that reference the current proxy contract.
+XTC can be obtained on Cronos through decentralized-market routes that reference the current proxy contract.
 
 | Access route | Link | Purpose |
 |---|---|---|
@@ -80,20 +80,13 @@ The migration converted eligible V1 balances to V2 at a 1:1 token ratio after th
 
 The historical interface is [migration.xitcoin.org](https://migration.xitcoin.org). Its availability does not prove that a migration path remains open. Verify the full destination contract and the current service notice before signing.
 
-## Planned V4 WXTC update
+## Planned Cronos symbol normalization
 
-The current Cronos proxy reports the on-chain symbol `$XTC`. This is the existing Cronos token identity and must not be confused with native `XTC` on the Xitcoin network or with the planned wrapped identity `WXTC`.
+The current Cronos proxy reports the on-chain symbol `$XTC`. The planned update changes the displayed symbol to `XTC` while preserving the proxy address, balances, decimal precision and total supply.
 
-After native XTC becomes the canonical origin asset and the official bridge accounting is activated, the planned V4 update is:
+This metadata update requires identification of the active upgrade authorization, source and bytecode verification, independent security review, and a published execution procedure. It is not active until the resulting on-chain state is verified.
 
-| Role | Planned symbol |
-|---|---|
-| Native asset on the Xitcoin network | XTC |
-| Verified 1:1 representation of native XTC on Cronos EVM | WXTC |
-
-V4 and the transition from Cronos `$XTC` to `WXTC` must become public only with the corresponding bridge backing, contract release and public migration notice. Renaming a token without that technical backing would be misleading.
-
-Future bridge extensions may support additional compatible networks. The planned wrapped representation on Solana will also use `WXTC`, but it must be identified by its complete Solana mint address and may be presented as active only after deployment, verification and bridge activation. Every representation must remain tied to canonical native XTC through verified contracts, published network identifiers and auditable 1:1 accounting.
+Xitcoin uses the public symbol `XTC` on its native network and on every verified external representation. Each representation is identified by its network and complete contract, mint or IBC denomination. Bridge accounting remains auditable and one-to-one.
 
 {% hint style="warning" %}
 A symbol is not proof of origin. Verify the network, chain ID and complete contract address.

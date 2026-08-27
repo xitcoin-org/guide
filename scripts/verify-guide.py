@@ -41,9 +41,10 @@ required = {
     ],
     "resources/brand-assets.md": [
         "Canonical native asset | XTC",
-        "Current Cronos display symbol | `$XTC`",
-        "Planned Cronos bridge representation | V4 — WXTC",
-        "Planned Solana bridge representation | WXTC",
+        "Public asset symbol | XTC",
+        "Current Cronos contract | `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`",
+        "Xitcoin native denomination | XTC (`axtc`)",
+        "External representations | XTC, identified by network and verified contract, mint or IBC denomination",
     ],
     "bridge/status-and-security.md": [
         "The canonical Xitcoin bridge is not currently presented as active",
@@ -69,6 +70,7 @@ prohibited = {
     r"\brelease candidate\b": "obsolete release-candidate status",
     r"Current Cronos display symbol\s*\|\s*XTC": "obsolete current Cronos symbol",
     r"Public display symbol\s*\|\s*XTC\s*\|\s*XTC": "obsolete current Cronos symbol table",
+    r"\bWXTC\b": "obsolete wrapped-symbol policy",
     r"Canonical staging active": "obsolete staging status",
     r"public endpoint cutover and transaction acceptance remain release gates": "obsolete release gate",
     r"transaction acceptance and public endpoint cutover remain release gates": "obsolete release gate",

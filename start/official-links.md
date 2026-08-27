@@ -17,7 +17,7 @@ icon: link
 * [CoinGecko — Xitcoin](https://www.coingecko.com/fr/coins/xitcoin)
 * [CoinMarketCap — Xitcoin](https://coinmarketcap.com/fr/currencies/xitcoin/)
 
-The current Cronos proxy reports **`$XTC`**. Native XTC on the Xitcoin network uses **`XTC`**. The planned wrapped representations will use **`WXTC`** only after their bridges and destination identifiers are publicly verified. Always verify the complete Cronos contract address: `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`.
+Xitcoin uses the public symbol **`XTC`** on its native network and on verified external representations. The current Cronos proxy still reports **`$XTC`** on-chain until the planned audited metadata update. Verify the network and complete Cronos contract address: `0xE45Fe733bC8617FA6Dac8437Fc44B5ffFA949991`.
 
 ## Testnet services
 

@@ -1,13 +1,13 @@
 ---
-description: Planned accounting and security architecture connecting Cronos $XTC and native XTC on Xitcoin.
+description: Planned accounting and security architecture connecting XTC on Cronos and the Xitcoin network.
 icon: bridge
 ---
 
 # Bridge architecture
 
-The planned canonical bridge connects the current Cronos `$XTC` proxy with native `XTC` on the Xitcoin network. After the verified V4 identity transition, the Cronos representation will be displayed as `WXTC` without changing the requirement for one-to-one backing.
+The planned canonical bridge connects XTC on Cronos with native XTC on the Xitcoin network. Both representations use the public symbol `XTC`; their identity is determined by the network, chain ID and canonical contract or denomination.
 
-It provides continuity between two networks. The user experience remains centered on XTC, while the bridge accounts for how value is locked, represented and returned.
+The bridge preserves auditable one-to-one accounting while value is locked, represented and returned.
 
 ## Bridge lifecycle at a glance
 
@@ -32,7 +32,7 @@ The forward path changes the network representation of XTC without increasing gl
 sequenceDiagram
     autonumber
     actor User
-    participant Cronos as Cronos $XTC
+    participant Cronos as Cronos XTC
     participant Vault as Cronos Escrow Vault
     participant Relay as Authorized Relayer Quorum
     participant Bridge as Xitcoin Bridge Module
@@ -58,12 +58,12 @@ sequenceDiagram
 
 ## Cronos to Xitcoin: lock and strictly backed mint
 
-1. A user deposits canonical Cronos `$XTC` into the approved bridge contract.
+1. A user deposits canonical Cronos `XTC` into the approved bridge contract.
 2. The Cronos-side contract locks the deposited amount.
 3. Relayers observe the event and wait for the required finality.
 4. The Xitcoin-side bridge verifies the authorized message and replay protection.
 5. The corresponding native XTC amount is minted to the destination address.
-6. Public accounting records the one-to-one relationship between Cronos `$XTC` locked and native XTC minted through the bridge.
+6. Public accounting records the one-to-one relationship between Cronos `XTC` locked and native XTC minted through the bridge.
 
 ## Xitcoin to Cronos: bridge burn and unlock
 
@@ -77,7 +77,7 @@ sequenceDiagram
 
 The bridge burn used for a return is an accounting operation: it cancels the Xitcoin representation before the same value is unlocked on Cronos. It does not reduce the global economic supply.
 
-A permanent burn of canonical `$XTC` on Cronos is different. It reduces the effective global XTC ceiling and must be recorded in a public burn ledger. The corresponding unused Xitcoin bridge capacity must be reduced by the same amount. Cronos `$XTC` backing an active Xitcoin representation must never be permanently burned unless the corresponding Xitcoin amount is retired first.
+A permanent burn of canonical `XTC` on Cronos is different. It reduces the effective global XTC ceiling and must be recorded in a public burn ledger. The corresponding unused Xitcoin bridge capacity must be reduced by the same amount. Cronos `XTC` backing an active Xitcoin representation must never be permanently burned unless the corresponding Xitcoin amount is retired first.
 
 Buyback XTC must have one exclusive destination: reward funding, bridge backing or permanent burn. The same XTC cannot be counted in more than one destination.
 
@@ -111,7 +111,7 @@ Users should not need to understand internal supply representations to use the b
 
 At all times, the system must preserve measurable relationships between:
 
-* `$XTC` locked on Cronos;
+* `XTC` locked on Cronos;
 * bridge-authorized native XTC issued on Xitcoin;
 * bridge-minted native XTC burned for return;
 * XTC unlocked back on Cronos.
@@ -120,10 +120,10 @@ The fundamental bridge invariant is:
 
 ```
 active bridge-minted XTC on Xitcoin
-= canonical $XTC locked in the Cronos Bridge Escrow Vault
+= canonical XTC locked in the Cronos Bridge Escrow Vault
 ```
 
-Bridge administration must not provide an unrestricted public issuance path. The canonical Cronos `$XTC` token must not receive new mint authority for bridge operation.
+Bridge administration must not provide an unrestricted public issuance path. The canonical Cronos `XTC` token must not receive new mint authority for bridge operation.
 
 ## Security controls
 

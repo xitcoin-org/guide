@@ -34,7 +34,7 @@ The public chronology distinguishes the persistent proxy generation from its imp
 1. V1 is the retired standalone Cronos token.
 2. V2 is the upgradeable proxy generation used for the 2025 migration.
 3. V3 is the current audited implementation revision identified by Cyberscope's source label `XitcoinV3_cyberscope.sol`.
-4. V4 is reserved for the planned `WXTC` transition after the canonical native-XTC bridge is operational and verified.
+4. V4 is reserved for the planned Cronos symbol normalization to `XTC`, subject to authorization review, independent verification and a published change procedure.
 
 Cyberscope publishes audit iterations dated July 2025 and February 2026 for the current contract record, together with a separate passed KYC record. Every implementation revision must be identified by source, bytecode, implementation address and audit scope. See [Xitcoin security and verification](../security/audits-and-validation.md).
 
