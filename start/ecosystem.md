@@ -28,9 +28,9 @@ Repository publication means that work is inspectable. It does not automatically
 
 XTC's Cronos history remains part of the ecosystem. The guide therefore distinguishes:
 
-* **Cronos `$XTC`:** the current canonical proxy token on Cronos;
+* **Cronos XTC:** the current canonical proxy token, identified by its Cronos contract address;
 * **native XTC:** the gas and staking asset of the Xitcoin network;
-* **future WXTC:** the planned one-to-one wrapped identity on Cronos and other verified destination networks such as Solana;
+* **external XTC representations:** bridge-backed assets identified by their network and verified contract, mint or IBC denomination;
 * **migration history:** prior token-continuity procedures;
 * **bridge architecture:** the planned controlled path between networks.
 
