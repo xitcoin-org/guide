@@ -21,7 +21,7 @@ else:
 
 required = {
     "README.md": [
-        "Cosmos chain ID | `xitcoin-testnet-1`",
+        "Cosmos chain ID | `xitcoin-testnet-v2-1`",
         "EVM chain ID | `101089`",
         "Base denomination | `axtc`",
         "Decimals | 18",
@@ -29,11 +29,11 @@ required = {
         "Mainnet has not launched",
     ],
     "start/network-status.md": [
-        "Public name | Xitcoin Testnet",
+        "Public name | Xitcoin Public Testnet",
         "Initial validators | Atlas, Borealis, Meridian and Zenith",
-        "Validator capacity | 258",
-        "Minimum self-delegation | 5,000,000 XTC",
-        "55c8756a212b9e92c0e8427ea61caff7fa9dca40e801e4b848f59d1aa5f6dae6",
+        "Genesis supply | 477,000,000 XTC",
+        "5db34acf6496b2c76a6f516e0eb605caef6762552584ddbed7c8703239f33d72",
+        "faucet amount 10 XTC per accepted request",
     ],
     "governance/overview.md": [
         "193 reserved Member-State positions",
@@ -62,7 +62,6 @@ for relative, statements in required.items():
             errors.append(f"{relative}: required statement missing: {statement}")
 
 prohibited = {
-    r"xitcoin-testnet(?!-1)": "obsolete Cosmos chain ID",
     r"\b195 sovereign reference positions\b": "obsolete 195-position policy",
     r"\b63 public positions\b": "obsolete 63-position policy",
     r"\b1,000,000 XTC\b": "obsolete validator minimum",

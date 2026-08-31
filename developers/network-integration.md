@@ -11,7 +11,7 @@ Wallets and services should represent Cosmos and EVM identities separately while
 
 | Field | Value |
 |---|---|
-| Cosmos chain ID | `xitcoin-testnet-1` |
+| Cosmos chain ID | `xitcoin-testnet-v2-1` |
 | EVM chain ID | `101089` |
 | EVM chain ID hex | `0x18ae1` |
 | Native symbol | XTC |

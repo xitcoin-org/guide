@@ -18,7 +18,7 @@ Xitcoin is an EVM-compatible proof-of-stake Layer 1 built with the Cosmos SDK, C
 This is the canonical public guide for users, developers, validators, infrastructure providers and integration partners.
 
 {% hint style="warning" %}
-**The canonical public testnet is active.** Xitcoin Testnet is publicly available with Cosmos chain ID `xitcoin-testnet-1`. Always verify the live network identifier before signing or broadcasting.
+**The canonical public testnet is active.** Xitcoin Public Testnet is publicly available with Cosmos chain ID `xitcoin-testnet-v2-1`. Always verify the live network identifier before signing or broadcasting.
 {% endhint %}
 
 ## Explore the network
@@ -50,7 +50,7 @@ This is the canonical public guide for users, developers, validators, infrastruc
 
 | Property | Testnet | Mainnet |
 |---|---:|---:|
-| Cosmos chain ID | `xitcoin-testnet-1` | `xitcoin` |
+| Cosmos chain ID | `xitcoin-testnet-v2-1` | `xitcoin` |
 | EVM chain ID | `101089` | `101088` |
 | Native asset | XTC | XTC |
 | Base denomination | `axtc` | `axtc` |

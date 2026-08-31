@@ -15,7 +15,7 @@ Official source code is published under the [xitcoin-org GitHub organization](ht
 | [brand](https://github.com/xitcoin-org/brand) | Canonical logo and brand assets |
 | [contracts](https://github.com/xitcoin-org/contracts) | Public smart-contract source |
 | [bridge-relayer](https://github.com/xitcoin-org/bridge-relayer) | Bridge-relayer source and design |
-| [explorer-cosmos-testnet](https://github.com/xitcoin-org/explorer-cosmos-testnet) | Cosmos testnet explorer |
+| [explorer-testnet](https://github.com/xitcoin-org/explorer-testnet) | Standard Ping-based Cosmos testnet explorer and isolated Xitcoin faucet interface |
 | [explorer-evm-testnet](https://github.com/xitcoin-org/explorer-evm-testnet) | EVM testnet explorer |
 
 Repository availability does not mean a service or protocol feature is active. Check the guide's status pages and verified releases.
