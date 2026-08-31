@@ -44,7 +44,9 @@ The native network was developed with Cosmos SDK, CometBFT and Cosmos EVM. Nativ
 
 ## Public testnet
 
-Xitcoin Testnet is active as a four-validator canonical public testnet using Cosmos chain ID `xitcoin-testnet-1` and EVM chain ID `101089`. Consensus, transaction acceptance and public endpoint cutover were completed and validated on 2026-08-21.
+Xitcoin Public Testnet is active with four validators and one public sentry. Its
+technical identifiers are Cosmos chain ID `xitcoin-testnet-v2-1` and EVM chain
+ID `101089`.
 
 ## Mainnet preparation
 

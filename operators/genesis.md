@@ -5,29 +5,26 @@ icon: file-shield
 
 # Genesis and verification
 
-Clone the canonical network repository and verify the checksum:
+Verify the deployed genesis file before starting a node:
 
 ```bash
-git clone https://github.com/xitcoin-org/testnets.git
-cd testnets/xitcoin-testnet-1
-sha256sum -c genesis.sha256
-xitcoind genesis validate-genesis genesis.json
+printf '%s  %s\n' \
+  '5db34acf6496b2c76a6f516e0eb605caef6762552584ddbed7c8703239f33d72' \
+  '/path/to/genesis.json' | sha256sum -c -
+xitcoind genesis validate-genesis /path/to/genesis.json
 ```
 
 The deployed Xitcoin Testnet genesis has:
 
 | Property | Canonical value |
 |---|---|
-| Cosmos Chain ID | `xitcoin-testnet-1` |
-| Genesis time | `2026-08-25T21:48:17.77229Z` |
-| Supply | 457,000,000 XTC |
-| SHA-256 | `55c8756a212b9e92c0e8427ea61caff7fa9dca40e801e4b848f59d1aa5f6dae6` |
+| Cosmos Chain ID | `xitcoin-testnet-v2-1` |
+| Supply | 477,000,000 XTC |
+| SHA-256 | `5db34acf6496b2c76a6f516e0eb605caef6762552584ddbed7c8703239f33d72` |
 
-The current public repository no longer resolves the historical source
-revision, binary checksum and Actions run that were previously listed here.
-They are therefore not presented as independently verifiable provenance.
-Future releases must publish a reachable source revision and reproducible
-binary checksums.
+Also query `https://rpc-testnet.xitcoin.org/status` and confirm that the live
+network reports `xitcoin-testnet-v2-1`, advances in height and is not catching
+up.
 
 {% hint style="warning" %}
 Confirm these values against the canonical

@@ -74,6 +74,8 @@ Only after the purpose is understood does the technical architecture matter:
 
 ## Current phase
 
-Mainnet has not launched. Xitcoin Testnet is active as a four-validator canonical public testnet using Cosmos chain ID `xitcoin-testnet-1` and EVM chain ID `101089`. Public endpoint cutover and transaction acceptance were completed and validated on 2026-08-21.
+Mainnet has not launched. Xitcoin Public Testnet is active with four validators
+and one public sentry. Its technical identifiers are Cosmos chain ID
+`xitcoin-testnet-v2-1` and EVM chain ID `101089`.
 
 Continue with [Vision and purpose](vision-and-purpose.md), [History and evolution](history-and-evolution.md) or [Mainnet readiness](mainnet-readiness.md).

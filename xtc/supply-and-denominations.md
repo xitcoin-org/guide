@@ -10,9 +10,9 @@ icon: scale-balanced
 The protocol configuration defines a maximum supply ceiling of
 **5,250,000,000 XTC**. This ceiling is not the current testnet genesis supply.
 
-The deployed Xitcoin Testnet genesis supply is **457,000,000 XTC**. Its exact
-account-level allocation is published in the canonical
-[Testnets repository](https://github.com/xitcoin-org/testnets).
+The deployed Xitcoin Public Testnet genesis supply is **477,000,000 XTC**.
+Supply must be verified against the deployed genesis and live bank-module
+state.
 
 ## Inflation
 
