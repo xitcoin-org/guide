@@ -9,7 +9,7 @@ Xitcoin testnet supports EVM-compatible wallets. Add the network manually only a
 
 | Field | Value |
 |---|---|
-| Network name | Xitcoin Testnet |
+| Network name | Xitcoin Public Testnet |
 | RPC URL | `https://evm-rpc-testnet.xitcoin.org` |
 | Chain ID | `101089` |
 | Currency symbol | XTC |
