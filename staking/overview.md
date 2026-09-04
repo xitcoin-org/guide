@@ -57,12 +57,12 @@ Holding or staking a large quantity of XTC does not override admission controls.
 
 - Delegations contribute to an active validator's consensus voting power.
 - Rewards and penalties depend on the active network rules.
-- Unbonding is not immediate; the candidate configuration uses a 21-day period.
+- Unbonding is not immediate; the documented testnet configuration uses a 21-day period.
 - Validator commission reduces delegator rewards.
 - Slashing can affect delegated stake.
 - Validator admission remains separate from ordinary delegation choice.
 - Sovereign allocation remains separate from ordinary validator rewards.
 
 {% hint style="warning" %}
-The five-million-XTC minimum and sovereign continuity framework remain target mainnet controls until their implementation, review and on-chain activation are complete.
+The documented testnet genesis sets the five-million-XTC minimum. The sovereign continuity framework remains under development. Mainnet activation of these controls requires separate implementation review and verified on-chain configuration.
 {% endhint %}

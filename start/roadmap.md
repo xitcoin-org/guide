@@ -27,6 +27,14 @@ The roadmap separates completed public records from infrastructure currently bei
 * reproducible Linux AMD64 `xitcoind` release artifact validation;
 * Cronos symbol-normalization specification, proxy authorization review and bridge security review before any production transition.
 
+## Bridge engineering status
+
+The coordinator is approval-only. Public destination manifest checks and
+fail-closed startup are merged; destination adapter prerequisites remain under
+review. Neither testnet bridge transfers nor mainnet bridging is activated.
+See [Bridge status and security](../bridge/status-and-security.md) for source
+and test evidence.
+
 ## Mainnet target
 
 | Component | Target |

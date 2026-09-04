@@ -52,7 +52,7 @@ Blockscout can trail the chain head briefly while it indexes. A moving
 one-to-two-block lag is normal; a persistent or increasing lag must be
 investigated.
 
-## Certified public-testnet state
+## Published public-testnet baseline
 
 - four validators active with equal initial voting power;
 - public RPC, API, gRPC, EVM RPC, explorers and faucet operational;
@@ -63,5 +63,9 @@ investigated.
 - Blockscout reindexed from the deployed genesis;
 - automated healthcheck repeatedly successful;
 - bridge route not configured and disabled.
+
+These published network records are not a live availability monitor. The
+4 September 2026 repository review did not access blockchain servers or
+revalidate endpoint health. Current availability must be verified separately.
 
 Testnet XTC has no monetary value. Mainnet has not launched.
