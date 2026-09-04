@@ -9,6 +9,9 @@ The planned canonical bridge connects XTC on Cronos with native XTC on the Xitco
 
 The bridge preserves auditable one-to-one accounting while value is locked, represented and returned.
 
+The diagrams describe the intended settlement flow. Destination submission is
+not activated; see [implementation and activation status](status-and-security.md).
+
 ## Bridge lifecycle at a glance
 
 ```mermaid

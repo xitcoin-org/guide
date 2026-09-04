@@ -7,7 +7,7 @@ icon: triangle-exclamation
 
 Validators must sign blocks reliably and must never sign conflicting blocks.
 
-The candidate configuration includes penalties for downtime and double-signing. Delegators share validator performance risk.
+The staking configuration includes penalties for downtime and double-signing. Delegators share validator performance risk.
 
 ## Reduce risk
 

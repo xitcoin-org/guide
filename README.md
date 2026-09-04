@@ -1,7 +1,6 @@
 ---
 description: Official guide to the Xitcoin network, XTC, testnet, staking, development and node operations.
 icon: circle-x
-cover: .gitbook/assets/gitbook-banner-xitcoin.png
 coverY: 0
 layout:
   width: default
