@@ -9,14 +9,22 @@ Xitcoin's visual identity centers on the supplied XTC symbol and three
 published colors. The [Brand repository](https://github.com/xitcoin-org/brand)
 is the source of truth for artwork; this Guide explains how to use it.
 
-![Xitcoin symbol](https://raw.githubusercontent.com/xitcoin-org/brand/8a3e841dbb1f78b0a15386bc1fbad411e3334241/assets/png/standard/xitcoin-symbol-200.png)
+<figure><img src="../.gitbook/assets/brand/standard-on-graphite.svg" alt="Original Xitcoin symbol on the official Graphite background" width="400"><figcaption><p>The Xitcoin symbol. Original artwork; presentation background only.</p></figcaption></figure>
 
-Use the original files. Do not reconstruct a symbol from a screenshot or
-introduce a new wordmark, typeface or network-specific logo.
+## Find what you need
 
-- [Logo system and downloads](../brand/logo-system.md): available files and their actual formats.
-- [Colors and placement](../brand/colors-and-placement.md): palette, backgrounds, clear space and sizing.
-- [Usage and integration](../brand/usage-and-integration.md): correct use, asset identity and source tracking.
+<table data-view="cards">
+<thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead>
+<tbody>
+<tr><td><strong>Logo library</strong></td><td>Preview the original mark and choose a verified download.</td><td><a href="../brand/logo-system.md">logo-system.md</a></td></tr>
+<tr><td><strong>Color and placement</strong></td><td>Published swatches, light and dark examples, and practical placement guidance.</td><td><a href="../brand/colors-and-placement.md">colors-and-placement.md</a></td></tr>
+<tr><td><strong>Use and integrate</strong></td><td>Artwork integrity and a checklist for wallets, explorers and token lists.</td><td><a href="../brand/usage-and-integration.md">usage-and-integration.md</a></td></tr>
+</tbody>
+</table>
+
+**Artwork source:** [xitcoin-org/brand](https://github.com/xitcoin-org/brand).
+**Presentation:** this Guide. Preview backgrounds and swatches are presentation
+assets, not additional logos. Use the original downloads for integrations.
 
 ## Asset naming
 

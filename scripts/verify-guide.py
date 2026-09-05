@@ -93,6 +93,7 @@ if errors:
         print(f"ERROR: {error}")
     raise SystemExit(1)
 
+subprocess.run([sys.executable, str(ROOT / "scripts/verify-brand.py")], check=True)
 subprocess.run([sys.executable, str(ROOT / "scripts/verify-math.py")], check=True)
 
 print(f"summary_pages={len(pages)}")
