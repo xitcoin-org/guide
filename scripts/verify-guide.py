@@ -2,6 +2,8 @@
 """Validate the canonical public Xitcoin Guide."""
 
 from pathlib import Path
+import subprocess
+import sys
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -90,6 +92,8 @@ if errors:
     for error in errors:
         print(f"ERROR: {error}")
     raise SystemExit(1)
+
+subprocess.run([sys.executable, str(ROOT / "scripts/verify-brand.py")], check=True)
 
 print(f"summary_pages={len(pages)}")
 print("canonical_identity=OK")

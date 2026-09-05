@@ -1,0 +1,17 @@
+{
+  "purpose": "Guide presentation only; original embedded artwork is unchanged",
+  "sources": [
+    {
+      "repository": "xitcoin-org/brand",
+      "revision": "8a3e841dbb1f78b0a15386bc1fbad411e3334241",
+      "path": "assets/png/standard/xitcoin-symbol-200.png",
+      "sha256": "0ce7d305e03a254c750b804c2326f3da9d58c9be06b22f239831a9bbfef5a3c6"
+    },
+    {
+      "repository": "xitcoin-org/brand",
+      "revision": "8a3e841dbb1f78b0a15386bc1fbad411e3334241",
+      "path": "assets/png/white/xitcoin-symbol-white-200.png",
+      "sha256": "7aa3def5ce460dfd73491e717378439a43220d942a00a6af8b7cc527b6fb7479"
+    }
+  ]
+}
