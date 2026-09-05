@@ -27,7 +27,9 @@ Every position starts with the same **1 500 000 XTC** base.
 
 Before rounding to whole XTC, each Member State's reference quantity is calculated as follows:
 
-$\displaystyle \operatorname{Allocation}_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{\operatorname{Population}_i}}{\sum_{j=1}^{193}\sqrt{\operatorname{Population}_j}} \right)$
+$$
+\operatorname{Allocation}_i = 386{,}000{,}000 \left( \frac{0.75}{193} + 0.25 \frac{\sqrt{\operatorname{Population}_i}}{\sum_{j=1}^{193}\sqrt{\operatorname{Population}_j}} \right)
+$$
 
 **Formula key**
 
@@ -310,9 +312,13 @@ Each position receives an individual five-year vesting schedule when it is activ
 
 During eligible service, the protocol calculates the vested and claimable amounts at the current block:
 
-$\displaystyle \operatorname{Vested}_i(\operatorname{Block}) = \operatorname{Allocation}_i \times \frac{\min\left(\operatorname{EligibleBlocks}_i(\operatorname{Block}),\operatorname{FiveYearBlocks}\right)}{\operatorname{FiveYearBlocks}}$
+$$
+\operatorname{Vested}_i(\operatorname{Block}) = \operatorname{Allocation}_i \times \frac{\min\left(\operatorname{EligibleBlocks}_i(\operatorname{Block}),\operatorname{FiveYearBlocks}\right)}{\operatorname{FiveYearBlocks}}
+$$
 
-$\displaystyle \operatorname{Claimable}_i(\operatorname{Block}) = \operatorname{Vested}_i(\operatorname{Block}) - \operatorname{Released}_i(\operatorname{Block})$
+$$
+\operatorname{Claimable}_i(\operatorname{Block}) = \operatorname{Vested}_i(\operatorname{Block}) - \operatorname{Released}_i(\operatorname{Block})
+$$
 
 **Formula key**
 
