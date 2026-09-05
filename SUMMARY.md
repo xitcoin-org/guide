@@ -65,9 +65,14 @@
 * [Responsible disclosure](security/responsible-disclosure.md)
 * [Testnet and risk notice](security/testnet-notice.md)
 
-## Brand and resources
+## Brand / Visual Identity
 
-* [Official brand assets](resources/brand-assets.md)
+* [Brand overview](resources/brand-assets.md)
+* [Logo system and downloads](brand/logo-system.md)
+* [Colors and placement](brand/colors-and-placement.md)
+* [Usage and integration](brand/usage-and-integration.md)
+
+## Resources
 * [Markets and liquidity](resources/markets-and-liquidity.md)
 * [Repositories](resources/repositories.md)
 * [Community and support](resources/community.md)

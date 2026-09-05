@@ -28,7 +28,7 @@ Each phase is documented separately so users can understand what changed without
 | Capability | What it means |
 |---|---|
 | Native XTC | One network asset for fees, staking and applications |
-| Proof-of-stake consensus | Independent validators verify blocks and secure the chain |
+| Proof-of-stake consensus | Validators verify blocks and secure the chain; operator independence is a separate property |
 | Ethereum compatibility | Existing EVM wallets, Solidity contracts and developer tools can connect |
 | Cosmos infrastructure | Native staking, governance, APIs and interoperability components |
 | Public verification | Source code, configuration, checksums and chain state can be inspected |

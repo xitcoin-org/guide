@@ -13,15 +13,15 @@ Before activation, the project must verify contracts, relayer configuration, mon
 
 ## Implementation and activation status
 
-Repository review on 4 September 2026 distinguishes the following stages:
+Repository review on 5 September 2026 distinguishes the following stages:
 
 | Component | Status | Evidence |
 |---|---|---|
 | Destination manifest checks and startup boundary | Implemented and merged; both destinations fail closed | [Relayer PR #38](https://github.com/xitcoin-org/bridge-relayer/pull/38) |
-| Phase-one relayer validation | 113 automated tests passed, with a zero-vulnerability production dependency audit at review time | [Merged validation record](https://github.com/xitcoin-org/bridge-relayer/pull/38) |
+| Phase-one relayer validation | 113 automated tests passed, with no production dependency advisories reported by npm at review time | [Merged validation record](https://github.com/xitcoin-org/bridge-relayer/pull/38) |
 | Coordinator | Approval-only; no destination submission in its runtime | [Coordinator source](https://github.com/xitcoin-org/bridge-relayer/blob/aee181bf465d4dbd6a49a760f7be98be2d9a49b0/src/coordinator-bootstrap.js) |
-| Destination adapter prerequisites | Under development in an unmerged PR; offline tests do not establish operational readiness | [Relayer PR #39](https://github.com/xitcoin-org/bridge-relayer/pull/39) |
-| Testnet bridge transfers | Not activated; destination startup remains disabled | [Submitter scope](https://github.com/xitcoin-org/bridge-relayer/blob/aee181bf465d4dbd6a49a760f7be98be2d9a49b0/docs/SUBMITTERS.md) |
+| Destination adapter prerequisites | Merged as `9fe70ca`; offline journal and replay-schema prerequisites only; no operational submission | [Relayer PR #39](https://github.com/xitcoin-org/bridge-relayer/pull/39) |
+| Testnet bridge transfers | Not activated; destination startup remains disabled | [Submitter scope](https://github.com/xitcoin-org/bridge-relayer/blob/9fe70ca158feb18d27765472e45a8936fbc0b1c4/docs/ADAPTERS.md) |
 | Mainnet bridge | Future work, subject to separate review and activation | [Mainnet readiness](../start/mainnet-readiness.md) |
 
 The testnet route connects **Cronos testnet (chain ID 338)** and **Xitcoin
@@ -33,6 +33,22 @@ The chain source includes an attestation message and a replay-status query.
 A processed replay flag alone does not prove a matching transaction or finality.
 Automated source and fixture tests are engineering evidence, not activation,
 independent security certification or proof of current service availability.
+
+## Status terms
+
+**Implemented** means source exists. **Tested offline** means the recorded
+checks used local fixtures. **Tested on testnet** requires transaction and
+finality evidence from that network. **Deployed but inactive** means an
+identified release exists without enabled operation. **Active** requires
+current operational evidence. **Planned** is future work; **blocked** identifies
+a missing prerequisite. These stages are not interchangeable.
+
+The remaining adapter work includes signed-transaction encoding and custody,
+account sequence or nonce ownership, fee bounds, bounded network responses,
+approval revalidation, canonical receipt and finality verification, and atomic
+recovery with RelayStore. The Xitcoin replay flag cannot establish completion
+or authorize a resend after an ambiguous outcome. See the
+[exact activation blockers](https://github.com/xitcoin-org/bridge-relayer/blob/9fe70ca158feb18d27765472e45a8936fbc0b1c4/docs/ADAPTERS.md#remaining-activation-blockers).
 
 ## Checks after a separately announced activation
 
