@@ -14,7 +14,7 @@ printf '%s  %s\n' \
 xitcoind genesis validate-genesis /path/to/genesis.json
 ```
 
-The deployed Xitcoin Testnet genesis has:
+The deployed Xitcoin Public Testnet genesis has:
 
 | Property | Canonical value |
 |---|---|

@@ -1,5 +1,5 @@
 ---
-description: Canonical public endpoint status for Xitcoin Testnet.
+description: Canonical public endpoint status for Xitcoin Public Testnet.
 icon: signal
 ---
 
