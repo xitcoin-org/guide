@@ -63,3 +63,10 @@ Testnet XTC has no monetary value. Mainnet has not launched, and no page in this
 ## Public source of truth
 
 The [Xitcoin PoS Chain repository](https://github.com/xitcoin-org/pos-chain) contains the node software and release source. Canonical public Testnet network configuration and Genesis files are maintained in the [Xitcoin Testnets repository](https://github.com/xitcoin-org/testnets). This guide makes that information understandable and operational. When a draft document differs from a validated release or live on-chain state, the validated release and live state take precedence.
+
+## Explorer availability
+
+The EVM explorer serves backend 11.2.8 and public Stats as observed on
+13 September 2026. See [explorers](testnet/explorers.md) for chart timing and
+[network status](start/network-status.md) for the scope of these observations.
+Explorer availability does not establish complete testnet acceptance.

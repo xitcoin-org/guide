@@ -69,3 +69,19 @@ These published network records are not a live availability monitor. The
 revalidate endpoint health. Current availability must be verified separately.
 
 Testnet XTC has no monetary value. Mainnet has not launched.
+
+## Explorer update — 13 September 2026
+
+The public EVM explorer serves Blockscout backend **11.2.8**, the corrected
+frontend and Stats. Indexed height advanced with the RPC in three observations.
+The counters and daily transaction chart refreshed in the browser. These are
+observations at that date, not a continuous availability guarantee.
+
+Backend counters and Stats refresh periodically and can lag the latest block.
+Compare timestamps and repeated heights before diagnosing a stalled index.
+[Explorer details](../testnet/explorers.md) explain the daily chart.
+
+This explorer update does not establish agreement between all validator hosts,
+independently anchored consensus verification, a bridge launch, or renewed
+acceptance of faucet transfers and wallet integrations. The earlier published
+network baseline above remains a dated record. Mainnet has not launched.
