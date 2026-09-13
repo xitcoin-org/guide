@@ -38,4 +38,4 @@ A short delay in a counter does not by itself mean the chain has stopped.
 The existing 0.01 XTC native transfer remains a currency amount with 18 decimals.
 This update does not change network identity or enable a bridge.
 
-Operators can consult the [deployment and recovery notes](https://github.com/xitcoin-org/explorer-evm-testnet/blob/main/docs/DEPLOYMENT.md).
+Operators can consult the [deployment and recovery notes](https://github.com/xitcoin-org/explorer-evm-testnet/blob/d33eb171032137008299bf00b63db63efb4bdc2e/docs/DEPLOYMENT.md).

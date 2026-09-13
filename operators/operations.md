@@ -22,7 +22,7 @@ Never restart all validators simultaneously. Coordinate upgrades to preserve con
 
 Treat explorer databases and caches separately from validator state. The EVM
 explorer's backend, frontend and Stats form one public service; the
-[deployment record](https://github.com/xitcoin-org/explorer-evm-testnet/blob/main/docs/DEPLOYMENT.md)
+[deployment record](https://github.com/xitcoin-org/explorer-evm-testnet/blob/d33eb171032137008299bf00b63db63efb4bdc2e/docs/DEPLOYMENT.md)
 describes the accepted version and recovery boundaries.
 
 After a public cutover, preserve newly acquired database and Redis state before
